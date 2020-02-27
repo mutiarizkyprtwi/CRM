@@ -1,1676 +1,846 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="">
+<!--<![endif]-->
 
-<!-- Mirrored from agmstudio.io/themes/material-style/2.4.4/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Aug 2019 09:21:50 GMT -->
+<!-- Mirrored from premiumlayers.net/demo/html/hotely/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Feb 2020 08:49:58 GMT -->
 
 <head>
    <meta charset="utf-8">
+
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-   <meta name="theme-color" content="#333">
-   <title>Material Style</title>
-   <meta name="description" content="Material Style Theme">
-   <link rel="shortcut icon" href="assets/img/favicon30f4.png?v=3">
-   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-   <link rel="stylesheet" href="assets/css/preload.min.css">
-   <link rel="stylesheet" href="assets/css/plugins.min.css">
-   <link rel="stylesheet" href="assets/css/style.light-blue-500.min.css">
-   <link rel="stylesheet" href="assets/css/width-boxed.min.css" id="ms-boxed" disabled="">
+
+   <meta name="description" content="">
+   <meta name="author" content="">
+
+   <title>Home - Hotel</title>
+
+   <!-- Standard Favicon -->
+   <link rel="icon" type="image/x-icon" href="assets/assets/images/favicon.png" />
+
+   <!-- For iPhone 4 Retina display: -->
+   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/assets/images/apple-touch-icon-114x114-precomposed.html">
+
+   <!-- For iPad: -->
+   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/assets/images/apple-touch-icon-72x72-precomposed.html">
+
+   <!-- For iPhone: -->
+   <link rel="apple-touch-icon-precomposed" href="assets/assets/images/apple-touch-icon-57x57-precomposed.html">
+
+   <!-- Library - Google Font Familys -->
+
+   <!-- Library - Bootstrap v3.3.5 -->
+   <link rel="stylesheet" type="text/css" href="assets/libraries/lib.css">
+   <link rel="stylesheet" type="text/css" href="assets/libraries/calender/calendar.css">
+
+   <!-- Custom - Common CSS -->
+   <link rel="stylesheet" type="text/css" href="assets/css/plugins.css">
+   <link rel="stylesheet" type="text/css" href="assets/css/navigation-menu.css">
+
+   <!-- Custom - Theme CSS -->
+   <link rel="stylesheet" type="text/css" href="assets/style.css" />
+   <link rel="stylesheet" type="text/css" href="assets/css/shortcodes.css" />
+
    <!--[if lt IE 9]>
-        <script src="assets/js/html5shiv.min.js"></script>
-        <script src="assets/js/respond.min.js"></script>
+		<script src="js/html5/respond.min.js"></script>
     <![endif]-->
+
 </head>
 
-<body>
-   <a href="javascript:void(0)" class="ms-conf-btn ms-configurator-btn btn-circle btn-circle-raised btn-circle-primary animated rubberBand"><i class="fa fa-gears"></i></a>
-   <div id="ms-configurator" class="ms-configurator">
-      <div class="ms-configurator-title">
-         <h3><i class="fa fa-gear"></i> Theme Configurator</h3>
-         <a href="javascript:void(0);" class="ms-conf-btn withripple"><i class="zmdi zmdi-close"></i></a>
-      </div>
-      <div class="panel-group" id="accordion_conf" role="tablist" aria-multiselectable="true">
-         <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="ms-conf-header-color">
-               <h4 class="panel-title">
-                  <a role="button" class="withripple" data-toggle="collapse" href="#ms-collapse-conf-1" aria-expanded="true" aria-controls="ms-collapse-conf-1">
-                     <i class="zmdi zmdi-invert-colors"></i> Color Selector </a>
-               </h4>
-            </div>
-            <div id="ms-collapse-conf-1" class="card-collapse collapse show" role="tabpanel" aria-labelledby="ms-conf-header-color" data-parent="#accordion_conf">
-               <div class="panel-body">
-                  <div id="color-options" class="ms-colors-container">
-                     <a href="javascript:void(0);" class="ms-color-box ms-color-box-primary red" data-color="red">red</a>
-                     <a href="javascript:void(0);" class="ms-color-box ms-color-box-primary pink" data-color="pink">pink</a>
-                     <a href="javascript:void(0);" class="ms-color-box ms-color-box-primary purple" data-color="purple">purple</a>
-                     <a href="javascript:void(0);" class="ms-color-box ms-color-box-primary deep-purple" data-color="deep-purple">deep-purple</a>
-                     <a href="javascript:void(0);" class="ms-color-box ms-color-box-primary indigo" data-color="indigo">indigo</a>
-                     <a href="javascript:void(0);" class="ms-color-box ms-color-box-primary blue" data-color="blue">blue</a>
-                     <a href="javascript:void(0);" class="ms-color-box ms-color-box-primary light-blue active" data-color="light-blue">light-blue</a>
-                     <a href="javascript:void(0);" class="ms-color-box ms-color-box-primary cyan" data-color="cyan">cyan</a>
-                     <a href="javascript:void(0);" class="ms-color-box ms-color-box-primary teal" data-color="teal">teal</a>
-                     <a href="javascript:void(0);" class="ms-color-box ms-color-box-primary green" data-color="green">green</a>
-                     <a href="javascript:void(0);" class="ms-color-box ms-color-box-primary light-green" data-color="light-green">light-green</a>
-                     <a href="javascript:void(0);" class="ms-color-box ms-color-box-primary lime" data-color="lime">lime</a>
-                     <a href="javascript:void(0);" class="ms-color-box ms-color-box-primary yellow" data-color="yellow">yellow</a>
-                     <a href="javascript:void(0);" class="ms-color-box ms-color-box-primary amber" data-color="amber">amber</a>
-                     <a href="javascript:void(0);" class="ms-color-box ms-color-box-primary orange" data-color="orange">orange</a>
-                     <a href="javascript:void(0);" class="ms-color-box ms-color-box-primary deep-orange" data-color="deep-orange">deep-orange</a>
-                     <a href="javascript:void(0);" class="ms-color-box ms-color-box-primary brown" data-color="brown">brown</a>
-                     <a href="javascript:void(0);" class="ms-color-box ms-color-box-primary grey" data-color="grey">grey</a>
-                     <a href="javascript:void(0);" class="ms-color-box ms-color-box-primary blue-grey" data-color="blue-grey">blue-grey</a>
-                  </div>
-                  <div id="grad-options" class="ms-color-shine">
-                     <h4 class="no-mb text-center">Color Brightness</h4>
-                     <span>300</span><span>400</span><span>500</span><span>600</span><span>700</span><span>800</span>
-                     <a href="javascript:void(0)" data-shine=300 class="ms-color-box grad c300 light-blue">300</a>
-                     <a href="javascript:void(0)" data-shine=400 class="ms-color-box grad c400 light-blue">400</a>
-                     <a href="javascript:void(0)" data-shine=500 class="ms-color-box grad c500 light-blue active">500</a>
-                     <a href="javascript:void(0)" data-shine=600 class="ms-color-box grad c600 light-blue">600</a>
-                     <a href="javascript:void(0)" data-shine=700 class="ms-color-box grad c700 light-blue">700</a>
-                     <a href="javascript:void(0)" data-shine=800 class="ms-color-box grad c800 light-blue">800</a>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="ms-conf-header-headers">
-               <h4 class="panel-title">
-                  <a class="collapsed withripple" role="button" data-toggle="collapse" href="#ms-collapse-conf-2" aria-expanded="false" aria-controls="ms-collapse-conf-2">
-                     <i class="zmdi zmdi-view-compact"></i> Header Styles </a>
-               </h4>
-            </div>
-            <div id="ms-collapse-conf-2" class="card-collapse collapse" role="tabpanel" aria-labelledby="ms-conf-header-headers" data-parent="#accordion_conf">
-               <div class="panel-body">
-                  <!--<h5>Preset Options</h5>
-                    <form class="form-inverse ms-conf-radio">
-                        <div class="form-group">
-                            <div class="radio radio-primary">
-                                <label>
-                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">Default Style
-                                </label>
-                            </div>
-                            <div class="radio radio-primary">
-                                <label>
-                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Pure Material
-                                </label>
-                            </div>
-                            <div class="radio radio-primary">
-                                <label>
-                                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">Navbar Mode
-                                </label>
-                            </div>
-                        </div>
-                    </form>
-                    <h5>Custom Header</h5>-->
-                  <h6>Header Options</h6>
-                  <form class="form-inverse ms-conf-radio" id="header-config">
-                     <div class="form-group">
-                        <div class="radio radio-primary">
-                           <label>
-                              <input type="radio" name="customHeader" id="whiteHeader" value="white" checked="cheked"> Light Color </label>
-                        </div>
-                        <div class="radio radio-primary">
-                           <label>
-                              <input type="radio" name="customHeader" id="primaryHeader" value="primary"> Primary Color </label>
-                        </div>
-                        <div class="radio radio-primary">
-                           <label>
-                              <input type="radio" name="customHeader" id="darkHeader" value="dark"> Dark Color </label>
-                        </div>
-                        <div class="radio radio-primary">
-                           <label>
-                              <input type="radio" name="customHeader" id="noHeader" value="hidden"> No Header (Navbar Mode) </label>
-                        </div>
-                     </div>
-                  </form>
-                  <h6>Navbar Options</h6>
-                  <form class="form-inverse ms-conf-radio" id="navbar-config">
-                     <div class="form-group">
-                        <div class="radio radio-primary">
-                           <label>
-                              <input type="radio" name="customNavbar" id="whiteNavbar" value="white" checked=""> Light Color </label>
-                        </div>
-                        <div class="radio radio-primary">
-                           <label>
-                              <input type="radio" name="customNavbar" id="primaryNavbar" value="primary"> Primary Color </label>
-                        </div>
-                        <div class="radio radio-primary">
-                           <label>
-                              <input type="radio" name="customNavbar" id="darkNavbar" value="dark"> Dark Color </label>
-                        </div>
-                     </div>
-                  </form>
-               </div>
-            </div>
-         </div>
-         <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="ms-conf-header-container">
-               <h4 class="panel-title">
-                  <a class="collapsed withripple" role="button" data-toggle="collapse" href="#ms-conf-collapse-3" aria-expanded="false" aria-controls="ms-conf-collapse-3">
-                     <i class="zmdi zmdi-grid"></i> Container Options </a>
-               </h4>
-            </div>
-            <div id="ms-conf-collapse-3" class="card-collapse collapse" role="tabpanel" aria-labelledby="ms-conf-header-container" data-parent="#accordion_conf">
-               <div class="panel-body">
-                  <form class="form-inverse ms-conf-radio" id="boxed-config">
-                     <div class="form-group">
-                        <div class="radio radio-primary">
-                           <label>
-                              <input type="radio" name="customWidth" id="fullWidth" value="full" checked=""> Full Width </label>
-                        </div>
-                        <div class="radio radio-primary">
-                           <label>
-                              <input type="radio" name="customWidth" id="boxedWidth" value="boxed"> Boxed Mode </label>
-                        </div>
-                     </div>
-                  </form>
-               </div>
-            </div>
+<body data-offset="200" data-spy="scroll" data-target=".ow-navigation">
+   <!-- Loader -->
+   <!-- <div id="site-loader" class="load-complete">
+      <div class="loader">
+         <div class="loader-inner ball-clip-rotate">
+            <div></div>
          </div>
       </div>
-   </div>
-   <div id="ms-preload" class="ms-preload">
-      <div id="status">
-         <div class="spinner">
-            <div class="dot1"></div>
-            <div class="dot2"></div>
-         </div>
-      </div>
-   </div>
-   <div class="ms-site-container">
-      <!-- Modal -->
-      <div class="modal modal-primary" id="ms-account-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-         <div class="modal-dialog animated zoomIn animated-3x" role="document">
-            <div class="modal-content">
-               <div class="modal-header d-block shadow-2dp no-pb">
-                  <button type="button" class="close d-inline pull-right mt-2" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="zmdi zmdi-close"></i></span></button>
-                  <div class="modal-title text-center">
-                     <span class="ms-logo ms-logo-white ms-logo-sm mr-1">M</span>
-                     <h3 class="no-m ms-site-title">Material<span>Style</span></h3>
+   </div>Loader /- -->
+
+   <a id="top"></a>
+
+   <!-- Header Section -->
+   <header id="header" class="header-section header-position container-fluid no-padding">
+      <!-- Top Header -->
+      <div class="top-header container-fluid no-padding">
+         <!-- Container -->
+         <div class="container">
+            <div class="row">
+               <div class="logo-block col-md-3"><a href="index-2.html" title="Hotely"><img src="assets/images/logo.png" alt="Logo" /></a></div>
+               <div class="col-md-9 contact-detail">
+                  <div class="phone">
+                     <img src="assets/images/phone-ic.png" alt="Phone" />
+                     <h6>contact us</h6>
+                     <a href="tell:1800234567890" title="1-800-23-456-7890">1-800-23-456-7890</a>
                   </div>
-                  <div class="modal-header-tabs">
-                     <ul class="nav nav-tabs nav-tabs-full nav-tabs-3 nav-tabs-primary" role="tablist">
-                        <li class="nav-item" role="presentation"><a href="#ms-login-tab" aria-controls="ms-login-tab" role="tab" data-toggle="tab" class="nav-link active withoutripple"><i class="zmdi zmdi-account"></i> Login</a></li>
-                        <li class="nav-item" role="presentation"><a href="#ms-register-tab" aria-controls="ms-register-tab" role="tab" data-toggle="tab" class="nav-link withoutripple"><i class="zmdi zmdi-account-add"></i> Register</a></li>
-                        <li class="nav-item" role="presentation"><a href="#ms-recovery-tab" aria-controls="ms-recovery-tab" role="tab" data-toggle="tab" class="nav-link withoutripple"><i class="zmdi zmdi-key"></i> Recovery Pass</a></li>
-                     </ul>
+                  <div class="address">
+                     <img src="assets/images/address-ic.png" alt="Address" />
+                     <h6>our office</h6>
+                     <p>19Mh,orleans,usa</p>
                   </div>
-               </div>
-               <div class="modal-body">
-                  <div class="tab-content">
-                     <div role="tabpanel" class="tab-pane fade active show" id="ms-login-tab">
-                        <form autocomplete="off">
-                           <fieldset>
-                              <div class="form-group label-floating">
-                                 <div class="input-group">
-                                    <span class="input-group-addon"><i class="zmdi zmdi-account"></i></span>
-                                    <label class="control-label" for="ms-form-user">Username</label>
-                                    <input type="text" id="ms-form-user" class="form-control">
-                                 </div>
-                              </div>
-                              <div class="form-group label-floating">
-                                 <div class="input-group">
-                                    <span class="input-group-addon"><i class="zmdi zmdi-lock"></i></span>
-                                    <label class="control-label" for="ms-form-pass">Password</label>
-                                    <input type="password" id="ms-form-pass" class="form-control">
-                                 </div>
-                              </div>
-                              <div class="row mt-2">
-                                 <div class="col-md-6">
-                                    <div class="form-group no-mt">
-                                       <div class="checkbox">
-                                          <label>
-                                             <input type="checkbox"> Remember Me </label>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="col-md-6">
-                                    <button class="btn btn-raised btn-primary pull-right">Login</button>
-                                 </div>
-                              </div>
-                           </fieldset>
-                        </form>
-                        <div class="text-center">
-                           <h3>Login with</h3>
-                           <a href="javascript:void(0)" class="wave-effect-light btn btn-raised btn-facebook"><i class="zmdi zmdi-facebook"></i> Facebook</a>
-                           <a href="javascript:void(0)" class="wave-effect-light btn btn-raised btn-twitter"><i class="zmdi zmdi-twitter"></i> Twitter</a>
-                           <a href="javascript:void(0)" class="wave-effect-light btn btn-raised btn-google"><i class="zmdi zmdi-google"></i> Google</a>
-                        </div>
-                     </div>
-                     <div role="tabpanel" class="tab-pane fade" id="ms-register-tab">
+                  <div class="menu-search">
+                     <div id="sb-search" class="sb-search">
                         <form>
-                           <fieldset>
-                              <div class="form-group label-floating">
-                                 <div class="input-group">
-                                    <span class="input-group-addon"><i class="zmdi zmdi-account"></i></span>
-                                    <label class="control-label" for="ms-form-user-r">Username</label>
-                                    <input type="text" id="ms-form-user-r" class="form-control">
-                                 </div>
-                              </div>
-                              <div class="form-group label-floating">
-                                 <div class="input-group">
-                                    <span class="input-group-addon"><i class="zmdi zmdi-email"></i></span>
-                                    <label class="control-label" for="ms-form-email-r">Email</label>
-                                    <input type="email" id="ms-form-email-r" class="form-control">
-                                 </div>
-                              </div>
-                              <div class="form-group label-floating">
-                                 <div class="input-group">
-                                    <span class="input-group-addon"><i class="zmdi zmdi-lock"></i></span>
-                                    <label class="control-label" for="ms-form-pass-r">Password</label>
-                                    <input type="password" id="ms-form-pass-r" class="form-control">
-                                 </div>
-                              </div>
-                              <div class="form-group label-floating">
-                                 <div class="input-group">
-                                    <span class="input-group-addon"><i class="zmdi zmdi-lock"></i></span>
-                                    <label class="control-label" for="ms-form-pass-rn">Re-type Password</label>
-                                    <input type="password" id="ms-form-pass-rn" class="form-control">
-                                 </div>
-                              </div>
-                              <button class="btn btn-raised btn-block btn-primary">Register Now</button>
-                           </fieldset>
-                        </form>
-                     </div>
-                     <div role="tabpanel" class="tab-pane fade" id="ms-recovery-tab">
-                        <fieldset>
-                           <div class="form-group label-floating">
-                              <div class="input-group">
-                                 <span class="input-group-addon"><i class="zmdi zmdi-account"></i></span>
-                                 <label class="control-label" for="ms-form-user-re">Username</label>
-                                 <input type="text" id="ms-form-user-re" class="form-control">
-                              </div>
-                           </div>
-                           <div class="form-group label-floating">
-                              <div class="input-group">
-                                 <span class="input-group-addon"><i class="zmdi zmdi-email"></i></span>
-                                 <label class="control-label" for="ms-form-email-re">Email</label>
-                                 <input type="email" id="ms-form-email-re" class="form-control">
-                              </div>
-                           </div>
-                           <button class="btn btn-raised btn-block btn-primary">Send Password</button>
-                        </fieldset>
+                           <input class="sb-search-input" placeholder="Enter your search term..." type="text" value="" name="search" id="search" />
+                           <button class="sb-search-submit"><img src="assets/images/search-ic.png" alt="Search" /></button>
+                           <span class="sb-icon-search"></span>
                         </form>
                      </div>
                   </div>
                </div>
             </div>
-         </div>
-      </div>
-      <header class="ms-header ms-header-primary">
-         <!--ms-header-primary-->
-         <div class="container container-full">
-            <div class="ms-title">
-               <a href="index-2.html">
-                  <!-- <img src="assets/img/demo/logo-header.png" alt=""> -->
-                  <span class="ms-logo animated zoomInDown animation-delay-5">M</span>
-                  <h1 class="animated fadeInRight animation-delay-6">Material <span>Style</span></h1>
-               </a>
-            </div>
-            <div class="header-right">
-               <div class="share-menu">
-                  <ul class="share-menu-list">
-                     <li class="animated fadeInRight animation-delay-3"><a href="javascript:void(0)" class="btn-circle btn-google"><i class="zmdi zmdi-google"></i></a></li>
-                     <li class="animated fadeInRight animation-delay-2"><a href="javascript:void(0)" class="btn-circle btn-facebook"><i class="zmdi zmdi-facebook"></i></a></li>
-                     <li class="animated fadeInRight animation-delay-1"><a href="javascript:void(0)" class="btn-circle btn-twitter"><i class="zmdi zmdi-twitter"></i></a></li>
-                  </ul>
-                  <a href="javascript:void(0)" class="btn-circle btn-circle-primary animated zoomInDown animation-delay-7"><i class="zmdi zmdi-share"></i></a>
-               </div>
-               <a href="javascript:void(0)" class="btn-circle btn-circle-primary no-focus animated zoomInDown animation-delay-8" data-toggle="modal" data-target="#ms-account-modal"><i class="zmdi zmdi-account"></i></a>
-               <form class="search-form animated zoomInDown animation-delay-9">
-                  <input id="search-box" type="text" class="search-input" placeholder="Search..." name="q" />
-                  <label for="search-box"><i class="zmdi zmdi-search"></i></label>
-               </form>
-               <a href="javascript:void(0)" class="btn-ms-menu btn-circle btn-circle-primary ms-toggle-left animated zoomInDown animation-delay-10"><i class="zmdi zmdi-menu"></i></a>
-            </div>
-         </div>
-      </header>
-      <nav class="navbar navbar-expand-md  navbar-static ms-navbar ms-navbar-primary">
-         <div class="container container-full">
-            <div class="navbar-header">
-               <a class="navbar-brand" href="index-2.html">
-                  <!-- <img src="assets/img/demo/logo-navbar.png" alt=""> -->
-                  <span class="ms-logo ms-logo-sm">M</span>
-                  <span class="ms-title">Material <strong>Style</strong></span>
-               </a>
-            </div>
-            <div class="collapse navbar-collapse" id="ms-navbar">
-               <ul class="navbar-nav">
-                  <li class="nav-item dropdown active">
-                     <a href="#" class="nav-link dropdown-toggle animated fadeIn animation-delay-7" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="home">Home <i class="zmdi zmdi-chevron-down"></i></a>
-                     <ul class="dropdown-menu">
-                        <li class="ms-tab-menu">
-                           <!-- Nav tabs -->
-                           <ul class="nav nav-tabs ms-tab-menu-left" role="tablist">
-                              <li class="nav-item"><a class="nav-link active" href="#tab-general" data-hover="tab" data-toggle="tab" role="tab"><i class="zmdi zmdi-home"></i> General Purpose</a></li>
-                              <li class="nav-item"><a class="nav-link" href="#tab-landing" data-hover="tab" data-toggle="tab" role="tab"><i class="zmdi zmdi-desktop-windows"></i> Landing pages</a></li>
-                              <li class="nav-item"><a class="nav-link" href="#tab-revolution" data-hover="tab" data-toggle="tab" role="tab"><i class="zmdi zmdi-panorama-horizontal"></i> Slider Revolution</a></li>
-                              <li class="nav-item"><a class="nav-link" href="#tab-shop" data-hover="tab" data-toggle="tab" role="tab"><i class="zmdi zmdi-store"></i> Shop</a></li>
-                              <li class="nav-item"><a class="nav-link" href="#tab-profile" data-hover="tab" data-toggle="tab" role="tab"><i class="zmdi zmdi-account"></i> Professional Profile</a></li>
-                              <li class="nav-item"><a class="nav-link" href="#tab-blog" data-hover="tab" data-toggle="tab" role="tab"><i class="zmdi zmdi-edit"></i> Blog Template</a></li>
-                              <li class="nav-item"><a class="nav-link" href="#tab-magazine" data-hover="tab" data-toggle="tab" role="tab"><i class="zmdi zmdi-flip"></i> Magazine Template</a></li>
-                              <li class="nav-item"><a class="nav-link" href="#tab-app" data-hover="tab" data-toggle="tab" role="tab"><i class="zmdi zmdi-smartphone-iphone"></i> App Pages</a></li>
-                              <li class="nav-item"><a class="nav-link" href="#tab-ads" data-hover="tab" data-toggle="tab" role="tab"><i class="zmdi zmdi-search"></i> Classified Ads</a></li>
-                           </ul>
-                           <!-- Tab panes -->
-                           <div class="tab-content ms-tab-menu-right">
-                              <div class="tab-pane active" id="tab-general" role="tabpanel">
-                                 <ul class="ms-tab-menu-right-container">
-                                    <li><a href="index-2.html">Default Home</a></li>
-                                    <li><a href="home-generic-2.html">Home Black Slider</a></li>
-                                    <li><a href="home-generic-3.html">Home Browsers Intro</a></li>
-                                    <li><a href="home-generic-4.html">Home Mobile Intro</a></li>
-                                    <li><a href="home-generic-5.html">Home Material Icons</a></li>
-                                    <li><a href="home-generic-6.html">Home Typed Hero</a></li>
-                                    <li><a href="home-generic-7.html">Home Typed Hero 2</a></li>
-                                 </ul>
-                              </div>
-                              <div class="tab-pane" id="tab-landing" role="tabpanel">
-                                 <ul class="ms-tab-menu-right-container">
-                                    <li><a href="home-landing.html">Home Landing Intro</a></li>
-                                    <li><a href="home-landing2.html">Home Landing Intro 2</a></li>
-                                    <li><a href="home-landing4.html">Home Landing Intro 3</a></li>
-                                    <li><a href="home-landing3.html">Home Landing Video</a></li>
-                                    <li><a href="home-cv3.html">Home Profile Landing 1</a></li>
-                                    <li><a href="home-cv4.html">Home Profile Landing 2</a></li>
-                                    <li class="disable"><a href="javascript:void(0)">Landing Video 2 (Next Update)</a></li>
-                                 </ul>
-                              </div>
-                              <div class="tab-pane" id="tab-revolution" role="tabpanel">
-                                 <ul class="ms-tab-menu-right-container">
-                                    <li><a class="with-badge" href="home-revolution.html">Home Revolution Devices <span class="badge badge-success pull-right">1.3</span></a></li>
-                                    <li><a class="with-badge" href="home-revolution2.html">Home Revolution App <span class="badge badge-success pull-right">1.3</span></a></li>
-                                    <li><a class="with-badge" href="home-revolution3.html">Home Revolution Video <span class="badge badge-success pull-right">1.3</span></a></li>
-                                    <li><a class="with-badge" href="home-revolution4.html">Home Revolution Idea <span class="badge badge-success pull-right">1.3</span></a></li>
-                                 </ul>
-                              </div>
-                              <div class="tab-pane" id="tab-shop" role="tabpanel">
-                                 <ul class="ms-tab-menu-right-container">
-                                    <li><a href="home-shop.html">Home Shop 1</a></li>
-                                    <li><a href="home-shop2.html">Home Shop 2</a></li>
-                                    <li class="disable"><a href="javascript:void(0)">Home Shop 3 (Next Update)</a></li>
-                                    <li class="disable"><a href="javascript:void(0)">Home Shop 4 (Next Update)</a></li>
-                                 </ul>
-                              </div>
-                              <div class="tab-pane" id="tab-profile" role="tabpanel">
-                                 <ul class="ms-tab-menu-right-container">
-                                    <li><a href="home-cv.html">Home Profile 1</a></li>
-                                    <li><a href="home-cv2.html">Home Profile 2</a></li>
-                                    <li><a href="home-cv3.html">Home Profile Landing 1</a></li>
-                                    <li><a href="home-cv4.html">Home Profile Landing 2</a></li>
-                                 </ul>
-                              </div>
-                              <div class="tab-pane" id="tab-blog" role="tabpanel">
-                                 <ul class="ms-tab-menu-right-container">
-                                    <li><a href="home-blog.html">Home Blog 1</a></li>
-                                    <li><a href="home-blog2.html">Home Blog 2</a></li>
-                                    <li class="disable"><a href="javascript:void(0)">Home Blog 3 (Next Update)</a></li>
-                                    <li class="disable"><a href="javascript:void(0)">Home Blog 4 (Next Update)</a></li>
-                                 </ul>
-                              </div>
-                              <div class="tab-pane" id="tab-magazine" role="tabpanel">
-                                 <ul class="ms-tab-menu-right-container">
-                                    <li><a href="home-magazine.html">Home Magazine 1</a></li>
-                                    <li class="disable"><a href="javascript:void(0)">Magazine 2 (Next Update)</a></li>
-                                    <li class="disable"><a href="javascript:void(0)">Magazine 3 (Next Update)</a></li>
-                                    <li class="disable"><a href="javascript:void(0)">Magazine 4 (Next Update)</a></li>
-                                 </ul>
-                              </div>
-                              <div class="tab-pane" id="tab-app" role="tabpanel">
-                                 <ul class="ms-tab-menu-right-container">
-                                    <li><a href="home-app.html">Home App 1</a></li>
-                                    <li><a href="home-app2.html">Home App 2</a></li>
-                                    <li class="disable"><a href="javascript:void(0)">Home App 3 (Next Update)</a></li>
-                                    <li class="disable"><a href="javascript:void(0)">Home App 4 (Next Update)</a></li>
-                                 </ul>
-                              </div>
-                              <div class="tab-pane" id="tab-ads" role="tabpanel">
-                                 <ul class="ms-tab-menu-right-container">
-                                    <li><a href="home-class.html">Home Classifieds 1</a></li>
-                                    <li class="disable"><a href="javascript:void(0)">Classifieds 2 (Next Update)</a></li>
-                                    <li class="disable"><a href="javascript:void(0)">Classifieds 3 (Next Update)</a></li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </li>
-                     </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                     <a href="#" class="nav-link dropdown-toggle animated fadeIn animation-delay-7" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="page">Pages <i class="zmdi zmdi-chevron-down"></i></a>
-                     <ul class="dropdown-menu">
-                        <li class="dropdown-submenu">
-                           <a href="javascript:void(0)" class="dropdown-item has_children">About us &amp; Team</a>
-                           <ul class="dropdown-menu dropdown-menu-left">
-                              <li><a class="dropdown-item" href="page-about.html">About us Option 1</a></li>
-                              <li><a class="dropdown-item" href="page-about2.html">About us Option 2</a></li>
-                              <li><a class="dropdown-item" href="page-about3.html">About us Option 3</a></li>
-                              <li><a class="dropdown-item" href="page-about4.html">About us Option 4</a></li>
-                              <li class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="page-team.html">Our Team Option 1</a></li>
-                              <li><a class="dropdown-item" href="page-team2.html">Our Team Option 2</a></li>
-                           </ul>
-                        </li>
-                        <li class="dropdown-submenu">
-                           <a href="javascript:void(0)" class="has_children dropdown-item">Form</a>
-                           <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="page-contact.html">Contact Option 1</a></li>
-                              <li><a class="dropdown-item" href="page-contact2.html">Contact Option 2</a></li>
-                              <li class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="page-login_register.html">Login &amp; Register</a></li>
-                              <li><a class="dropdown-item" href="page-login.html">Login Full</a></li>
-                              <li><a class="dropdown-item" href="page-login2.html">Login Integrated</a></li>
-                              <li class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="page-login_register2.html">Register Option 1</a></li>
-                              <li><a class="dropdown-item" href="page-register2.html">Register Option 2</a></li>
-                           </ul>
-                        </li>
-                        <li class="dropdown-submenu">
-                           <a href="javascript:void(0)" class="has_children dropdown-item">Profiles</a>
-                           <ul class="dropdown-menu dropdown-menu-left">
-                              <li><a class="dropdown-item" href="page-profile.html">User Profile Option 1</a></li>
-                              <li><a class="dropdown-item" href="page-profile2.html">User Profile Option 2</a></li>
-                           </ul>
-                        </li>
-                        <li class="dropdown-submenu">
-                           <a href="javascript:void(0)" class="has_children dropdown-item">Error</a>
-                           <ul class="dropdown-menu dropdown-menu-left">
-                              <li><a class="dropdown-item" href="page-404.html">Error 404 Full Page</a></li>
-                              <li><a class="dropdown-item" href="page-404_2.html">Error 404 Integrated</a></li>
-                              <li><a class="dropdown-item" href="page-500.html">Error 500 Full Page</a></li>
-                              <li><a class="dropdown-item" href="page-500_2.html">Error 500 Integrated</a></li>
-                           </ul>
-                        </li>
-                        <li class="dropdown-submenu">
-                           <a href="javascript:void(0)" class="has_children dropdown-item">Bussiness &amp; Products</a>
-                           <ul class="dropdown-menu dropdown-menu-left">
-                              <li><a class="dropdown-item" href="page-testimonial.html">Testimonials</a></li>
-                              <li><a class="dropdown-item" href="page-clients.html">Our Clients</a></li>
-                              <li><a class="dropdown-item" href="page-product.html">Products</a></li>
-                              <li><a class="dropdown-item" href="page-services.html">Services</a></li>
-                           </ul>
-                        </li>
-                        <li class="dropdown-submenu">
-                           <a href="javascript:void(0)" class="has_children dropdown-item">Pricing</a>
-                           <ul class="dropdown-menu dropdown-menu-left">
-                              <li><a class="dropdown-item" href="page-pricing.html">Pricing Box</a></li>
-                              <li><a class="dropdown-item" href="page-pricing2.html">Pricing Box 2</a></li>
-                              <li><a class="dropdown-item" href="page-princing_table.html">Pricing Mega Table</a></li>
-                           </ul>
-                        </li>
-                        <li class="dropdown-submenu">
-                           <a href="javascript:void(0)" class="has_children dropdown-item">FAQ &amp; Support</a>
-                           <ul class="dropdown-menu dropdown-menu-left">
-                              <li><a class="dropdown-item" href="page-support.html">Support Center</a></li>
-                              <li><a class="dropdown-item" href="page-faq.html">FAQ Option 1</a></li>
-                              <li><a class="dropdown-item" href="page-faq2.html">FAQ Option 2</a></li>
-                           </ul>
-                        </li>
-                        <li class="dropdown-submenu">
-                           <a href="javascript:void(0)" class="has_children dropdown-item">Coming Soon</a>
-                           <ul class="dropdown-menu dropdown-menu-left">
-                              <li><a class="dropdown-item" href="page-coming.html">Coming Soon Option 1</a></li>
-                              <li><a class="dropdown-item" href="page-coming2.html">Coming Soon Option 2</a></li>
-                              <li><a class="dropdown-item" href="page-coming3.html">Coming Soon Option 3</a></li>
-                           </ul>
-                        </li>
-                        <li class="dropdown-submenu">
-                           <a href="javascript:void(0)" class="has_children dropdown-item">Timeline</a>
-                           <ul class="dropdown-menu dropdown-menu-left">
-                              <li><a class="dropdown-item" href="page-timeline_left.html">Timeline Left</a></li>
-                              <li><a class="dropdown-item" href="page-timeline_left2.html">Timeline Left 2</a></li>
-                              <li><a class="dropdown-item" href="page-timeline.html">Timeline Center</a></li>
-                           </ul>
-                        </li>
-                        <li class="dropdown-submenu">
-                           <a href="javascript:void(0)" class="has_children dropdown-item">Email Templates</a>
-                           <ul class="dropdown-menu dropdown-menu-left">
-                              <li><a class="dropdown-item with-badge" href="page-email.html">Email Template 1 <span class="badge badge-success text-right">1.2</span></a></a></li>
-                              <li><a class="dropdown-item with-badge" href="page-email2.html">Email Template 2 <span class="badge badge-success text-right">1.2</span></a></a></li>
-                           </ul>
-                        </li>
-                        <li><a class="dropdown-item" href="page-all.html" class="dropdown-link">All Pages</a></li>
-                     </ul>
-                  </li>
-                  <li class="nav-item dropdown dropdown-megamenu-container">
-                     <a href="#" class="nav-link dropdown-toggle animated fadeIn animation-delay-7" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="component">UI Elements <i class="zmdi zmdi-chevron-down"></i></a>
-                     <ul class="dropdown-menu dropdown-megamenu animated fadeIn animated-2x">
-                        <li class="container">
-                           <div class="row">
-                              <div class="col-sm-3 megamenu-col">
-                                 <div class="megamenu-block animated fadeInLeft animated-2x">
-                                    <h3 class="megamenu-block-title"><i class="fa fa-bold"></i> Bootstrap CSS</h3>
-                                    <ul class="megamenu-block-list">
-                                       <li>
-                                          <a class="withripple" href="component-typography.html"><i class="fa fa-font"></i> Typography</a>
-                                       </li>
-                                       <li>
-                                          <a class="withripple" href="component-headers.html"><i class="fa fa-header"></i> Headers</a>
-                                       </li>
-                                       <li>
-                                          <a class="withripple" href="component-dividers.html"><i class="fa fa-arrows-h"></i> Dividers</a>
-                                       </li>
-                                       <li>
-                                          <a class="withripple" href="component-blockquotes.html"><i class="fa fa-quote-right"></i> Blockquotes</a>
-                                       </li>
-                                       <li>
-                                          <a class="withripple" href="component-forms.html"><i class="fa fa-check-square-o"></i> Forms <span class="badge badge-info pull-right"><i class="zmdi zmdi-long-arrow-up no-mr"></i> 1.5</span></a>
-                                       </li>
-                                       <li>
-                                          <a class="withripple" href="component-slider.html">
-                                             <i class="fa fa-sliders"></i> Sliders <span class="badge badge-success pull-right">2.3</span>
-                                          </a>
-                                       </li>
-                                       <li>
-                                          <a class="withripple" href="component-tables.html"><i class="fa fa-table"></i> Tables</a>
-                                       </li>
-                                    </ul>
-                                 </div>
-                                 <div class="megamenu-block animated fadeInLeft animated-2x">
-                                    <h3 class="megamenu-block-title"><i class="fa fa-hand-o-up"></i> Buttons</h3>
-                                    <ul class="megamenu-block-list">
-                                       <li>
-                                          <a class="withripple" href="component-basic-buttons.html">
-                                             <i class="fa fa-arrow-circle-right"></i> Basic Buttons</a>
-                                       </li>
-                                       <li>
-                                          <a class="withripple" href="component-buttons-components.html">
-                                             <i class="fa fa-arrow-circle-right"></i> Buttons Components</a>
-                                       </li>
-                                       <li>
-                                          <a class="withripple" href="component-social-buttons.html">
-                                             <i class="fa fa-arrow-circle-right"></i> Social Buttons <span class="badge badge-info pull-right"><i class="zmdi zmdi-long-arrow-up no-mr"></i> 1.3</span></a>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </div>
-                              <div class="col-sm-3 megamenu-col">
-                                 <div class="megamenu-block animated fadeInLeft animated-2x">
-                                    <h3 class="megamenu-block-title"><i class="fa fa-list-alt"></i> Basic Components</h3>
-                                    <ul class="megamenu-block-list">
-                                       <li>
-                                          <a class="withripple" href="component-panels.html">
-                                             <i class="zmdi zmdi-view-agenda"></i> Panels</a>
-                                       </li>
-                                       <li>
-                                          <a class="withripple" href="component-alerts.html">
-                                             <i class="zmdi zmdi-info"></i> Alerts &amp; Wells</a>
-                                       </li>
-                                       <li>
-                                          <a class="withripple" href="component-badges.html">
-                                             <i class="zmdi zmdi-tag"></i> Badges &amp; Badges Pills</a>
-                                       </li>
-                                       <li>
-                                          <a class="withripple" href="component-lists.html">
-                                             <i class="zmdi zmdi-view-list"></i> Lists</a>
-                                       </li>
-                                       <li>
-                                          <a class="withripple" href="component-thumbnails.html">
-                                             <i class="zmdi zmdi-image-o"></i> Thumbnails</a>
-                                       </li>
-                                       <li>
-                                          <a class="withripple" href="component-carousels.html">
-                                             <i class="zmdi zmdi-view-carousel"></i> Carousels</a>
-                                       </li>
-                                       <li>
-                                          <a class="withripple" href="component-modals.html">
-                                             <i class="zmdi zmdi-window-maximize"></i> Modals</a>
-                                       </li>
-                                       <li>
-                                          <a class="withripple" href="component-tooltip.html">
-                                             <i class="zmdi zmdi-pin-help"></i> Tooltip &amp; Popover</a>
-                                       </li>
-                                       <li>
-                                          <a class="withripple" href="component-progress-bars.html">
-                                             <i class="zmdi zmdi-view-headline"></i> Progress Bars</a>
-                                       </li>
-                                       <li>
-                                          <a class="withripple" href="component-pagination.html">
-                                             <i class="zmdi zmdi-n-2-square"></i> Pagination</a>
-                                       </li>
-                                       <li>
-                                          <a class="withripple" href="component-breadcrumb.html">
-                                             <i class="zmdi zmdi-label-alt-outline"></i> Breadcrumb <span class="badge badge-success pull-right">2.2</span></a>
-                                       </li>
-                                       <li>
-                                          <a class="withripple" href="component-dropdowns.html">
-                                             <i class="fa fa-info"></i> Dropdowns</a>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </div>
-                              <div class="col-sm-3 megamenu-col">
-                                 <div class="megamenu-block animated fadeInRight animated-2x">
-                                    <h3 class="megamenu-block-title"><i class="zmdi zmdi-folder-star-alt"></i> Extra Components</h3>
-                                    <ul class="megamenu-block-list">
-                                       <li>
-                                          <a class="withripple" href="component-cards.html">
-                                             <i class="zmdi zmdi-card-membership"></i> Cards</a>
-                                       </li>
-                                       <li>
-                                          <a class="withripple" href="component-composite-cards.html">
-                                             <i class="zmdi zmdi-card-giftcard"></i> Composite Cards</a>
-                                       </li>
-                                       <li>
-                                          <a class="withripple" href="component-counters.html">
-                                             <i class="zmdi zmdi-n-6-square"></i> Counters</a>
-                                       </li>
-                                       <li>
-                                          <a class="withripple" href="component-audio-video.html">
-                                             <i class="zmdi zmdi-play-circle"></i> Audio &amp; Video <span class="badge badge-info pull-right"><i class="zmdi zmdi-long-arrow-up no-mr"></i> 2.3</span></a>
-                                       </li>
-                                       <li>
-                                          <a class="withripple" href="component-masonry.html">
-                                             <i class="zmdi zmdi-view-dashboard"></i> Masonry Layer</a>
-                                       </li>
-                                       <li>
-                                          <a class="withripple" href="component-snackbar.html">
-                                             <i class="zmdi zmdi-notifications-active"></i> SnackBar <span class="badge badge-success pull-right">1.2</span></a>
-                                       </li>
-                                       <li>
-                                          <a class="withripple" href="component-lightbox.html">
-                                             <i class="zmdi zmdi-collection-image-o"></i> Lightbox <span class="badge badge-success pull-right">1.5</span></a>
-                                       </li>
-                                    </ul>
-                                 </div>
-                                 <div class="megamenu-block animated fadeInRight animated-2x">
-                                    <h3 class="megamenu-block-title"><i class="zmdi zmdi-tab"></i> Collapses &amp; Tabs</h3>
-                                    <ul class="megamenu-block-list">
-                                       <li>
-                                          <a class="withripple" href="component-collapses.html">
-                                             <i class="zmdi zmdi-view-day"></i> Collapses</a>
-                                       </li>
-                                       <li>
-                                          <a class="withripple" href="component-horizontal-tabs.html">
-                                             <i class="zmdi zmdi-tab"></i> Horitzontal Tabs</a>
-                                       </li>
-                                       <li>
-                                          <a class="withripple" href="component-vertical-tabs.html">
-                                             <i class="zmdi zmdi-menu"></i> Vertical Tabs</a>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </div>
-                              <div class="col-sm-3 megamenu-col">
-                                 <div class="megamenu-block animated fadeInRight animated-2x">
-                                    <h3 class="megamenu-block-title"><i class="fa fa-briefcase"></i> Icons</h3>
-                                    <ul class="megamenu-block-list">
-                                       <li>
-                                          <a class="withripple" href="component-icons-basic.html">
-                                             <i class="fa fa-arrow-circle-right"></i> Basic Icons</a>
-                                       </li>
-                                       <li>
-                                          <a class="withripple" href="component-icons-fontawesome.html">
-                                             <i class="fa fa-arrow-circle-right"></i> Font Awesome</a>
-                                       </li>
-                                       <li>
-                                          <a class="withripple" href="component-icons-iconic.html">
-                                             <i class="fa fa-arrow-circle-right"></i> Material Design Iconic</a>
-                                       </li>
-                                       <li>
-                                          <a class="withripple" href="component-icons-glyphicons.html">
-                                             <i class="fa fa-arrow-circle-right"></i> Glyphicons</a>
-                                       </li>
-                                       <li>
-                                          <a class="withripple" href="component-icons-ionicons.html">
-                                             <i class="fa fa-arrow-circle-right"></i> Ionicons <span class="badge badge-info pull-right"><i class="zmdi zmdi-long-arrow-up no-mr"></i> 2.4</span></a>
-                                       </li>
-                                    </ul>
-                                 </div>
-                                 <div class="megamenu-block animated fadeInRight animated-2x">
-                                    <h3 class="megamenu-block-title"><i class="fa fa-area-chart"></i> Charts</h3>
-                                    <ul class="megamenu-block-list">
-                                       <li>
-                                          <a class="withripple" href="component-charts-circle.html">
-                                             <i class="zmdi zmdi-chart-donut"></i> Circle Charts</a>
-                                       </li>
-                                       <li>
-                                          <a class="withripple" href="component-charts-bar.html">
-                                             <i class="fa fa-bar-chart"></i> Bars Charts</a>
-                                       </li>
-                                       <li>
-                                          <a class="withripple" href="component-charts-line.html">
-                                             <i class="fa fa-line-chart"></i> Line Charts</a>
-                                       </li>
-                                       <li>
-                                          <a class="withripple" href="component-charts-more.html">
-                                             <i class="fa fa-pie-chart"></i> More Charts</a>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </div>
-                           </div>
-                        </li>
-                     </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                     <a href="#" class="nav-link dropdown-toggle animated fadeIn animation-delay-7" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="blog">Blog <i class="zmdi zmdi-chevron-down"></i></a>
-                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="blog-sidebar.html"><i class="zmdi zmdi-view-compact"></i> Blog Sidebar 1</a></li>
-                        <li><a class="dropdown-item" href="blog-sidebar2.html"><i class="zmdi zmdi-view-compact"></i> Blog Sidebar 2</a></li>
-                        <li><a class="dropdown-item" href="blog-masonry.html"><i class="zmdi zmdi-view-dashboard"></i> Blog Masonry 1</a></li>
-                        <li><a class="dropdown-item" href="blog-masonry2.html"><i class="zmdi zmdi-view-dashboard"></i> Blog Masonry 2</a></li>
-                        <li><a class="dropdown-item" href="blog-full.html"><i class="zmdi zmdi zmdi-view-stream"></i> Blog Full Page 1</a></li>
-                        <li><a class="dropdown-item" href="blog-full2.html"><i class="zmdi zmdi zmdi-view-stream"></i> Blog Full Page 2</a></li>
-                        <li class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="blog-post.html"><i class="zmdi zmdi-file-text"></i> Blog Post 1</a></li>
-                        <li><a class="dropdown-item" href="blog-post2.html"><i class="zmdi zmdi-file-text"></i> Blog Post 2</a></li>
-                     </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                     <a href="#" class="nav-link dropdown-toggle animated fadeIn animation-delay-8" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="portfolio">Portfolio <i class="zmdi zmdi-chevron-down"></i></a>
-                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="portfolio-filters_sidebar.html"><i class="zmdi zmdi-view-compact"></i> Portfolio Sidebar Filters</a></li>
-                        <li><a class="dropdown-item" href="portfolio-filters_topbar.html"><i class="zmdi zmdi-view-agenda"></i> Portfolio Topbar Filters</a></li>
-                        <li><a class="dropdown-item" href="portfolio-filters_sidebar_fluid.html"><i class="zmdi zmdi-view-compact"></i> Portfolio Sidebar Fluid</a></li>
-                        <li><a class="dropdown-item" href="portfolio-filters_topbar_fluid.html"><i class="zmdi zmdi-view-agenda"></i> Portfolio Topbar Fluid</a></li>
-                        <li><a class="dropdown-item" href="portfolio-cards.html"><i class="zmdi zmdi-card-membership"></i> Porfolio Cards</a></li>
-                        <li><a class="dropdown-item" href="portfolio-masonry.html"><i class="zmdi zmdi-view-dashboard"></i> Porfolio Masonry</a></li>
-                        <li><a class="dropdown-item with-badge" href="portfolio-gallery.html"><i class="zmdi zmdi-apps"></i> Picture Gallery <span class="badge badge-success text-right">1.5</span></a></li>
-                        <li class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="portfolio-item.html"><i class="zmdi zmdi-collection-item-1"></i> Portfolio Item 1</a></li>
-                        <li><a class="dropdown-item" href="portfolio-item2.html"><i class="zmdi zmdi-collection-item-2"></i> Portfolio Item 2</a></li>
-                     </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                     <a href="#" class="nav-link dropdown-toggle animated fadeIn animation-delay-9" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="ecommerce">E-Commerce <i class="zmdi zmdi-chevron-down"></i></a>
-                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="ecommerce-filters.html">E-Commerce Sidebar</a></li>
-                        <li><a class="dropdown-item" href="ecommerce-filters-full.html">E-Commerce Sidebar Full</a></li>
-                        <li><a class="dropdown-item" href="ecommerce-filters-full2.html">E-Commerce Topbar Full</a></li>
-                        <li class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="ecommerce-item.html">E-Commerce Item</a></li>
-                        <li><a class="dropdown-item" href="ecommerce-cart.html">E-Commerce Cart</a></li>
-                     </ul>
-                  </li>
-               </ul>
-            </div>
-            <a href="javascript:void(0)" class="ms-toggle-left btn-navbar-menu"><i class="zmdi zmdi-menu"></i></a>
-         </div> <!-- container -->
-      </nav>
-      <div class="ms-hero ms-hero-material">
-         <span class="ms-hero-bg"></span>
+         </div><!-- Container /- -->
+      </div><!-- Top Header /- -->
+      <!-- Menu Block -->
+      <div class="menu-block">
+         <!-- Container -->
          <div class="container">
             <div class="row">
-               <div class="col-xl-6 col-lg-7">
-                  <div id="carousel-hero" class="carousel slide carousel-fade" data-ride="carousel" data-interval="8000">
-                     <!-- Wrapper for slides -->
-                     <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item active">
-                           <div class="carousel-caption">
-                              <div class="ms-hero-material-text-container">
-                                 <header class="ms-hero-material-title animated slideInLeft animation-delay-5">
-                                    <h1 class="animated fadeInLeft animation-delay-15 font-smoothing">The <strong>power design</strong> amazing projects</h1>
-                                    <h2 class="animated fadeInLeft animation-delay-18">The most customizable <span class="color-warning">material design</span> template.</h2>
-                                 </header>
-                                 <ul class="ms-hero-material-list">
-                                    <li class="">
-                                       <div class="ms-list-icon animated zoomInUp animation-delay-18">
-                                          <span class="ms-icon ms-icon-circle ms-icon-xlg color-warning shadow-3dp"><i class="zmdi zmdi-airplane"></i></span>
-                                       </div>
-                                       <div class="ms-list-text animated fadeInRight animation-delay-19">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, fugit sit nesciunt cum rerum iusto.</div>
-                                    </li>
-                                    <li class="">
-                                       <div class="ms-list-icon animated zoomInUp animation-delay-20">
-                                          <span class="ms-icon ms-icon-circle ms-icon-xlg color-success shadow-3dp"><i class="zmdi zmdi-bike"></i></span>
-                                       </div>
-                                       <div class="ms-list-text animated fadeInRight animation-delay-21">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi laborum dignissimos fuga maxime facere.</div>
-                                    </li>
-                                    <li class="">
-                                       <div class="ms-list-icon animated zoomInUp animation-delay-22">
-                                          <span class="ms-icon ms-icon-circle ms-icon-xlg color-danger shadow-3dp"><i class="zmdi zmdi-album"></i></span>
-                                       </div>
-                                       <div class="ms-list-text animated fadeInRight animation-delay-23">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit sequi est repudianda.</div>
-                                    </li>
-                                 </ul>
-                                 <div class="ms-hero-material-buttons text-right">
-                                    <div class="ms-hero-material-buttons text-right">
-                                       <a href="javascript:void(0);" class="btn btn-warning btn-raised animated fadeInLeft animation-delay-24 mr-2"><i class="zmdi zmdi-settings"></i> Personalize</a>
-                                       <a href="javascript:void(0);" class="btn btn-success btn-raised animated fadeInRight animation-delay-24"><i class="zmdi zmdi-download"></i> Download</a>
-                                    </div>
-                                 </div>
-                              </div> <!-- ms-hero-material-text-container -->
-                           </div>
-                        </div>
-                        <div class="carousel-item">
-                           <div class="carousel-caption">
-                              <div class="ms-hero-material-text-container">
-                                 <header class="ms-hero-material-title animated slideInLeft animation-delay-5">
-                                    <h1 class="animated fadeInLeft animation-delay-15">A template with <strong>infinite</strong> possibilities</h1>
-                                    <h2 class="animated fadeInLeft animation-delay-18">Unlimited combinations to create <span class="color-warning">unique designs</span> .</h2>
-                                 </header>
-                                 <ul class="ms-hero-material-list">
-                                    <li class="">
-                                       <div class="ms-list-icon animated zoomInUp animation-delay-18">
-                                          <span class="ms-icon ms-icon-circle ms-icon-xlg color-info shadow-3dp"><i class="zmdi zmdi-city"></i></span>
-                                       </div>
-                                       <div class="ms-list-text animated fadeInRight animation-delay-19">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, fugit sit nesciunt cum rerum iusto.</div>
-                                    </li>
-                                    <li class="">
-                                       <div class="ms-list-icon animated zoomInUp animation-delay-20">
-                                          <span class="ms-icon ms-icon-circle ms-icon-xlg color-royal shadow-3dp"><i class="zmdi zmdi-cake"></i></span>
-                                       </div>
-                                       <div class="ms-list-text animated fadeInRight animation-delay-21">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi laborum dignissimos fuga maxime facere.</div>
-                                    </li>
-                                    <li class="">
-                                       <div class="ms-list-icon animated zoomInUp animation-delay-22">
-                                          <span class="ms-icon ms-icon-circle ms-icon-xlg color-warning shadow-3dp"><i class="zmdi zmdi-coffee"></i></span>
-                                       </div>
-                                       <div class="ms-list-text animated fadeInRight animation-delay-23">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit sequi est repudianda.</div>
-                                    </li>
-                                 </ul>
-                                 <div class="ms-hero-material-buttons text-right">
-                                    <div class="ms-hero-material-buttons text-right">
-                                       <a href="javascript:void(0);" class="btn btn-warning btn-raised animated fadeInLeft animation-delay-24 mr-2"><i class="zmdi zmdi-settings"></i> Personalize</a>
-                                       <a href="javascript:void(0);" class="btn btn-success btn-raised animated fadeInRight animation-delay-24"><i class="zmdi zmdi-download"></i> Download</a>
-                                    </div>
-                                 </div>
-                              </div> <!-- ms-hero-material-text-container -->
-                           </div>
-                        </div>
-                        <div class="carousel-item">
-                           <div class="carousel-caption">
-                              <div class="ms-hero-material-text-container">
-                                 <header class="ms-hero-material-title animated slideInLeft animation-delay-5">
-                                    <h1 class="animated fadeInLeft animation-delay-15">Commitment of <strong>monthly updates</strong>.</h1>
-                                    <h2 class="animated fadeInLeft animation-delay-18">There will soon be a version for <span class="color-warning">Bootstrap 4</span>.</h2>
-                                 </header>
-                                 <ul class="ms-hero-material-list">
-                                    <li class="">
-                                       <div class="ms-list-icon animated zoomInUp animation-delay-18">
-                                          <span class="ms-icon ms-icon-circle ms-icon-xlg color-danger shadow-3dp"><i class="zmdi zmdi-cutlery"></i></span>
-                                       </div>
-                                       <div class="ms-list-text animated fadeInRight animation-delay-19">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, fugit sit nesciunt cum rerum iusto.</div>
-                                    </li>
-                                    <li class="">
-                                       <div class="ms-list-icon animated zoomInUp animation-delay-20">
-                                          <span class="ms-icon ms-icon-circle ms-icon-xlg color-info shadow-3dp"><i class="zmdi zmdi-dns"></i></span>
-                                       </div>
-                                       <div class="ms-list-text animated fadeInRight animation-delay-21">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi laborum dignissimos fuga maxime facere.</div>
-                                    </li>
-                                    <li class="">
-                                       <div class="ms-list-icon animated zoomInUp animation-delay-22">
-                                          <span class="ms-icon ms-icon-circle ms-icon-xlg color-success shadow-3dp"><i class="zmdi zmdi-compass"></i></span>
-                                       </div>
-                                       <div class="ms-list-text animated fadeInRight animation-delay-23">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit sequi est repudianda.</div>
-                                    </li>
-                                 </ul>
-                                 <div class="ms-hero-material-buttons text-right">
-                                    <a href="javascript:void(0);" class="btn btn-warning btn-raised animated fadeInLeft animation-delay-24 mr-2"><i class="zmdi zmdi-settings"></i> Personalize</a>
-                                    <a href="javascript:void(0);" class="btn btn-success btn-raised animated fadeInRight animation-delay-24"><i class="zmdi zmdi-download"></i> Download</a>
-                                 </div>
-                              </div> <!-- ms-hero-material-text-container -->
-                           </div>
-                        </div>
-                        <div class="carousel-controls">
-                           <!-- Controls -->
-                           <a class="left carousel-control animated zoomIn animation-delay-30" href="#carousel-hero" role="button" data-slide="prev">
-                              <i class="zmdi zmdi-chevron-left"></i>
-                              <span class="sr-only">Previous</span>
-                           </a>
-                           <a class="right carousel-control animated zoomIn animation-delay-30" href="#carousel-hero" role="button" data-slide="next">
-                              <i class="zmdi zmdi-chevron-right"></i>
-                              <span class="sr-only">Next</span>
-                           </a>
-                           <!-- Indicators -->
-                           <ol class="carousel-indicators">
-                              <li data-target="#carousel-hero" data-slide-to="0" class="animated fadeInUpBig animation-delay-27 active"></li>
-                              <li data-target="#carousel-hero" data-slide-to="1" class="animated fadeInUpBig animation-delay-28"></li>
-                              <li data-target="#carousel-hero" data-slide-to="2" class="animated fadeInUpBig animation-delay-29"></li>
-                           </ol>
-                        </div>
+               <div class="col-md-10">
+                  <nav class="navbar navbar-default ow-navigation">
+                     <div class="navbar-header">
+                        <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                           <span class="sr-only">Toggle navigation</span>
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                        </button>
+                        <a href="index-2.html" title="Hotely" class="navbar-brand">Hotely</a>
                      </div>
-                  </div>
-               </div>
-               <div class="col-xl-6 col-lg-5">
-                  <div class="ms-hero-img animated zoomInUp animation-delay-30">
-                     <img src="assets/img/demo/mock-imac-material2.png" alt="" class="img-fluid">
-                     <div id="carousel-hero-img" class="carousel carousel-fade slide" data-ride="carousel" data-interval="3000">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators carousel-indicators-hero-img">
-                           <li data-target="#carousel-hero-img" data-slide-to="0" class="active"></li>
-                           <li data-target="#carousel-hero-img" data-slide-to="1"></li>
-                           <li data-target="#carousel-hero-img" data-slide-to="2"></li>
-                        </ol>
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner" role="listbox">
-                           <div class="ms-hero-img-slider carousel-item active">
-                              <img src="assets/img/demo/hero1.png" alt="" class="img-fluid">
-                           </div>
-                           <div class="ms-hero-img-slider carousel-item">
-                              <img src="assets/img/demo/hero3.png" alt="" class="img-fluid">
-                           </div>
-                           <div class="ms-hero-img-slider carousel-item">
-                              <img src="assets/img/demo/hero2.png" alt="" class="img-fluid">
-                           </div>
-                        </div>
+                     <div class="navbar-collapse collapse" id="navbar">
+                        <ul class="nav navbar-nav">
+                           <li class="dropdown active">
+                              <a href="index-2.html" title="Home" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
+                              <i class="ddl-switch fa fa-angle-down"></i>
+                              <ul class="dropdown-menu">
+                                 <li><a href="index-2.html" title="Home">Home</a></li>
+                                 <li><a href="index-3.html" title="Home 2">Home 2</a></li>
+                              </ul>
+                           </li>
+                           <li><a href="about-page.html" title="About Us">about Us</a></li>
+                           <li class="dropdown">
+                              <a href="#" title="Rooms" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Rooms</a>
+                              <i class="ddl-switch fa fa-angle-down"></i>
+                              <ul class="dropdown-menu">
+                                 <li><a href="booking-page.html" title="Booking">Booking</a></li>
+                                 <li><a href="404.html" title="404">404</a></li>
+                              </ul>
+                           </li>
+                           <li><a href="services-page.html" title="Services">Services</a></li>
+                           <li><a href="portfolio.html" title="Gallery">Gallery</a></li>
+                           <li class="dropdown">
+                              <a href="#blog-section" title="News" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">News</a>
+                              <i class="ddl-switch fa fa-angle-down"></i>
+                              <ul class="dropdown-menu">
+                                 <li><a href="blog-page.html" title="Blog">Blog</a></li>
+                                 <li><a href="blog-post.html" title="Single Post">Single Post</a></li>
+                              </ul>
+                           </li>
+                           <li><a href="contact-us.html" title="Contact">Contact</a></li>
+                        </ul>
                      </div>
-                  </div>
+                  </nav>
                </div>
-            </div>
-         </div> <!-- container -->
-      </div> <!-- ms-hero ms-hero-black -->
-      <div class="container mt-4">
-         <h2 class="text-center color-primary mb-2 wow fadeInDown animation-delay-4">Know our amazing features</h2>
-         <p class="lead text-center aco wow fadeInDown animation-delay-5 mw-800 center-block mb-4"> Lorem ipsum dolor sit amet, <span class="color-primary">consectetur adipisicing</span> elit. Dolor alias provident excepturi eligendi, nam numquam iusto eum illum, ea quisquam.</p>
-         <div class="row">
-            <div class="ms-feature col-xl-3 col-lg-6 col-md-6 card wow flipInX animation-delay-4">
-               <div class="text-center card-body">
-                  <span class="ms-icon ms-icon-circle ms-icon-xxlg color-info"><i class="zmdi zmdi-cloud-outline"></i></span>
-                  <h4 class="color-info">A feature title</h4>
-                  <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dicta error.</p>
-                  <a href="javascript:void(0)" class="btn btn-info btn-raised">Action here</a>
+               <div class="col-md-2 book-now">
+                  <a href="#" title="Book Now">Book now</a>
                </div>
-            </div>
-            <div class="ms-feature col-xl-3 col-lg-6 col-md-6 card wow flipInX animation-delay-8">
-               <div class="text-center card-body">
-                  <span class="ms-icon ms-icon-circle ms-icon-xxlg color-warning"><i class="zmdi zmdi-desktop-mac"></i></span>
-                  <h4 class="color-warning">A feature title</h4>
-                  <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dicta error.</p>
-                  <a href="javascript:void(0)" class="btn btn-warning btn-raised">Action here</a>
-               </div>
-            </div>
-            <div class="ms-feature col-xl-3 col-lg-6 col-md-6 card wow flipInX animation-delay-10">
-               <div class="text-center card-body">
-                  <span class="ms-icon ms-icon-circle ms-icon-xxlg color-success"><i class="zmdi zmdi-download"></i></span>
-                  <h4 class="color-success">A feature title</h4>
-                  <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dicta error.</p>
-                  <a href="javascript:void(0)" class="btn btn-success btn-raised">Action here</a>
-               </div>
-            </div>
-            <div class="ms-feature col-xl-3 col-lg-6 col-md-6 card wow flipInX animation-delay-6">
-               <div class="text-center card-body">
-                  <span class="ms-icon ms-icon-circle ms-icon-xxlg  color-danger"><i class="zmdi zmdi-flower-alt"></i></span>
-                  <h4 class="color-danger">A feature title</h4>
-                  <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dicta error.</p>
-                  <a href="javascript:void(0)" class="btn btn-danger btn-raised">Action here</a>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- container -->
-      <div class="wrap wrap-mountain mt-6">
-         <div class="container">
-            <h2 class="text-center text-light mb-6 wow fadeInDown animation-delay-5">Material Design is a <strong>new way</strong> to create designs</h2>
-            <div class="row">
-               <div class="col-lg-6 order-lg-2 mb-4  center-block">
-                  <img src="assets/img/demo/mock.png" alt="" class="img-fluid center-block wow zoomIn animation-delay-12 ">
-               </div>
-               <div class="col-lg-6 order-lg-1 pr-6">
-                  <p class="wow fadeInLeft animation-delay-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam sint officiis odio tempora natus, sed voluptas facilis ullam suscipit. Ducimus quas, eius ut, dolores mollitia sapiente doloremque aliquid sequi eaque.</p>
-                  <p class="wow fadeInLeft animation-delay-7">Adipisicing elit. Sapiente porro voluptatem rerum modi quibusdam accusantium nihil facere cupiditate quam! Ipsa.</p>
-                  <p class="wow fadeInLeft animation-delay-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque quasi voluptatem, similique corrupti necessitatibus nihil error, nemo delectus voluptates deserunt ducimus quaerat molestiae labore id repellat exercitationem asperiores neque quibusdam.</p>
-                  <div class="text-center">
-                     <a href="javascript:void(0)" class="btn btn-warning btn-raised mr-1 wow flipInX animation-delay-14"><i class="zmdi zmdi-chart-donut"></i> Action here </a>
-                     <a href="javascript:void(0)" class="btn btn-info btn-raised wow flipInX animation-delay-16"><i class="zmdi zmdi-case"></i> Button</a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="container mt-6">
-         <h1 class="font-light">Technology that brings teams together</h1>
-         <p class="lead color-primary">— Intelligent apps that help you do your best work. </p>
-         <div class="panel panel-light panel-flat">
-            <!-- Nav tabs -->
-            <ul class="nav nav-tabs nav-tabs-transparent indicator-primary nav-tabs-full nav-tabs-5" role="tablist">
-               <li class="nav-item wow fadeInDown animation-delay-6" role="presentation"><a href="#windows" aria-controls="windows" role="tab" data-toggle="tab" class="nav-link withoutripple"><i class="zmdi zmdi-windows"></i> <span class="d-none d-md-inline">Windows</span></a></li>
-               <li class="nav-item wow fadeInDown animation-delay-4" role="presentation"><a href="#macos" aria-controls="macos" role="tab" data-toggle="tab" class="nav-link withoutripple active"><i class="zmdi zmdi-apple"></i> <span class="d-none d-md-inline">MacOS</span></a></li>
-               <li class="nav-item wow fadeInDown animation-delay-2" role="presentation"><a href="#linux" aria-controls="linux" role="tab" data-toggle="tab" class="nav-link withoutripple"><i class="fa fa-linux"></i> <span class="d-none d-md-inline">Linux</span></a></li>
-               <li class="nav-item wow fadeInDown animation-delay-4" role="presentation"><a href="#android" aria-controls="android" role="tab" data-toggle="tab" class="nav-link withoutripple"><i class="zmdi zmdi-android"></i> <span class="d-none d-md-inline">Android</span></a></li>
-               <li class="nav-item wow fadeInDown animation-delay-6" role="presentation"><a href="#ios" aria-controls="ios" role="tab" data-toggle="tab" class="nav-link withoutripple"><i class="zmdi zmdi-smartphone-iphone"></i> <span class="d-none d-md-inline">IOS</span></a></li>
-            </ul>
-            <div class="panel-body">
-               <!-- Tab panes -->
-               <div class="tab-content mt-4">
-                  <div role="tabpanel" class="tab-pane fade" id="windows">
-                     <div class="row">
-                        <div class="col-lg-6 order-lg-2">
-                           <img src="assets/img/demo/mock4.png" alt="" class="img-fluid animated zoomIn animation-delay-8">
-                        </div>
-                        <div class="col-lg-6 order-lg-1">
-                           <h3 class="text-normal animated fadeInUp animation-delay-4">Bring ideas together faster</h3>
-                           <p class="lead lead-md animated fadeInUp animation-delay-6">Create documents, spreadsheets and presentations from anywhere. Share them with teammates and work together on the same file, at the same time.</p>
-                           <p class="lead lead-md animated fadeInUp animation-delay-7">sing your work is easy with one login for everything you do. Administrative controls offer two-step verification to enhance security for the whole company.</p>
-                           <div class="">
-                              <a href="javascript:void(0)" class="btn btn-info btn-raised animated zoomIn animation-delay-10"><i class="zmdi zmdi-info"></i> More info</a>
-                              <a href="javascript:void(0)" class="btn btn-danger btn-raised mr-1 animated zoomIn animation-delay-12"><i class="zmdi zmdi-chart-donut"></i> Action here </a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div role="tabpanel" class="tab-pane active show fade" id="macos">
-                     <div class="row">
-                        <div class="col-lg-6">
-                           <img src="assets/img/demo/mock2.png" alt="" class="img-fluid wow animated zoomIn animation-delay-8">
-                        </div>
-                        <div class="col-lg-6">
-                           <h3 class="text-normal wow animated fadeInUp animation-delay-4">Bring ideas together faster</h3>
-                           <p class="lead lead-md  wow animated fadeInUp animation-delay-6">Create documents, spreadsheets and presentations from anywhere. Share them with teammates and work together on the same file, at the same time.</p>
-                           <p class="lead lead-md wow animated fadeInUp animation-delay-7">sing your work is easy with one login for everything you do. Administrative controls offer two-step verification to enhance security for the whole company.</p>
-                           <div class="">
-                              <a href="javascript:void(0)" class="btn btn-info btn-raised wow animated zoomIn animation-delay-10"><i class="zmdi zmdi-info"></i> More info</a>
-                              <a href="javascript:void(0)" class="btn btn-danger btn-raised mr-1 wow animated zoomIn animation-delay-12"><i class="zmdi zmdi-chart-donut"></i> Action here </a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div role="tabpanel" class="tab-pane fade" id="linux">
-                     <div class="row">
-                        <div class="col-lg-6 order-lg-2">
-                           <img src="assets/img/demo/mock5.png" alt="" class="img-fluid animated zoomIn animation-delay-8">
-                        </div>
-                        <div class="col-lg-6 order-lg-1">
-                           <h3 class="text-normal animated fadeInUp animation-delay-4">Bring ideas together faster</h3>
-                           <p class="lead lead-md animated fadeInUp animation-delay-6">Create documents, spreadsheets and presentations from anywhere. Share them with teammates and work together on the same file, at the same time.</p>
-                           <p class="lead lead-md animated fadeInUp animation-delay-7">sing your work is easy with one login for everything you do. Administrative controls offer two-step verification to enhance security for the whole company.</p>
-                           <div class="">
-                              <a href="javascript:void(0)" class="btn btn-info btn-raised animated zoomIn animation-delay-10"><i class="zmdi zmdi-info"></i> More info</a>
-                              <a href="javascript:void(0)" class="btn btn-danger btn-raised mr-1 animated zoomIn animation-delay-12"><i class="zmdi zmdi-chart-donut"></i> Action here </a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div role="tabpanel" class="tab-pane fade" id="android">
-                     <div class="row">
-                        <div class="col-lg-6">
-                           <img src="assets/img/demo/mock6.png" alt="" class="img-fluid animated zoomIn animation-delay-8">
-                        </div>
-                        <div class="col-lg-6">
-                           <h3 class="text-normal animated fadeInUp animation-delay-4">Bring ideas together faster</h3>
-                           <p class="lead lead-md  animated fadeInUp animation-delay-6">Create documents, spreadsheets and presentations from anywhere. Share them with teammates and work together on the same file, at the same time.</p>
-                           <p class="lead lead-md animated fadeInUp animation-delay-7">sing your work is easy with one login for everything you do. Administrative controls offer two-step verification to enhance security for the whole company.</p>
-                           <div class="">
-                              <a href="javascript:void(0)" class="btn btn-info btn-raised animated zoomIn animation-delay-10"><i class="zmdi zmdi-info"></i> More info</a>
-                              <a href="javascript:void(0)" class="btn btn-danger btn-raised mr-1 animated zoomIn animation-delay-12"><i class="zmdi zmdi-chart-donut"></i> Action here </a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div role="tabpanel" class="tab-pane fade" id="ios">
-                     <div class="row">
-                        <div class="col-lg-6 order-lg-2">
-                           <img src="assets/img/demo/mock3.png" alt="" class="img-fluid animated zoomIn animation-delay-8">
-                        </div>
-                        <div class="col-lg-6 order-lg-1">
-                           <h3 class="text-normal animated fadeInUp animation-delay-4">Bring ideas together faster</h3>
-                           <p class="lead lead-md animated fadeInUp animation-delay-6">Create documents, spreadsheets and presentations from anywhere. Share them with teammates and work together on the same file, at the same time.</p>
-                           <p class="lead lead-md animated fadeInUp animation-delay-7">sing your work is easy with one login for everything you do. Administrative controls offer two-step verification to enhance security for the whole company.</p>
-                           <div class="">
-                              <a href="javascript:void(0)" class="btn btn-info btn-raised animated zoomIn animation-delay-10"><i class="zmdi zmdi-info"></i> More info</a>
-                              <a href="javascript:void(0)" class="btn btn-danger btn-raised mr-1 animated zoomIn animation-delay-12"><i class="zmdi zmdi-chart-donut"></i> Action here </a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div> <!-- panel -->
-      </div> <!-- container -->
-      <div class="container mt-6">
-         <div class="text-center mb-4">
-            <h2 class="uppercase color-primary">See our subscription plans</h2>
-            <p class="lead uppercase">Surprise with our unique features</p>
-         </div>
-         <div class="row no-gutters">
-            <div class="col-lg-4">
-               <div class="price-table price-table-info wow zoomInUp animation-delay-2">
-                  <header class="price-table-header">
-                     <span class="price-table-category">Personal</span>
-                     <h3><sup>$</sup>19.99 <sub>/mo.</sub></h3>
-                  </header>
-                  <div class="price-table-body">
-                     <ul class="price-table-list">
-                        <li><i class="zmdi zmdi-code"></i> Lorem ipsum dolor sit amet.</li>
-                        <li><i class="zmdi zmdi-globe"></i> Voluptate ex quam autem dolor.</li>
-                        <li><i class="zmdi zmdi-settings"></i> Dignissimos velit reic cumque.</li>
-                        <li><i class="zmdi zmdi-cloud"></i> Nihil corrupti soluta vitae non.</li>
-                        <li><i class="zmdi zmdi-star"></i> Atque molestiae, blanditiis ratione.</li>
-                     </ul>
-                     <div class="text-center">
-                        <a href="javascript:void(0)" class="btn btn-info btn-raised"><i class="zmdi zmdi-cloud-download"></i> Get Now</a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="col-lg-4">
-               <div class="price-table price-table-success prominent wow zoomInDown animation-delay-2">
-                  <header class="price-table-header">
-                     <span class="price-table-category">Professional</span>
-                     <h3><sup>$</sup>49.99 <sub>/mo.</sub></h3>
-                  </header>
-                  <div class="price-table-body">
-                     <ul class="price-table-list">
-                        <li><i class="zmdi zmdi-code"></i> Lorem ipsum dolor sit amet.</li>
-                        <li><i class="zmdi zmdi-globe"></i> Voluptate ex quam autem dolor.</li>
-                        <li><i class="zmdi zmdi-settings"></i> Dignissimos velit reic cumque.</li>
-                        <li><i class="zmdi zmdi-cloud"></i> Nihil corrupti soluta vitae non.</li>
-                        <li><i class="zmdi zmdi-star"></i> Atque molestiae, blanditiis ratione.</li>
-                     </ul>
-                     <div class="text-center">
-                        <a href="javascript:void(0)" class="btn btn-success btn-raised"><i class="zmdi zmdi-cloud-download"></i> Get Now</a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="col-lg-4">
-               <div class="price-table price-table-warning wow zoomInUp animation-delay-2">
-                  <header class="price-table-header">
-                     <span class="price-table-category">Business</span>
-                     <h3><sup>$</sup>99.99 <sub>/mo.</sub></h3>
-                  </header>
-                  <div class="price-table-body">
-                     <ul class="price-table-list">
-                        <li><i class="zmdi zmdi-code"></i> Lorem ipsum dolor sit amet.</li>
-                        <li><i class="zmdi zmdi-globe"></i> Voluptate ex quam autem dolor.</li>
-                        <li><i class="zmdi zmdi-settings"></i> Dignissimos velit reic cumque.</li>
-                        <li><i class="zmdi zmdi-cloud"></i> Nihil corrupti soluta vitae non.</li>
-                        <li><i class="zmdi zmdi-star"></i> Atque molestiae, blanditiis ratione.</li>
-                     </ul>
-                     <div class="text-center">
-                        <a href="javascript:void(0)" class="btn btn-warning btn-raised"><i class="zmdi zmdi-cloud-download"></i> Get Now</a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!--container -->
-      <div class="wrap wrap-danger mt-6">
-         <h2 class="text-center no-m">What our customers say</h2>
-         <div id="carousel-example-generic" class="carousel carousel-cards carousel-fade slide" data-ride="carousel" data-interval="7000">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-               <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-               <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-               <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-            </ol>
+            </div><!-- Row /- -->
+         </div><!-- Container /- -->
+      </div><!-- Menu Block /- -->
+   </header><!-- Header Section /- -->
+
+   <main class="site-main page-spacing">
+      <!-- Slider Section -->
+      <div id="slider-section" class="slider-section container-fluid no-padding">
+         <div id="photo-slider" class="carousel slide" data-ride="carousel">
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
-               <div class="carousel-item active">
+               <div class="item active">
+                  <img src="assets/images/slider/slide1.jpg" alt="Slide" />
                   <div class="carousel-caption">
-                     <div class="container">
-                        <div class="row">
-                           <div class="col-lg-4">
-                              <div class="card animated flipInX animation-delay-2 mb-4">
-                                 <blockquote class="blockquote blockquote-avatar withripple">
-                                    <img src="assets/img/demo/avatar.png" alt="" class="avatar d-none d-sm-block">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante ultricies nisi vel augue quam semper libero.</p>
-                                    <footer>Brian Krzanich, Intel CEO.</footer>
-                                 </blockquote>
-                              </div>
-                           </div>
-                           <div class="col-lg-4">
-                              <div class="card animated flipInX animation-delay-3 mb-4">
-                                 <blockquote class="blockquote blockquote-avatar withripple">
-                                    <img src="assets/img/demo/avatar.png" alt="" class="avatar d-none d-sm-block">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante ultricies nisi vel augue quam semper libero.</p>
-                                    <footer>Brian Krzanich, Intel CEO.</footer>
-                                 </blockquote>
-                              </div>
-                           </div>
-                           <div class="col-lg-4">
-                              <div class="card animated flipInX animation-delay-4 mb-4">
-                                 <blockquote class="blockquote blockquote-avatar withripple">
-                                    <img src="assets/img/demo/avatar.png" alt="" class="avatar d-none d-sm-block">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante ultricies nisi vel augue quam semper libero.</p>
-                                    <footer>Brian Krzanich, Intel CEO.</footer>
-                                 </blockquote>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
+                     <h2 data-animation="animated fadeInDown">Welcome to Hotely</h2>
+                     <h6 data-animation="animated bounceIn"><span class="left-sep"></span>the place where you looking to<span class="right-sep"></span></h6>
+                     <a href="#" title="Explore Now" data-animation="animated fadeInUp">explore now <i class="fa fa-long-arrow-right"></i></a>
                   </div>
                </div>
-               <div class="carousel-item">
+               <div class="item">
+                  <img src="assets/images/slider/slide1.jpg" alt="Slide" />
                   <div class="carousel-caption">
-                     <div class="container">
-                        <div class="row">
-                           <div class="col-lg-4">
-                              <div class="card animated flipInX animation-delay-2 mb-4">
-                                 <blockquote class="blockquote blockquote-avatar withripple">
-                                    <img src="assets/img/demo/avatar.png" alt="" class="avatar d-none d-sm-block">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante ultricies nisi vel augue quam semper libero.</p>
-                                    <footer>Brian Krzanich, Intel CEO.</footer>
-                                 </blockquote>
-                              </div>
-                           </div>
-                           <div class="col-lg-4">
-                              <div class="card animated flipInX animation-delay-3 mb-4">
-                                 <blockquote class="blockquote blockquote-avatar withripple">
-                                    <img src="assets/img/demo/avatar.png" alt="" class="avatar d-none d-sm-block">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante ultricies nisi vel augue quam semper libero.</p>
-                                    <footer>Brian Krzanich, Intel CEO.</footer>
-                                 </blockquote>
-                              </div>
-                           </div>
-                           <div class="col-lg-4">
-                              <div class="card animated flipInX animation-delay-4 mb-4">
-                                 <blockquote class="blockquote blockquote-avatar withripple">
-                                    <img src="assets/img/demo/avatar.png" alt="" class="avatar d-none d-sm-block">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante ultricies nisi vel augue quam semper libero.</p>
-                                    <footer>Brian Krzanich, Intel CEO.</footer>
-                                 </blockquote>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
+                     <h2 data-animation="animated fadeInDown">Welcome to Hotely</h2>
+                     <h6 data-animation="animated bounceIn"><span class="left-sep"></span>the place where you looking to<span class="right-sep"></span></h6>
+                     <a href="#" title="Explore Now" data-animation="animated fadeInUp">explore now <i class="fa fa-long-arrow-right"></i></a>
                   </div>
                </div>
-               <div class="carousel-item">
+               <div class="item">
+                  <img src="assets/images/slider/slide1.jpg" alt="Slide" />
                   <div class="carousel-caption">
-                     <div class="container">
-                        <div class="row">
-                           <div class="col-lg-4">
-                              <div class="card animated flipInX animation-delay-2 mb-4">
-                                 <blockquote class="blockquote blockquote-avatar withripple">
-                                    <img src="assets/img/demo/avatar.png" alt="" class="avatar d-none d-sm-block">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante ultricies nisi vel augue quam semper libero.</p>
-                                    <footer>Brian Krzanich, Intel CEO.</footer>
-                                 </blockquote>
-                              </div>
-                           </div>
-                           <div class="col-lg-4">
-                              <div class="card animated flipInX animation-delay-3 mb-4">
-                                 <blockquote class="blockquote blockquote-avatar withripple">
-                                    <img src="assets/img/demo/avatar.png" alt="" class="avatar d-none d-sm-block">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante ultricies nisi vel augue quam semper libero.</p>
-                                    <footer>Brian Krzanich, Intel CEO.</footer>
-                                 </blockquote>
-                              </div>
-                           </div>
-                           <div class="col-lg-4">
-                              <div class="card animated flipInX animation-delay-4 mb-4">
-                                 <blockquote class="blockquote blockquote-avatar withripple">
-                                    <img src="assets/img/demo/avatar.png" alt="" class="avatar d-none d-sm-block">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante ultricies nisi vel augue quam semper libero.</p>
-                                    <footer>Brian Krzanich, Intel CEO.</footer>
-                                 </blockquote>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
+                     <h2 data-animation="animated fadeInDown">Welcome to Hotely</h2>
+                     <h6 data-animation="animated bounceIn"><span class="left-sep"></span>the place where you looking to<span class="right-sep"></span></h6>
+                     <a href="#" title="Explore Now" data-animation="animated fadeInUp">explore now <i class="fa fa-long-arrow-right"></i></a>
                   </div>
                </div>
             </div>
             <!-- Controls -->
-            <a class="left carousel-control-prev btn btn-white btn-raised" href="#carousel-example-generic" role="button" data-slide="next">
-               <i class="zmdi zmdi-arrow-left"></i>
+            <a class="left carousel-control" href="#photo-slider" role="button" data-slide="prev">
+               <span class="fa fa-angle-left" aria-hidden="true"></span>
             </a>
-            <a class="right carousel-control-next btn btn-white btn-raised" href="#carousel-example-generic" role="button" data-slide="next">
-               <i class="zmdi zmdi-arrow-right"></i>
+            <a class="right carousel-control" href="#photo-slider" role="button" data-slide="next">
+               <span class="fa fa-angle-right" aria-hidden="true"></span>
             </a>
          </div>
-      </div>
-      <div class="container mt-6">
-         <h2 class="text-center color-primary mb-4">Our Latest Works</h2>
-         <div class="owl-dots"></div>
-         <div class="owl-carousel owl-theme">
-            <div class="card animation-delay-6">
-               <div class="withripple zoom-img">
-                  <a href="javascript:void()"><img src="assets/img/demo/port4.jpg" alt="..." class="img-fluid"></a>
-               </div>
-               <div class="card-body">
-                  <h3 class="color-primary">Thumbnail label</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, repellat, vitae porro ex expedita cumque nulla.</p>
-                  <p class="text-right">
-                     <a href="javascript:void()" class="btn btn-primary btn-raised text-right" role="button"><i class="zmdi zmdi-collection-image-o"></i> View More</a>
-                  </p>
-               </div>
+         <p class="goto-next"><a href="#" title="Go to Next" class="bounce"><img src="assets/images/slider/go-to-next.png" alt="Go To Next" /></a></p>
+      </div><!-- Slider Section /- -->
+
+      <!-- container -->
+      <div class="container">
+         <div class="booking-form container-fluid">
+            <div class="col-md-2 col-sm-12 col-xs-12">
+               <h4>book your<span>rooms</span></h4>
             </div>
-            <div class="card card-dark-inverse animation-delay-8">
-               <div class="withripple zoom-img">
-                  <a href="javascript:void()"><img src="assets/img/demo/port24.jpg" alt="..." class="img-fluid"></a>
+            <form class="col-md-10 col-sm-12 col-xs-12">
+               <div class="form-group">
+                  <i class="fa fa-calendar-minus-o"></i>
+                  <input type="text" class="form-control" id="datepicker1" placeholder="ARRIVAL DATE" />
                </div>
-               <div class="card-body">
-                  <h3 class="">Thumbnail label</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, repellat, vitae porro ex expedita cumque nulla.</p>
-                  <p class="text-right">
-                     <a href="javascript:void()" class="btn btn-info btn-raised text-right" role="button"><i class="zmdi zmdi-collection-image-o"></i> View More</a>
-                  </p>
+               <div class="form-group">
+                  <i class="fa fa-calendar-minus-o"></i>
+                  <input type="text" class="form-control" id="datepicker2" placeholder="DEPARTURE DATE" />
                </div>
-            </div>
-            <div class="card animation-delay-10">
-               <div class="withripple zoom-img">
-                  <a href="javascript:void()"><img src="assets/img/demo/port7.jpg" alt="..." class="img-fluid"></a>
+               <div class="form-group">
+                  <select class="selectpicker">
+                     <option>NO OF ROOMS</option>
+                     <option>2</option>
+                     <option>3</option>
+                     <option>4</option>
+                  </select>
                </div>
-               <div class="card-body">
-                  <h3 class="color-primary">Thumbnail label</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, repellat, vitae porro ex expedita cumque nulla.</p>
-                  <p class="text-right">
-                     <a href="javascript:void()" class="btn btn-primary btn-raised text-right" role="button"><i class="zmdi zmdi-collection-image-o"></i> View More</a>
-                  </p>
+               <div class="form-group">
+                  <select class="selectpicker">
+                     <option>NO OF PERSONS</option>
+                     <option>2</option>
+                     <option>3</option>
+                     <option>4</option>
+                  </select>
                </div>
-            </div>
-            <div class="card animation-delay-6">
-               <div class="withripple zoom-img">
-                  <a href="javascript:void()"><img src="assets/img/demo/port8.jpg" alt="..." class="img-fluid"></a>
+               <div class="form-group">
+                  <input type="submit" value="book now" title="Book Now" />
                </div>
-               <div class="card-body">
-                  <h3 class="color-primary">Thumbnail label</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, repellat, vitae porro ex expedita cumque nulla.</p>
-                  <p class="text-right">
-                     <a href="javascript:void()" class="btn btn-primary btn-raised text-right" role="button"><i class="zmdi zmdi-collection-image-o"></i> View More</a>
-                  </p>
+            </form>
+         </div>
+         <div class="content-block container-fluid">
+            <div class="row">
+               <div class="col-md-5 col-sm-6 col-xs-12 content-img-block">
+                  <img src="assets/images/booking/waiter-right.jpg" alt="Waiter" />
                </div>
-            </div>
-            <div class="card card-dark-inverse animation-delay-8">
-               <div class="withripple zoom-img">
-                  <a href="javascript:void()"><img src="assets/img/demo/port9.jpg" alt="..." class="img-fluid"></a>
-               </div>
-               <div class="card-body">
-                  <h3 class="">Thumbnail label</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, repellat, vitae porro ex expedita cumque nulla.</p>
-                  <p class="text-right">
-                     <a href="javascript:void()" class="btn btn-info btn-raised text-right" role="button"><i class="zmdi zmdi-collection-image-o"></i> View More</a>
-                  </p>
-               </div>
-            </div>
-            <div class="card animation-delay-10">
-               <div class="withripple zoom-img">
-                  <a href="javascript:void()"><img src="assets/img/demo/port5.jpg" alt="..." class="img-fluid"></a>
-               </div>
-               <div class="card-body">
-                  <h3 class="color-primary">Thumbnail label</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, repellat, vitae porro ex expedita cumque nulla.</p>
-                  <p class="text-right">
-                     <a href="javascript:void()" class="btn btn-primary btn-raised text-right" role="button"><i class="zmdi zmdi-collection-image-o"></i> View More</a>
-                  </p>
-               </div>
-            </div>
-            <div class="card animation-delay-6">
-               <div class="withripple zoom-img">
-                  <a href="javascript:void()"><img src="assets/img/demo/port11.jpg" alt="..." class="img-fluid"></a>
-               </div>
-               <div class="card-body">
-                  <h3 class="color-primary">Thumbnail label</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, repellat, vitae porro ex expedita cumque nulla.</p>
-                  <p class="text-right">
-                     <a href="javascript:void()" class="btn btn-primary btn-raised text-right" role="button"><i class="zmdi zmdi-collection-image-o"></i> View More</a>
-                  </p>
-               </div>
-            </div>
-            <div class="card card-dark-inverse animation-delay-8">
-               <div class="withripple zoom-img">
-                  <a href="javascript:void()"><img src="assets/img/demo/port3.jpg" alt="..." class="img-fluid"></a>
-               </div>
-               <div class="card-body">
-                  <h3 class="">Thumbnail label</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, repellat, vitae porro ex expedita cumque nulla.</p>
-                  <p class="text-right">
-                     <a href="javascript:void()" class="btn btn-info btn-raised text-right" role="button"><i class="zmdi zmdi-collection-image-o"></i> View More</a>
-                  </p>
-               </div>
-            </div>
-            <div class="card animation-delay-10">
-               <div class="withripple zoom-img">
-                  <a href="javascript:void()"><img src="assets/img/demo/port14.jpg" alt="..." class="img-fluid"></a>
-               </div>
-               <div class="card-body">
-                  <h3 class="color-primary">Thumbnail label</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, repellat, vitae porro ex expedita cumque nulla.</p>
-                  <p class="text-right">
-                     <a href="javascript:void()" class="btn btn-primary btn-raised text-right" role="button"><i class="zmdi zmdi-collection-image-o"></i> View More</a>
-                  </p>
+               <div class="col-md-7 col-sm-6 col-xs-12">
+                  <h3>enjoy a memorable days with your fly hotel</h3>
+                  <p>Tthese men promptly escaped from a maximum security stock ade to the Los Angeles underground these Happy Days are yours and mine Happy Days as long as we live its you and me baby there aint nothing wrong with that the Brady Bunch the Brady Bunch that is the Brady Bunch sunny Days sweeping the clouds away.</p>
+                  <a href="#" title="view details" class="read-more">view details <i class="fa fa-long-arrow-right"></i></a>
                </div>
             </div>
          </div>
-      </div>
-      <aside class="ms-footbar">
+      </div><!-- container /- -->
+      <div class="section-padding"></div>
+
+      <!-- Offer Section -->
+      <div class="container-fluid offer-section no-padding">
+         <!-- container -->
+         <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+               <h3>our great offers</h3>
+               <p>These men promptly escaped from a maximum security stock ade to the Los Angeles underground these Happy Days are yours and mine Happy Days as long wrong with that the Brady Bunch.</p>
+            </div><!-- Section Header /- -->
+            <div class="offer-list">
+               <div class="offer-box tall">
+                  <img src="assets/images/offer/offer1.jpg" alt="Offer" />
+                  <div class="offer-detail">
+                     <h3>health &amp; <span>fitness</span></h3>
+                     <div class="price-detail">
+                        <h4>starts from - <span>75<sup>$</sup></span></h4>
+                        <a class="read-more" title="book now" href="#">book now <i class="fa fa-long-arrow-right"></i></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="offer-box wide">
+                  <img src="assets/images/offer/offer2.jpg" alt="Offer" />
+                  <div class="offer-detail">
+                     <h3>Best <span>Dishes</span></h3>
+                     <div class="price-detail">
+                        <h4>starts from - <span>75<sup>$</sup></span></h4>
+                        <a class="read-more" title="book now" href="#">book now <i class="fa fa-long-arrow-right"></i></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="offer-box wide">
+                  <img src="assets/images/offer/offer3.jpg" alt="Offer" />
+                  <div class="offer-detail">
+                     <h3>Swimming <span>pool</span></h3>
+                     <div class="price-detail">
+                        <h4>starts from - <span>75<sup>$</sup></span></h4>
+                        <a class="read-more" title="book now" href="#">book now <i class="fa fa-long-arrow-right"></i></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="offer-box full">
+                  <img src="assets/images/offer/offer4.jpg" alt="Offer" />
+                  <div class="offer-detail">
+                     <h3>HIFI INTERIOR <span>BEDROOMS</span></h3>
+                     <div class="price-detail">
+                        <h4>starts from - <span>75<sup>$</sup></span></h4>
+                        <a class="read-more" title="book now" href="#">book now <i class="fa fa-long-arrow-right"></i></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div><!-- container /- -->
+      </div><!-- Offer Section /- -->
+      <div class="section-padding"></div>
+
+      <!-- Direrction Section -->
+      <div id="direction-section" class="direction-section container-fluid no-padding">
+         <div class="section-padding"></div>
+         <!-- Container -->
+         <div class="container">
+            <div class="col-md-5 col-sm-12 col-xs-12">
+               <!-- Section Header -->
+               <div class="section-header">
+                  <h3>driving directions</h3>
+                  <p>These men promptly escaped from a maximum security stock ade to the Los Angeles underground these Happy Days.</p>
+               </div><!-- Section Header /- -->
+               <div class="dir-content">
+                  <div class="dir-box">
+                     <h4>2.3 <sub>KM</sub></h4>
+                     <p>from mountain view</p>
+                  </div>
+                  <div class="dir-box">
+                     <h4>15 <sub>KM</sub></h4>
+                     <p>new orleans</p>
+                  </div>
+               </div>
+               <a class="read-more" title="view direction" href="#">view direction <i class="fa fa-long-arrow-right"></i></a>
+            </div>
+            <div class="col-md-7 col-sm-12 col-xs-12">
+               <img src="assets/images/dir-map.jpg" alt="Direrction Map" />
+            </div>
+         </div><!-- Container /- -->
+         <div class="section-padding"></div>
+      </div><!-- Direrction Section /- -->
+      <div class="section-padding"></div>
+
+      <!-- Recommended Section -->
+      <div id="recommended-section" class="recommended-section container-fluid no-padding">
+         <!-- Container -->
+         <div class="container">
+            <div class="section-header">
+               <h3>recommended hotels</h3>
+               <p>These men promptly escaped from a maximum security stock ade to the Los Angeles underground these Happy Days are yours and mine Happy Days as long wrong with that the Brady Bunch.</p>
+            </div>
+            <div class="recommended-detail">
+               <div class="col-md-6 col-sm-12 col-xs-12 no-padding hotel-detail">
+                  <div class="col-md-6 col-sm-6 col-xs-6 no-padding hotel-img-box">
+                     <img src="assets/images/hotel/recommended1.jpg" alt="Recommended" height="267" width="297" />
+                     <span><a href="#" title="Book Now">Book Now</a></span>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-6 hotel-detail-box">
+                     <h4>Hotel Paris</h4>
+                     <p>These men promptly escaped from a dum to the Los Angeles</p>
+                     <h6><b>125<sup>$</sup></b><span>For Person Per Night</span></h6>
+                     <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                     </span>
+                  </div>
+               </div>
+               <div class="col-md-6 col-sm-12 col-xs-12 no-padding hotel-detail">
+                  <div class="col-md-6 col-sm-6 col-xs-6 no-padding hotel-img-box">
+                     <img src="assets/images/hotel/recommended1.jpg" alt="Recommended" height="267" width="297" />
+                     <span><a href="#" title="Book Now">Book Now</a></span>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-6 hotel-detail-box">
+                     <h4>Hotel Paris</h4>
+                     <p>These men promptly escaped from a dum to the Los Angeles</p>
+                     <h6><b>125<sup>$</sup></b><span>For Person Per Night</span></h6>
+                     <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                     </span>
+                  </div>
+               </div>
+               <div class="col-md-6 col-sm-12 col-xs-12 no-padding hotel-detail">
+                  <div class="col-md-6 col-sm-6 col-xs-6 no-padding hotel-img-box">
+                     <img src="assets/images/hotel/recommended1.jpg" alt="Recommended" height="267" width="297" />
+                     <span><a href="#" title="Book Now">Book Now</a></span>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-6 hotel-detail-box">
+                     <h4>Hotel Paris</h4>
+                     <p>These men promptly escaped from a dum to the Los Angeles</p>
+                     <h6><b>125<sup>$</sup></b><span>For Person Per Night</span></h6>
+                     <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                     </span>
+                  </div>
+               </div>
+               <div class="col-md-6 col-sm-12 col-xs-12 no-padding hotel-detail">
+                  <div class="col-md-6 col-sm-6 col-xs-6 no-padding hotel-img-box">
+                     <img src="assets/images/hotel/recommended1.jpg" alt="Recommended" height="267" width="297" />
+                     <span><a href="#" title="Book Now">Book Now</a></span>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-6 hotel-detail-box">
+                     <h4>Hotel Paris</h4>
+                     <p>These men promptly escaped from a dum to the Los Angeles</p>
+                     <h6><b>125<sup>$</sup></b><span>For Person Per Night</span></h6>
+                     <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                     </span>
+                  </div>
+               </div>
+               <a href="#" title="View More Hotels" class="read-more">view more hotels<i class="fa fa-long-arrow-right"></i></a>
+            </div>
+         </div><!-- Container /- -->
+         <div class="section-padding"></div>
+      </div><!-- Recommended Section /- -->
+
+      <!-- Room Section -->
+      <div id="room-section" class="room-section container-fluid no-padding">
+         <div class="section-padding"></div>
+         <!-- Container -->
+         <div class="container">
+            <div id="room-carousel" class="carousel slide" data-ride="carousel">
+               <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                     <div class="col-md-6 no-padding room-img">
+                        <img src="assets/assets/images/room/room1.jpg" alt="Room">
+                     </div>
+                     <div class="col-md-6 no-padding room-detail">
+                        <h4>luxury rooms</h4>
+                        <div class="room-facility">
+                           <div class="facility-box">
+                              <i><img src="assets/assets/images/room/facility-ic1.png" alt="Facility Icon" /></i>
+                              <h5>high speed <span>wifi</span></h5>
+                           </div>
+                           <div class="facility-box">
+                              <i><img src="assets/assets/images/room/facility-ic2.png" alt="Facility Icon" /></i>
+                              <h5>one-call <span>doctor</span></h5>
+                           </div>
+                           <div class="facility-box">
+                              <i><img src="assets/assets/images/room/facility-ic3.png" alt="Facility Icon" /></i>
+                              <h5>mineral <span>water</span></h5>
+                           </div>
+                        </div>
+                        <p>These men promptly escaped from a maximum security stock ade to the Los Angeles underground these Happy Days are yours and mine Happy Days as long wrong with that the Brady Bunch.</p>
+                        <a class="read-more" title="Read More" href="#">Read More <i class="fa fa-long-arrow-right"></i></a>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="col-md-6 no-padding room-img">
+                        <img src="assets/assets/images/room/room1.jpg" alt="Room">
+                     </div>
+                     <div class="col-md-6 no-padding room-detail">
+                        <h4>luxury rooms</h4>
+                        <div class="room-facility">
+                           <div class="facility-box">
+                              <i><img src="assets/assets/images/room/facility-ic1.png" alt="Facility Icon" /></i>
+                              <h5>high speed <span>wifi</span></h5>
+                           </div>
+                           <div class="facility-box">
+                              <i><img src="assets/assets/images/room/facility-ic2.png" alt="Facility Icon" /></i>
+                              <h5>one-call <span>doctor</span></h5>
+                           </div>
+                           <div class="facility-box">
+                              <i><img src="assets/assets/images/room/facility-ic3.png" alt="Facility Icon" /></i>
+                              <h5>mineral <span>water</span></h5>
+                           </div>
+                        </div>
+                        <p>These men promptly escaped from a maximum security stock ade to the Los Angeles underground these Happy Days are yours and mine Happy Days as long wrong with that the Brady Bunch.</p>
+                        <a class="read-more" title="Read More" href="#">Read More <i class="fa fa-long-arrow-right"></i></a>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="col-md-6 no-padding room-img">
+                        <img src="assets/assets/images/room/room1.jpg" alt="Room">
+                     </div>
+                     <div class="col-md-6 no-padding room-detail">
+                        <h4>luxury rooms</h4>
+                        <div class="room-facility">
+                           <div class="facility-box">
+                              <i><img src="assets/assets/images/room/facility-ic1.png" alt="Facility Icon" /></i>
+                              <h5>high speed <span>wifi</span></h5>
+                           </div>
+                           <div class="facility-box">
+                              <i><img src="assets/assets/images/room/facility-ic2.png" alt="Facility Icon" /></i>
+                              <h5>one-call <span>doctor</span></h5>
+                           </div>
+                           <div class="facility-box">
+                              <i><img src="assets/assets/images/room/facility-ic3.png" alt="Facility Icon" /></i>
+                              <h5>mineral <span>water</span></h5>
+                           </div>
+                        </div>
+                        <p>These men promptly escaped from a maximum security stock ade to the Los Angeles underground these Happy Days are yours and mine Happy Days as long wrong with that the Brady Bunch.</p>
+                        <a class="read-more" title="Read More" href="#">Read More <i class="fa fa-long-arrow-right"></i></a>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="col-md-6 no-padding room-img">
+                        <img src="assets/images/room/room1.jpg" alt="Room">
+                     </div>
+                     <div class="col-md-6 no-padding room-detail">
+                        <h4>luxury rooms</h4>
+                        <div class="room-facility">
+                           <div class="facility-box">
+                              <i><img src="assets/iassets/mages/room/facility-ic1.png" alt="Facility Icon" /></i>
+                              <h5>high speed <span>wifi</span></h5>
+                           </div>
+                           <div class="facility-box">
+                              <i><img src="assets/assets/images/room/facility-ic2.png" alt="Facility Icon" /></i>
+                              <h5>one-call <span>doctor</span></h5>
+                           </div>
+                           <div class="facility-box">
+                              <i><img src="assets/images/room/facility-ic3.png" alt="Facility Icon" /></i>
+                              <h5>mineral <span>water</span></h5>
+                           </div>
+                        </div>
+                        <p>These men promptly escaped from a maximum security stock ade to the Los Angeles underground these Happy Days are yours and mine Happy Days as long wrong with that the Brady Bunch.</p>
+                        <a class="read-more" title="Read More" href="#">Read More <i class="fa fa-long-arrow-right"></i></a>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="col-md-6 no-padding room-img">
+                        <img src="assets/assets/images/room/room1.jpg" alt="Room">
+                     </div>
+                     <div class="col-md-6 no-padding room-detail">
+                        <h4>luxury rooms</h4>
+                        <div class="room-facility">
+                           <div class="facility-box">
+                              <i><img src="assets/assets/images/room/facility-ic1.png" alt="Facility Icon" /></i>
+                              <h5>high speed <span>wifi</span></h5>
+                           </div>
+                           <div class="facility-box">
+                              <i><img src="assets/assets/images/room/facility-ic2.png" alt="Facility Icon" /></i>
+                              <h5>one-call <span>doctor</span></h5>
+                           </div>
+                           <div class="facility-box">
+                              <i><img src="assets/assets/images/room/facility-ic3.png" alt="Facility Icon" /></i>
+                              <h5>mineral <span>water</span></h5>
+                           </div>
+                        </div>
+                        <p>These men promptly escaped from a maximum security stock ade to the Los Angeles underground these Happy Days are yours and mine Happy Days as long wrong with that the Brady Bunch.</p>
+                        <a class="read-more" title="Read More" href="#">Read More <i class="fa fa-long-arrow-right"></i></a>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="col-md-6 no-padding room-img">
+                        <img src="assets/assets/images/room/room1.jpg" alt="Room">
+                     </div>
+                     <div class="col-md-6 no-padding room-detail">
+                        <h4>luxury rooms</h4>
+                        <div class="room-facility">
+                           <div class="facility-box">
+                              <i><img src="assets/assets/images/room/facility-ic1.png" alt="Facility Icon" /></i>
+                              <h5>high speed <span>wifi</span></h5>
+                           </div>
+                           <div class="facility-box">
+                              <i><img src="assets/assets/images/room/facility-ic2.png" alt="Facility Icon" /></i>
+                              <h5>one-call <span>doctor</span></h5>
+                           </div>
+                           <div class="facility-box">
+                              <i><img src="assets/assets/images/room/facility-ic3.png" alt="Facility Icon" /></i>
+                              <h5>mineral <span>water</span></h5>
+                           </div>
+                        </div>
+                        <p>These men promptly escaped from a maximum security stock ade to the Los Angeles underground these Happy Days are yours and mine Happy Days as long wrong with that the Brady Bunch.</p>
+                        <a class="read-more" title="Read More" href="#">Read More <i class="fa fa-long-arrow-right"></i></a>
+                     </div>
+                  </div>
+               </div>
+               <!-- Controls -->
+               <div class="carousel-contorls">
+                  <a class="left carousel-control" href="#room-carousel" role="button" data-slide="prev">
+                     <span class="fa fa-angle-left" aria-hidden="true"></span>
+                  </a>
+                  <div class="num"></div>
+                  <a class="right carousel-control" href="#room-carousel" role="button" data-slide="next">
+                     <span class="fa fa-angle-right" aria-hidden="true"></span>
+                  </a>
+               </div>
+            </div>
+         </div><!-- Container /- -->
+         <div class="section-padding"></div>
+      </div><!-- Room Section /- -->
+      <div class="section-padding"></div>
+
+      <!-- Testimonial Section -->
+      <div id="testimonial-section" class="testimonial-section container-fluid no-padding">
+         <!-- section Header -->
+         <div class="section-header">
+            <h3>what our client says</h3>
+         </div><!-- section Header /- -->
+         <!-- Container -->
+         <div class="container">
+            <div class="col-md-1"></div>
+            <div class="col-md-10 col-sm-12 col-xs-12">
+               <div id="testimonial-carousel" class="carousel slide" data-ride="carousel">
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner" role="listbox">
+                     <div class="item active">
+                        <span>
+                           <i class="fa fa-star-o"></i>
+                           <i class="fa fa-star-o"></i>
+                           <i class="fa fa-star-o"></i>
+                           <i class="fa fa-star-o"></i>
+                           <i class="fa fa-star-o"></i>
+                        </span>
+                        <p>These men promptly escaped from a maximum security stock ade to the Los Angeles underground these Happy Days are yours and mine Happy Days as long wrong with that the Brady Bunch these HappDays are yours and mine Happy Days as long wrong Brady Bunch.</p>
+                        <img src="assets/assets/images/testi1.jpg" alt="Testi" />
+                        <h4>andrew mcmahon</h4>
+                     </div>
+                     <div class="item">
+                        <span>
+                           <i class="fa fa-star-o"></i>
+                           <i class="fa fa-star-o"></i>
+                           <i class="fa fa-star-o"></i>
+                           <i class="fa fa-star-o"></i>
+                           <i class="fa fa-star-o"></i>
+                        </span>
+                        <p>These men promptly escaped from a maximum security stock ade to the Los Angeles underground these Happy Days are yours and mine Happy Days as long wrong with that the Brady Bunch these HappDays are yours and mine Happy Days as long wrong Brady Bunch.</p>
+                        <img src="assets/images/testi1.jpg" alt="Testi" />
+                        <h4>andrew mcmahon</h4>
+                     </div>
+                     <div class="item">
+                        <span>
+                           <i class="fa fa-star-o"></i>
+                           <i class="fa fa-star-o"></i>
+                           <i class="fa fa-star-o"></i>
+                           <i class="fa fa-star-o"></i>
+                           <i class="fa fa-star-o"></i>
+                        </span>
+                        <p>These men promptly escaped from a maximum security stock ade to the Los Angeles underground these Happy Days are yours and mine Happy Days as long wrong with that the Brady Bunch these HappDays are yours and mine Happy Days as long wrong Brady Bunch.</p>
+                        <img src="assets/assets/images/testi1.jpg" alt="Testi" />
+                        <h4>andrew mcmahon</h4>
+                     </div>
+                  </div>
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                     <li data-target="#testimonial-carousel" data-slide-to="0" class="active"></li>
+                     <li data-target="#testimonial-carousel" data-slide-to="1"></li>
+                     <li data-target="#testimonial-carousel" data-slide-to="2"></li>
+                  </ol>
+
+                  <!-- Controls -->
+                  <a class="left carousel-control" href="#testimonial-carousel" role="button" data-slide="prev">
+                     <i class="arrow_carrot-left"></i>
+                  </a>
+                  <a class="right carousel-control" href="#testimonial-carousel" role="button" data-slide="next">
+                     <i class="arrow_carrot-right"></i>
+                  </a>
+               </div>
+            </div>
+            <div class="col-md-1"></div>
+         </div><!-- Container /- -->
+         <div class="section-padding"></div>
+      </div><!-- Testimonial Section /- -->
+
+      <!-- Price Section -->
+      <div id="price-section" class="price-section container-fluid no-padding">
+         <div class="section-padding"></div>
+         <!-- Container -->
+         <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+               <h3>our awesome plans</h3>
+               <p>These men promptly escaped from a maximum security stock ade to the Los Angeles underground these Happy Days are yours and mine Happy Days as long wrong with that the Brady Bunch.</p>
+            </div><!-- Section Header /- -->
+            <div class="row">
+               <div class="col-md-4 col-sm-4 col-xs-6">
+                  <div class="price-box">
+                     <div class="price-img-box">
+                        <img src="assets/images/price/price1.jpg" alt="Price" />
+                        <h4><sup>$</sup>99<sub>per</sub> <span>night</span></h4>
+                     </div>
+                     <h3>comfort room</h3>
+                     <ul>
+                        <li>Restaurant Foods</li>
+                        <li><del>High Speed Free Wifi</del></li>
+                        <li>Swimming Pool</li>
+                        <li><del>Private Balcony</del></li>
+                        <li>One-Call Doctor</li>
+                     </ul>
+                     <a href="#"><i class="fa fa-plus"></i></a>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-4 col-xs-6">
+                  <div class="price-box">
+                     <div class="price-img-box">
+                        <img src="assets/images/price/price2.jpg" alt="Price" />
+                        <h4><sup>$</sup>119<sub>per</sub> <span>night</span></h4>
+                     </div>
+                     <h3>deluxe room</h3>
+                     <ul>
+                        <li>Restaurant Foods</li>
+                        <li>High Speed Free Wifi</li>
+                        <li>Swimming Pool</li>
+                        <li><del>Private Balcony</del></li>
+                        <li>One-Call Doctor</li>
+                     </ul>
+                     <a href="#"><i class="fa fa-plus"></i></a>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-4 col-xs-6">
+                  <div class="price-box">
+                     <div class="price-img-box">
+                        <img src="assets/images/price/price3.jpg" alt="Price" />
+                        <h4><sup>$</sup>139<sub>per</sub> <span>night</span></h4>
+                     </div>
+                     <h3>luxury room</h3>
+                     <ul>
+                        <li>Restaurant Foods</li>
+                        <li>High Speed Free Wifi</li>
+                        <li>Swimming Pool</li>
+                        <li>Private Balcony</li>
+                        <li>One-Call Doctor</li>
+                     </ul>
+                     <a href="#"><i class="fa fa-plus"></i></a>
+                  </div>
+               </div>
+            </div>
+         </div><!-- Container /- -->
+         <div class="section-padding"></div>
+      </div><!-- Price Section /- -->
+
+      <!-- Events Section -->
+      <div id="events-section" class="events-section container-fluid no-padding">
+         <div class="section-padding"></div>
+         <!-- Container -->
+         <div class="container">
+            <div class="col-md-2 col-sm-12 col-xs-12 section-header">
+               <h3>upcoming events</h3>
+            </div>
+            <div class="col-md-5 col-sm-12 col-xs-12 event-tabs">
+               <!-- Nav tabs -->
+               <ul class="nav nav-tabs" role="tablist">
+                  <li role="presentation">
+                     <a href="#music" aria-controls="music" role="tab" data-toggle="tab">
+                        <h5 class="event-date">25 <span>May</span></h5>
+                        <h3>music bounce <span>6.00 PM - 10.30 PM</span></h3>
+                     </a>
+                  </li>
+                  <li role="presentation" class="active">
+                     <a href="#movie" aria-controls="movie" role="tab" data-toggle="tab">
+                        <h5 class="event-date">25 <span>May</span></h5>
+                        <h3>movie fair <span>7.00 PM - 11.30 PM</span></h3>
+                     </a>
+                  </li>
+                  <li role="presentation">
+                     <a href="#freeze" aria-controls="freeze" role="tab" data-toggle="tab">
+                        <h5 class="event-date">25 <span>May</span></h5>
+                        <h3>freeze glow <span>7.00 PM - 12.30 PM</span></h3>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+            <div class="col-md-5 col-sm-12 col-xs-12">
+               <div class="tab-content event-content">
+                  <div role="tabpanel" class="tab-pane" id="music">
+                     <div class="event-box">
+                        <h3>ABOUT MUSIC BOUNCE</h3>
+                        <p>These men promptly escaped from a maximum security stock ade to the Los Angeles underground these Happy Days are yours and mine Happy Days.</p>
+                        <h6>VENUE: <a href="#" title="HOTEL CESAR PLACE">HOTEL CESAR PLACE</a></h6>
+                     </div>
+                  </div>
+                  <div role="tabpanel" class="tab-pane active" id="movie">
+                     <div class="event-box">
+                        <h3>ABOUT MOVIE FAIR</h3>
+                        <p>These men promptly escaped from a maximum security stock ade to the Los Angeles underground these Happy Days are yours and mine Happy Days.</p>
+                        <h6>VENUE: <a href="#" title="HOTEL CESAR PLACE">HOTEL CESAR PLACE</a></h6>
+                     </div>
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="freeze">
+                     <div class="event-box">
+                        <h3>ABOUT FREEZE GLOW</h3>
+                        <p>These men promptly escaped from a maximum security stock ade to the Los Angeles underground these Happy Days are yours and mine Happy Days.</p>
+                        <h6>VENUE: <a href="#" title="HOTEL CESAR PLACE">HOTEL CESAR PLACE</a></h6>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div><!-- Container /- -->
+         <div class="section-padding"></div>
+      </div><!-- Event Section /- -->
+
+
+
+   </main>
+
+   <!-- Footer Section -->
+   <div class="footer-section container-fluid no-padding">
+      <!-- Top Footer -->
+      <div class="top-footer container-fluid no-padding">
+         <!-- Container -->
          <div class="container">
             <div class="row">
-               <div class="col-lg-4 ms-footer-col">
-                  <div class="ms-footbar-block">
-                     <h3 class="ms-footbar-title">Sitemap</h3>
-                     <ul class="list-unstyled ms-icon-list three_cols">
-                        <li><a href="index-2.html"><i class="zmdi zmdi-home"></i> Home</a></li>
-                        <li><a href="page-blog.html"><i class="zmdi zmdi-edit"></i> Blog</a></li>
-                        <li><a href="page-blog.html"><i class="zmdi zmdi-image-o"></i> Portafolio</a></li>
-                        <li><a href="portfolio-filters_sidebar.html"><i class="zmdi zmdi-case"></i> Works</a></li>
-                        <li><a href="page-timeline_left2.html"><i class="zmdi zmdi-time"></i> Timeline</a></li>
-                        <li><a href="page-pricing.html"><i class="zmdi zmdi-money"></i> Pricing</a></li>
-                        <li><a href="page-about.html"><i class="zmdi zmdi-favorite-outline"></i> About Us</a></li>
-                        <li><a href="page-team2.html"><i class="zmdi zmdi-accounts"></i> Our Team</a></li>
-                        <li><a href="page-services.html"><i class="zmdi zmdi-face"></i> Services</a></li>
-                        <li><a href="page-faq2.html"><i class="zmdi zmdi-help"></i> FAQ</a></li>
-                        <li><a href="page-login2.html"><i class="zmdi zmdi-lock"></i> Login</a></li>
-                        <li><a href="page-contact.html"><i class="zmdi zmdi-email"></i> Contact</a></li>
-                     </ul>
-                  </div>
-                  <div class="ms-footbar-block">
-                     <h3 class="ms-footbar-title">Subscribe</h3>
-                     <p class="">Lorem ipsum Amet fugiat elit nisi anim mollit minim labore ut esse Duis ullamco ad dolor veniam velit.</p>
-                     <form>
-                        <div class="form-group label-floating mt-2 mb-1">
-                           <div class="input-group ms-input-subscribe">
-                              <label class="control-label" for="ms-subscribe"><i class="zmdi zmdi-email"></i> Email Adress</label>
-                              <input type="email" id="ms-subscribe" class="form-control">
-                           </div>
-                        </div>
-                        <button class="ms-subscribre-btn" type="button">Subscribe</button>
-                     </form>
-                  </div>
-               </div>
-               <div class="col-lg-5 col-md-7 ms-footer-col ms-footer-alt-color">
-                  <div class="ms-footbar-block">
-                     <h3 class="ms-footbar-title text-center mb-2">Last Articles</h3>
-                     <div class="ms-footer-media">
-                        <div class="media">
-                           <div class="media-left media-middle">
-                              <a href="javascript:void(0)">
-                                 <img class="media-object media-object-circle" src="assets/img/demo/p75.jpg" alt="...">
-                              </a>
-                           </div>
-                           <div class="media-body">
-                              <h4 class="media-heading"><a href="javascript:void(0)">Lorem ipsum dolor sit expedita cumque amet consectetur adipisicing repellat</a></h4>
-                              <div class="media-footer">
-                                 <span><i class="zmdi zmdi-time color-info-light"></i> August 18, 2016</span>
-                                 <span><i class="zmdi zmdi-folder-outline color-warning-light"></i> <a href="javascript:void(0)">Design</a></span>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="media">
-                           <div class="media-left media-middle">
-                              <a href="javascript:void(0)">
-                                 <img class="media-object media-object-circle" src="assets/img/demo/p75.jpg" alt="...">
-                              </a>
-                           </div>
-                           <div class="media-body">
-                              <h4 class="media-heading"><a href="javascript:void(0)">Labore ut esse Duis consectetur expedita cumque ullamco ad dolor veniam velit</a></h4>
-                              <div class="media-footer">
-                                 <span><i class="zmdi zmdi-time color-info-light"></i> August 18, 2016</span>
-                                 <span><i class="zmdi zmdi-folder-outline color-warning-light"></i> <a href="javascript:void(0)">News</a></span>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="media">
-                           <div class="media-left media-middle">
-                              <a href="javascript:void(0)">
-                                 <img class="media-object media-object-circle" src="assets/img/demo/p75.jpg" alt="...">
-                              </a>
-                           </div>
-                           <div class="media-body">
-                              <h4 class="media-heading"><a href="javascript:void(0)">voluptates deserunt ducimus expedita cumque quaerat molestiae labore</a></h4>
-                              <div class="media-footer">
-                                 <span><i class="zmdi zmdi-time color-info-light"></i> August 18, 2016</span>
-                                 <span><i class="zmdi zmdi-folder-outline color-warning-light"></i> <a href="javascript:void(0)">Productivity</a></span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-3 col-md-5 ms-footer-col ms-footer-text-right">
-                  <div class="ms-footbar-block">
-                     <div class="ms-footbar-title">
-                        <span class="ms-logo ms-logo-white ms-logo-sm mr-1">M</span>
-                        <h3 class="no-m ms-site-title">Material<span>Style</span></h3>
-                     </div>
-                     <address class="no-mb">
-                        <p><i class="color-danger-light zmdi zmdi-pin mr-1"></i> 795 Folsom Ave, Suite 600</p>
-                        <p><i class="color-warning-light zmdi zmdi-map mr-1"></i> San Francisco, CA 94107</p>
-                        <p><i class="color-info-light zmdi zmdi-email mr-1"></i> <a href="mailto:joe@example.com">example@domain.com</a></p>
-                        <p><i class="color-royal-light zmdi zmdi-phone mr-1"></i>+34 123 456 7890 </p>
-                        <p><i class="color-success-light fa fa-fax mr-1"></i>+34 123 456 7890 </p>
-                     </address>
-                  </div>
-                  <div class="ms-footbar-block">
-                     <h3 class="ms-footbar-title">Social Media</h3>
-                     <div class="ms-footbar-social">
-                        <a href="javascript:void(0)" class="btn-circle btn-facebook"><i class="zmdi zmdi-facebook"></i></a>
-                        <a href="javascript:void(0)" class="btn-circle btn-twitter"><i class="zmdi zmdi-twitter"></i></a>
-                        <a href="javascript:void(0)" class="btn-circle btn-youtube"><i class="zmdi zmdi-youtube-play"></i></a><br>
-                        <a href="javascript:void(0)" class="btn-circle btn-google"><i class="zmdi zmdi-google"></i></a>
-                        <a href="javascript:void(0)" class="btn-circle btn-instagram"><i class="zmdi zmdi-instagram"></i></a>
-                        <a href="javascript:void(0)" class="btn-circle btn-github"><i class="zmdi zmdi-github"></i></a>
-                     </div>
-                  </div>
-               </div>
+               <!-- Text Widget -->
+               <aside class="col-md-4 col-sm-12 col-xs-12 widget text_widget">
+                  <h4 class="widget_title">about us</h4>
+                  <p>These men promptly escaped from a maximum security stock ade to the Los Angeles underground these Happy Days are yours and mine Happy Days as long wrong with that the Brady Bunch these men promptly escaped from a maximum security.</p>
+                  <ul class="social_widget">
+                     <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                     <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                     <li><a href="#" title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
+                     <li><a href="#" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                  </ul>
+               </aside><!-- Text Widget /- -->
+               <!-- Newsletter -->
+               <aside class="col-md-4 col-sm-6 col-xs-6 widget widget_newsletter">
+                  <h4 class="widget_title">newsletter</h4>
+                  <form>
+                     <input type="text" class="form-control" placeholder="your mail id" />
+                     <input type="submit" value="subscribe" />
+                  </form>
+               </aside><!-- Newsletter /- -->
+               <!-- Gallery -->
+               <aside class="col-md-4 col-sm-6 col-xs-6 widget widget_gallery">
+                  <h4 class="widget_title">Gallery</h4>
+                  <ul>
+                     <li><a href="#"><img src="assets/assets/images/ftr-gallery1.jpg" alt="Gallery" /></a></li>
+                     <li><a href="#"><img src="assets/assets/images/ftr-gallery2.jpg" alt="Gallery" /></a></li>
+                     <li><a href="#"><img src="assets/assets/images/ftr-gallery3.jpg" alt="Gallery" /></a></li>
+                     <li><a href="#"><img src="assets/assets/images/ftr-gallery4.jpg" alt="Gallery" /></a></li>
+                     <li><a href="#"><img src="assets/assets/images/ftr-gallery5.jpg" alt="Gallery" /></a></li>
+                     <li><a href="#"><img src="assets/assets/images/ftr-gallery6.jpg" alt="Gallery" /></a></li>
+                  </ul>
+               </aside><!-- Gallery /- -->
             </div>
-         </div>
-      </aside>
-      <footer class="ms-footer">
-         <div class="container">
-            <p>Copyright &copy; Material Style 2017</p>
-         </div>
-      </footer>
-      <div class="btn-back-top">
-         <a href="#" data-scroll id="back-top" class="btn-circle btn-circle-primary btn-circle-sm btn-circle-raised "><i class="zmdi zmdi-long-arrow-up"></i></a>
+         </div><!-- Container /- -->
+      </div><!-- Top Footer -->
+      <div class="bottom-footer container-fluid">
+         <p>&copy; Copyrights 2017 Hotely. All Rights Reserved</p>
       </div>
-   </div> <!-- ms-site-container -->
-   <div class="ms-slidebar sb-slidebar sb-left sb-style-overlay" id="ms-slidebar">
-      <div class="sb-slidebar-container">
-         <header class="ms-slidebar-header">
-            <div class="ms-slidebar-login">
-               <a href="javascript:void(0)" class="withripple"><i class="zmdi zmdi-account"></i> Login</a>
-               <a href="javascript:void(0)" class="withripple"><i class="zmdi zmdi-account-add"></i> Register</a>
-            </div>
-            <div class="ms-slidebar-title">
-               <form class="search-form">
-                  <input id="search-box-slidebar" type="text" class="search-input" placeholder="Search..." name="q" />
-                  <label for="search-box-slidebar"><i class="zmdi zmdi-search"></i></label>
-               </form>
-               <div class="ms-slidebar-t">
-                  <span class="ms-logo ms-logo-sm">M</span>
-                  <h3>Material<span>Style</span></h3>
-               </div>
-            </div>
-         </header>
-         <ul class="ms-slidebar-menu" id="slidebar-menu" role="tablist" aria-multiselectable="true">
-            <li class="card" role="tab" id="sch1">
-               <a class="collapsed" role="button" data-toggle="collapse" href="#sc1" aria-expanded="false" aria-controls="sc1">
-                  <i class="zmdi zmdi-home"></i> Home </a>
-               <ul id="sc1" class="card-collapse collapse" role="tabpanel" aria-labelledby="sch1" data-parent="#slidebar-menu">
-                  <li><a href="index-2.html">Default Home</a></li>
-                  <li><a href="home-generic-2.html">Home Black Slider</a></li>
-                  <li><a href="home-landing.html">Home Landing Intro</a></li>
-                  <li><a href="home-landing3.html">Home Landing Video</a></li>
-                  <li><a href="home-shop.html">Home Shop 1</a></li>
-               </ul>
-            </li>
-            <li class="card" role="tab" id="sch2">
-               <a class="collapsed" role="button" data-toggle="collapse" href="#sc2" aria-expanded="false" aria-controls="sc2">
-                  <i class="zmdi zmdi-desktop-mac"></i> Pages </a>
-               <ul id="sc2" class="card-collapse collapse" role="tabpanel" aria-labelledby="sch2" data-parent="#slidebar-menu">
-                  <li><a href="page-about.html">About US</a></li>
-                  <li><a href="page-team.html">Our Team</a></li>
-                  <li><a href="page-product.html">Products</a></li>
-                  <li><a href="page-services.html">Services</a></li>
-                  <li><a href="page-faq.html">FAQ</a></li>
-                  <li><a href="page-timeline_left.html">Timeline</a></li>
-                  <li><a href="page-contact.html">Contact Option</a></li>
-                  <li><a href="page-login.html">Login</a></li>
-                  <li><a href="page-pricing.html">Pricing</a></li>
-                  <li><a href="page-coming.html">Coming Soon</a></li>
-               </ul>
-            </li>
-            <li class="card" role="tab" id="sch4">
-               <a class="collapsed" role="button" data-toggle="collapse" href="#sc4" aria-expanded="false" aria-controls="sc4">
-                  <i class="zmdi zmdi-edit"></i> Blog </a>
-               <ul id="sc4" class="card-collapse collapse" role="tabpanel" aria-labelledby="sch4" data-parent="#slidebar-menu">
-                  <li><a href="blog-sidebar.html">Blog Sidebar 1</a></li>
-                  <li><a href="blog-sidebar2.html">Blog Sidebar 2</a></li>
-                  <li><a href="blog-masonry.html">Blog Masonry 1</a></li>
-                  <li><a href="blog-masonry2.html">Blog Masonry 2</a></li>
-                  <li><a href="blog-full.html">Blog Full Page 1</a></li>
-                  <li><a href="blog-full2.html">Blog Full Page 2</a></li>
-                  <li><a href="blog-post.html">Blog Post 1</a></li>
-                  <li><a href="blog-post2.html">Blog Post 2</a></li>
-               </ul>
-            </li>
-            <li class="card" role="tab" id="sch5">
-               <a class="collapsed" role="button" data-toggle="collapse" href="#sc5" aria-expanded="false" aria-controls="sc5">
-                  <i class="zmdi zmdi-shopping-basket"></i> E-Commerce </a>
-               <ul id="sc5" class="card-collapse collapse" role="tabpanel" aria-labelledby="sch5" data-parent="#slidebar-menu">
-                  <li><a href="ecommerce-filters.html">E-Commerce Sidebar</a></li>
-                  <li><a href="ecommerce-filters-full.html">E-Commerce Sidebar Full</a></li>
-                  <li><a href="ecommerce-filters-full2.html">E-Commerce Topbar Full</a></li>
-                  <li><a href="ecommerce-item.html">E-Commerce Item</a></li>
-                  <li><a href="ecommerce-cart.html">E-Commerce Cart</a></li>
-               </ul>
-            </li>
-            <li class="card" role="tab" id="sch6">
-               <a class="collapsed" role="button" data-toggle="collapse" href="#sc6" aria-expanded="false" aria-controls="sc6">
-                  <i class="zmdi zmdi-collection-image-o"></i> Portfolio </a>
-               <ul id="sc6" class="card-collapse collapse" role="tabpanel" aria-labelledby="sch6" data-parent="#slidebar-menu">
-                  <li><a href="portfolio-filters_sidebar.html">Portfolio Sidebar Filters</a></li>
-                  <li><a href="portfolio-filters_topbar.html">Portfolio Topbar Filters</a></li>
-                  <li><a href="portfolio-filters_sidebar_fluid.html">Portfolio Sidebar Fluid</a></li>
-                  <li><a href="portfolio-filters_topbar_fluid.html">Portfolio Topbar Fluid</a></li>
-                  <li><a href="portfolio-cards.html">Porfolio Cards</a></li>
-                  <li><a href="portfolio-masonry.html">Porfolio Masonry</a></li>
-                  <li><a href="portfolio-item.html">Portfolio Item 1</a></li>
-                  <li><a href="portfolio-item2.html">Portfolio Item 2</a></li>
-               </ul>
-            </li>
-            <li>
-               <a class="link" href="component-typography.html"><i class="zmdi zmdi-view-compact"></i> UI Elements</a>
-            </li>
-            <li>
-               <a class="link" href="page-all.html"><i class="zmdi zmdi-link"></i> All Pages</a>
-            </li>
-         </ul>
-         <div class="ms-slidebar-social ms-slidebar-block">
-            <h4 class="ms-slidebar-block-title">Social Links</h4>
-            <div class="ms-slidebar-social">
-               <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-facebook"><i class="zmdi zmdi-facebook"></i> <span class="badge-pill badge-pill-pink">12</span>
-                  <div class="ripple-container"></div>
-               </a>
-               <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-twitter"><i class="zmdi zmdi-twitter"></i> <span class="badge-pill badge-pill-pink">4</span>
-                  <div class="ripple-container"></div>
-               </a>
-               <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-google"><i class="zmdi zmdi-google"></i>
-                  <div class="ripple-container"></div>
-               </a>
-               <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-instagram"><i class="zmdi zmdi-instagram"></i>
-                  <div class="ripple-container"></div>
-               </a>
-            </div>
-         </div>
-      </div>
-   </div>
-   <script src="assets/js/plugins.min.js"></script>
-   <script src="assets/js/app.min.js"></script>
-   <script src="assets/js/configurator.min.js"></script>
-   <script>
-      (function(i, s, o, g, r, a, m) {
-         i['GoogleAnalyticsObject'] = r;
-         i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
-         }, i[r].l = 1 * new Date();
-         a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-         a.async = 1;
-         a.src = g;
-         m.parentNode.insertBefore(a, m)
-      })(window, document, 'script', '../../../../www.google-analytics.com/analytics.js', 'ga');
-      ga('create', 'UA-90917746-2', 'auto');
-      ga('send', 'pageview');
-   </script>
-   <script src="assets/js/index.js"></script>
+   </div><!-- Footer Section /- -->
+
+   <!-- JQuery v1.11.3 -->
+   <script src="assets/js/jquery.min.js"></script>
+
+   <!-- Library JS -->
+   <script src="assets/libraries/lib.js"></script>
+   <script src="assets/libraries/calender/jquery-ui-datepicker.min.js"></script>
+   <script src="../../../../code.jquery.com/jquery-migrate-1.0.0.js"></script>
+
+   <!-- Library - Theme JS -->
+   <script src="js/functions.js"></script>
+
 </body>
 
-<!-- Mirrored from agmstudio.io/themes/material-style/2.4.4/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Aug 2019 09:25:03 GMT -->
+<!-- Mirrored from premiumlayers.net/demo/html/hotely/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Feb 2020 08:50:55 GMT -->
 
 </html>
