@@ -21,16 +21,16 @@
    <title>Home - Hotel</title>
 
    <!-- Standard Favicon -->
-   <link rel="icon" type="image/x-icon" href="assets/assets/images/favicon.png" />
+   <link rel="icon" type="image/x-icon" href="assets/images/favicon.png" />
 
    <!-- For iPhone 4 Retina display: -->
-   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/assets/images/apple-touch-icon-114x114-precomposed.html">
+   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/apple-touch-icon-114x114-precomposed.html">
 
    <!-- For iPad: -->
-   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/assets/images/apple-touch-icon-72x72-precomposed.html">
+   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/apple-touch-icon-72x72-precomposed.html">
 
    <!-- For iPhone: -->
-   <link rel="apple-touch-icon-precomposed" href="assets/assets/images/apple-touch-icon-57x57-precomposed.html">
+   <link rel="apple-touch-icon-precomposed" href="assets/images/apple-touch-icon-57x57-precomposed.html">
 
    <!-- Library - Google Font Familys -->
 
