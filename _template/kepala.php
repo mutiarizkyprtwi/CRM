@@ -35,5 +35,3 @@
 <link rel="stylesheet" type="text/css" href="assets/css/shortcodes.css" />
 
 <!--[if lt IE 9]>
-		<script src="js/html5/respond.min.js"></script>
-    <![endif]-->

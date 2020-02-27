@@ -9,6 +9,7 @@
 
 <head>
    <?php include '_template/kepala.php' ?>
+
 </head>
 
 <body data-offset="200" data-spy="scroll" data-target=".ow-navigation">
@@ -37,6 +38,7 @@
    <?php include '_template/footer.php' ?>
 
    <?php include '_template/kaki.php' ?>
+
 
 </body>
 
