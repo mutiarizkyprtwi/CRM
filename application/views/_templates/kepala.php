@@ -32,6 +32,6 @@
 
 <!-- Custom - Theme CSS -->
 <link rel="stylesheet" type="text/css" href="<?= base_url('assets/style.css') ?>" />
-<link rel="stylesheet" type="text/css" href="<?= base_url('assets/style.css') ?>" />
+<link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/shortcodes.css') ?>" />
 
 <!--[if lt IE 9]>

@@ -4,7 +4,7 @@
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
          <div class="item active">
-            <img src="assets/images/slider/slide1.jpg" alt="Slide" />
+            <img src="<?= base_url('assets/images/slider/slide1.jpg') ?>" alt="Slide" />
             <div class="carousel-caption">
                <h2 data-animation="animated fadeInDown">Welcome to Hotely</h2>
                <h6 data-animation="animated bounceIn"><span class="left-sep"></span>the place where you looking to<span class="right-sep"></span></h6>
@@ -12,7 +12,7 @@
             </div>
          </div>
          <div class="item">
-            <img src="assets/images/slider/slide1.jpg" alt="Slide" />
+            <img src="<?= base_url('assets/images/slider/slide1.jpg') ?>" alt="Slide" />
             <div class="carousel-caption">
                <h2 data-animation="animated fadeInDown">Welcome to Hotely</h2>
                <h6 data-animation="animated bounceIn"><span class="left-sep"></span>the place where you looking to<span class="right-sep"></span></h6>
@@ -20,7 +20,7 @@
             </div>
          </div>
          <div class="item">
-            <img src="assets/images/slider/slide1.jpg" alt="Slide" />
+            <img src="<?= base_url('assets/images/slider/slide1.jpg') ?>" alt="Slide" />
             <div class="carousel-caption">
                <h2 data-animation="animated fadeInDown">Welcome to Hotely</h2>
                <h6 data-animation="animated bounceIn"><span class="left-sep"></span>the place where you looking to<span class="right-sep"></span></h6>
@@ -36,7 +36,7 @@
          <span class="fa fa-angle-right" aria-hidden="true"></span>
       </a>
    </div>
-   <p class="goto-next"><a href="#" title="Go to Next" class="bounce"><img src="assets/images/slider/go-to-next.png" alt="Go To Next" /></a></p>
+   <p class="goto-next"><a href="#" title="Go to Next" class="bounce"><img src="<?= base_url('assets/images/slider/go-to-next.png') ?>" alt="Go To Next" /></a></p>
 </div><!-- Slider Section /- -->
 
 <!-- container -->
@@ -78,7 +78,7 @@
    <div class="content-block container-fluid">
       <div class="row">
          <div class="col-md-5 col-sm-6 col-xs-12 content-img-block">
-            <img src="assets/images/booking/waiter-right.jpg" alt="Waiter" />
+            <img src="<?= base_url('assets/images/booking/waiter-right.jpg') ?>" alt="Waiter" />
          </div>
          <div class="col-md-7 col-sm-6 col-xs-12">
             <h3>enjoy a memorable days with your fly hotel</h3>
@@ -111,7 +111,7 @@
             </div>
          </div>
          <div class="offer-box wide">
-            <img src="assets/images/offer/offer2.jpg" alt="Offer" />
+            <img src="<?= base_url('assets/images/offer/offer2.jpg') ?>" alt="Offer" />
             <div class="offer-detail">
                <h3>Best <span>Dishes</span></h3>
                <div class="price-detail">
@@ -121,7 +121,7 @@
             </div>
          </div>
          <div class="offer-box wide">
-            <img src="assets/images/offer/offer3.jpg" alt="Offer" />
+            <img src="<?= base_url('assets/images/offer/offer3.jpg') ?>" alt="Offer" />
             <div class="offer-detail">
                <h3>Swimming <span>pool</span></h3>
                <div class="price-detail">
@@ -131,7 +131,7 @@
             </div>
          </div>
          <div class="offer-box full">
-            <img src="assets/images/offer/offer4.jpg" alt="Offer" />
+            <img src="<?= base_url('assets/images/offer/offer4.jpg') ?>" alt="Offer" />
             <div class="offer-detail">
                <h3>HIFI INTERIOR <span>BEDROOMS</span></h3>
                <div class="price-detail">
@@ -187,7 +187,7 @@
       <div class="recommended-detail">
          <div class="col-md-6 col-sm-12 col-xs-12 no-padding hotel-detail">
             <div class="col-md-6 col-sm-6 col-xs-6 no-padding hotel-img-box">
-               <img src="assets/images/hotel/recommended1.jpg" alt="Recommended" height="267" width="297" />
+               <img src="<?= base_url('assets/images/hotel/recommended1.jpg') ?>" alt="Recommended" height="267" width="297" />
                <span><a href="#" title="Book Now">Book Now</a></span>
             </div>
             <div class="col-md-6 col-sm-6 col-xs-6 hotel-detail-box">
@@ -203,7 +203,7 @@
          </div>
          <div class="col-md-6 col-sm-12 col-xs-12 no-padding hotel-detail">
             <div class="col-md-6 col-sm-6 col-xs-6 no-padding hotel-img-box">
-               <img src="assets/images/hotel/recommended1.jpg" alt="Recommended" height="267" width="297" />
+               <img src="<?= base_url('assets/images/hotel/recommended1.jpg') ?>" alt="Recommended" height="267" width="297" />
                <span><a href="#" title="Book Now">Book Now</a></span>
             </div>
             <div class="col-md-6 col-sm-6 col-xs-6 hotel-detail-box">
@@ -219,7 +219,7 @@
          </div>
          <div class="col-md-6 col-sm-12 col-xs-12 no-padding hotel-detail">
             <div class="col-md-6 col-sm-6 col-xs-6 no-padding hotel-img-box">
-               <img src="assets/images/hotel/recommended1.jpg" alt="Recommended" height="267" width="297" />
+               <img src="<?= base_url('assets/images/hotel/recommended1.jpg') ?>" alt="Recommended" height="267" width="297" />
                <span><a href="#" title="Book Now">Book Now</a></span>
             </div>
             <div class="col-md-6 col-sm-6 col-xs-6 hotel-detail-box">
@@ -235,7 +235,7 @@
          </div>
          <div class="col-md-6 col-sm-12 col-xs-12 no-padding hotel-detail">
             <div class="col-md-6 col-sm-6 col-xs-6 no-padding hotel-img-box">
-               <img src="assets/images/hotel/recommended1.jpg" alt="Recommended" height="267" width="297" />
+               <img src="<?= base_url('assets/images/hotel/recommended1.jpg') ?>" alt="Recommended" height="267" width="297" />
                <span><a href="#" title="Book Now">Book Now</a></span>
             </div>
             <div class="col-md-6 col-sm-6 col-xs-6 hotel-detail-box">
@@ -264,21 +264,21 @@
          <div class="carousel-inner" role="listbox">
             <div class="item active">
                <div class="col-md-6 no-padding room-img">
-                  <img src="assets/assets/images/room/room1.jpg" alt="Room">
+                  <img src="<?= base_url('assets/images/room/room1.jpg') ?>" alt="Room">
                </div>
                <div class="col-md-6 no-padding room-detail">
                   <h4>luxury rooms</h4>
                   <div class="room-facility">
                      <div class="facility-box">
-                        <i><img src="assets/assets/images/room/facility-ic1.png" alt="Facility Icon" /></i>
+                        <i><img src="<?= base_url('assets/images/room/facility-ic1.png') ?>" alt="Facility Icon" /></i>
                         <h5>high speed <span>wifi</span></h5>
                      </div>
                      <div class="facility-box">
-                        <i><img src="assets/assets/images/room/facility-ic2.png" alt="Facility Icon" /></i>
+                        <i><img src="<?= base_url('assets/images/room/facility-ic2.png') ?>" alt="Facility Icon" /></i>
                         <h5>one-call <span>doctor</span></h5>
                      </div>
                      <div class="facility-box">
-                        <i><img src="assets/assets/images/room/facility-ic3.png" alt="Facility Icon" /></i>
+                        <i><img src="<?= base_url('assets/images/room/facility-ic3.png') ?>" alt="Facility Icon" /></i>
                         <h5>mineral <span>water</span></h5>
                      </div>
                   </div>
@@ -288,21 +288,21 @@
             </div>
             <div class="item">
                <div class="col-md-6 no-padding room-img">
-                  <img src="assets/assets/images/room/room1.jpg" alt="Room">
+                  <img src="<?= base_url('assets/images/room/room1.jpg') ?>" alt="Room">
                </div>
                <div class="col-md-6 no-padding room-detail">
                   <h4>luxury rooms</h4>
                   <div class="room-facility">
                      <div class="facility-box">
-                        <i><img src="assets/assets/images/room/facility-ic1.png" alt="Facility Icon" /></i>
+                        <i><img src="<?= base_url('assets/images/room/facility-ic1.png') ?>" alt="Facility Icon" /></i>
                         <h5>high speed <span>wifi</span></h5>
                      </div>
                      <div class="facility-box">
-                        <i><img src="assets/assets/images/room/facility-ic2.png" alt="Facility Icon" /></i>
+                        <i><img src="<?= base_url('assets/images/room/facility-ic2.png') ?>" alt="Facility Icon" /></i>
                         <h5>one-call <span>doctor</span></h5>
                      </div>
                      <div class="facility-box">
-                        <i><img src="assets/assets/images/room/facility-ic3.png" alt="Facility Icon" /></i>
+                        <i><img src="<?= base_url('assets/images/room/facility-ic3.png') ?>" alt="Facility Icon" /></i>
                         <h5>mineral <span>water</span></h5>
                      </div>
                   </div>
@@ -312,21 +312,21 @@
             </div>
             <div class="item">
                <div class="col-md-6 no-padding room-img">
-                  <img src="assets/assets/images/room/room1.jpg" alt="Room">
+                  <img src="<?= base_url('assets/images/room/room1.jpg') ?>" alt="Room">
                </div>
                <div class="col-md-6 no-padding room-detail">
                   <h4>luxury rooms</h4>
                   <div class="room-facility">
                      <div class="facility-box">
-                        <i><img src="assets/assets/images/room/facility-ic1.png" alt="Facility Icon" /></i>
+                        <i><img src="<?= base_url('assets/images/room/facility-ic1.png') ?>" alt="Facility Icon" /></i>
                         <h5>high speed <span>wifi</span></h5>
                      </div>
                      <div class="facility-box">
-                        <i><img src="assets/assets/images/room/facility-ic2.png" alt="Facility Icon" /></i>
+                        <i><img src="<?= base_url('assets/images/room/facility-ic2.png') ?>" alt="Facility Icon" /></i>
                         <h5>one-call <span>doctor</span></h5>
                      </div>
                      <div class="facility-box">
-                        <i><img src="assets/assets/images/room/facility-ic3.png" alt="Facility Icon" /></i>
+                        <i><img src="<?= base_url('assets/images/room/facility-ic3.png') ?>" alt="Facility Icon" /></i>
                         <h5>mineral <span>water</span></h5>
                      </div>
                   </div>
@@ -336,21 +336,21 @@
             </div>
             <div class="item">
                <div class="col-md-6 no-padding room-img">
-                  <img src="assets/images/room/room1.jpg" alt="Room">
+                  <img src="<?= base_url('assets/images/room/room1.jpg') ?>" alt="Room">
                </div>
                <div class="col-md-6 no-padding room-detail">
                   <h4>luxury rooms</h4>
                   <div class="room-facility">
                      <div class="facility-box">
-                        <i><img src="assets/iassets/mages/room/facility-ic1.png" alt="Facility Icon" /></i>
+                        <i><img src="<?= base_url('assets/images/room/facility-ic1.png') ?>" alt="Facility Icon" /></i>
                         <h5>high speed <span>wifi</span></h5>
                      </div>
                      <div class="facility-box">
-                        <i><img src="assets/assets/images/room/facility-ic2.png" alt="Facility Icon" /></i>
+                        <i><img src="<?= base_url('assets/images/room/facility-ic2.png') ?>" alt="Facility Icon" /></i>
                         <h5>one-call <span>doctor</span></h5>
                      </div>
                      <div class="facility-box">
-                        <i><img src="assets/images/room/facility-ic3.png" alt="Facility Icon" /></i>
+                        <i><img src="<?= base_url('assets/images/room/facility-ic3.png') ?>" alt="Facility Icon" /></i>
                         <h5>mineral <span>water</span></h5>
                      </div>
                   </div>
@@ -360,21 +360,21 @@
             </div>
             <div class="item">
                <div class="col-md-6 no-padding room-img">
-                  <img src="assets/assets/images/room/room1.jpg" alt="Room">
+                  <img src="<?= base_url('assets/images/room/room1.jpg') ?>" alt="Room">
                </div>
                <div class="col-md-6 no-padding room-detail">
                   <h4>luxury rooms</h4>
                   <div class="room-facility">
                      <div class="facility-box">
-                        <i><img src="assets/assets/images/room/facility-ic1.png" alt="Facility Icon" /></i>
+                        <i><img src="<?= base_url('assets/images/room/facility-ic1.png') ?>" alt="Facility Icon" /></i>
                         <h5>high speed <span>wifi</span></h5>
                      </div>
                      <div class="facility-box">
-                        <i><img src="assets/assets/images/room/facility-ic2.png" alt="Facility Icon" /></i>
+                        <i><img src="<?= base_url('assets/images/room/facility-ic2.png') ?>" alt="Facility Icon" /></i>
                         <h5>one-call <span>doctor</span></h5>
                      </div>
                      <div class="facility-box">
-                        <i><img src="assets/assets/images/room/facility-ic3.png" alt="Facility Icon" /></i>
+                        <i><img src="<?= base_url('assets/images/room/facility-ic3.png') ?>" alt="Facility Icon" /></i>
                         <h5>mineral <span>water</span></h5>
                      </div>
                   </div>
@@ -384,21 +384,21 @@
             </div>
             <div class="item">
                <div class="col-md-6 no-padding room-img">
-                  <img src="assets/assets/images/room/room1.jpg" alt="Room">
+                  <img src="<?= base_url('assets/images/room/room1.jpg') ?>" alt="Room">
                </div>
                <div class="col-md-6 no-padding room-detail">
                   <h4>luxury rooms</h4>
                   <div class="room-facility">
                      <div class="facility-box">
-                        <i><img src="assets/assets/images/room/facility-ic1.png" alt="Facility Icon" /></i>
+                        <i><img src="<?= base_url('assets/images/room/facility-ic1.png') ?>" alt="Facility Icon" /></i>
                         <h5>high speed <span>wifi</span></h5>
                      </div>
                      <div class="facility-box">
-                        <i><img src="assets/assets/images/room/facility-ic2.png" alt="Facility Icon" /></i>
+                        <i><img src="<?= base_url('assets/images/room/facility-ic2.png') ?>" alt="Facility Icon" /></i>
                         <h5>one-call <span>doctor</span></h5>
                      </div>
                      <div class="facility-box">
-                        <i><img src="assets/assets/images/room/facility-ic3.png" alt="Facility Icon" /></i>
+                        <i><img src="<?= base_url('assets/images/room/facility-ic3.png') ?>" alt="Facility Icon" /></i>
                         <h5>mineral <span>water</span></h5>
                      </div>
                   </div>
@@ -445,7 +445,7 @@
                      <i class="fa fa-star-o"></i>
                   </span>
                   <p>These men promptly escaped from a maximum security stock ade to the Los Angeles underground these Happy Days are yours and mine Happy Days as long wrong with that the Brady Bunch these HappDays are yours and mine Happy Days as long wrong Brady Bunch.</p>
-                  <img src="assets/assets/images/testi1.jpg" alt="Testi" />
+                  <img src="<?= base_url('assets/images/testi1.jpg') ?>" alt="Testi" />
                   <h4>andrew mcmahon</h4>
                </div>
                <div class="item">
@@ -457,7 +457,7 @@
                      <i class="fa fa-star-o"></i>
                   </span>
                   <p>These men promptly escaped from a maximum security stock ade to the Los Angeles underground these Happy Days are yours and mine Happy Days as long wrong with that the Brady Bunch these HappDays are yours and mine Happy Days as long wrong Brady Bunch.</p>
-                  <img src="assets/images/testi1.jpg" alt="Testi" />
+                  <img src="<?= base_url('assets/images/testi1.jpg') ?>" alt="Testi" />
                   <h4>andrew mcmahon</h4>
                </div>
                <div class="item">
@@ -469,7 +469,7 @@
                      <i class="fa fa-star-o"></i>
                   </span>
                   <p>These men promptly escaped from a maximum security stock ade to the Los Angeles underground these Happy Days are yours and mine Happy Days as long wrong with that the Brady Bunch these HappDays are yours and mine Happy Days as long wrong Brady Bunch.</p>
-                  <img src="assets/assets/images/testi1.jpg" alt="Testi" />
+                  <img src="<?= base_url('assets/images/testi1.jpg') ?>" alt="Testi" />
                   <h4>andrew mcmahon</h4>
                </div>
             </div>
@@ -508,7 +508,7 @@
          <div class="col-md-4 col-sm-4 col-xs-6">
             <div class="price-box">
                <div class="price-img-box">
-                  <img src="assets/images/price/price1.jpg" alt="Price" />
+                  <img src="<?= base_url('assets/images/price/price1.jpg') ?>" alt="Price" />
                   <h4><sup>$</sup>99<sub>per</sub> <span>night</span></h4>
                </div>
                <h3>comfort room</h3>
@@ -525,7 +525,7 @@
          <div class="col-md-4 col-sm-4 col-xs-6">
             <div class="price-box">
                <div class="price-img-box">
-                  <img src="assets/images/price/price2.jpg" alt="Price" />
+                  <img src="<?= base_url('assets/images/price/price2.jpg') ?>" alt="Price" />
                   <h4><sup>$</sup>119<sub>per</sub> <span>night</span></h4>
                </div>
                <h3>deluxe room</h3>
@@ -542,7 +542,7 @@
          <div class="col-md-4 col-sm-4 col-xs-6">
             <div class="price-box">
                <div class="price-img-box">
-                  <img src="assets/images/price/price3.jpg" alt="Price" />
+                  <img src="<?= base_url('assets/images/price/price3.jpg') ?>" alt="Price" />
                   <h4><sup>$</sup>139<sub>per</sub> <span>night</span></h4>
                </div>
                <h3>luxury room</h3>

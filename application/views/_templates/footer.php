@@ -28,12 +28,12 @@
              <aside class="col-md-4 col-sm-6 col-xs-6 widget widget_gallery">
                 <h4 class="widget_title">Gallery</h4>
                 <ul>
-                   <li><a href="#"><img src="assets/assets/images/ftr-gallery1.jpg" alt="Gallery" /></a></li>
-                   <li><a href="#"><img src="assets/assets/images/ftr-gallery2.jpg" alt="Gallery" /></a></li>
-                   <li><a href="#"><img src="assets/assets/images/ftr-gallery3.jpg" alt="Gallery" /></a></li>
-                   <li><a href="#"><img src="assets/assets/images/ftr-gallery4.jpg" alt="Gallery" /></a></li>
-                   <li><a href="#"><img src="assets/assets/images/ftr-gallery5.jpg" alt="Gallery" /></a></li>
-                   <li><a href="#"><img src="assets/assets/images/ftr-gallery6.jpg" alt="Gallery" /></a></li>
+                   <li><a href="#"><img src="<?= base_url('assets/images/ftr-gallery1.jpg') ?>" alt="Gallery" /></a></li>
+                   <li><a href="#"><img src="<?= base_url('assets/images/ftr-gallery2.jpg') ?>" alt="Gallery" /></a></li>
+                   <li><a href="#"><img src="<?= base_url('assets/images/ftr-gallery3.jpg') ?>" alt="Gallery" /></a></li>
+                   <li><a href="#"><img src="<?= base_url('assets/images/ftr-gallery4.jpg') ?>" alt="Gallery" /></a></li>
+                   <li><a href="#"><img src="<?= base_url('assets/images/ftr-gallery5.jpg') ?>" alt="Gallery" /></a></li>
+                   <li><a href="#"><img src="<?= base_url('assets/images/ftr-gallery6.jpg') ?>" alt="Gallery" /></a></li>
                 </ul>
              </aside><!-- Gallery /- -->
           </div>
