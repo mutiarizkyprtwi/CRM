@@ -14,7 +14,7 @@
             <li class="has_sub">
                <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-invert-colors"></i> <span> Data Master </span> <span class="menu-arrow"></span> </a>
                <ul class="list-unstyled">
-                  <li><a href="<?= base_url('users') ?>">Users</a></li>
+                  <li><a href="ui-buttons.html">Buttons</a></li>
                   <li><a href="ui-cards.html">Cards</a></li>
                   <li><a href="ui-typography.html">Typography </a></li>
                   <li><a href="ui-checkbox-radio.html">Checkboxs-Radios</a></li>
@@ -36,7 +36,7 @@
             </li>
 
             <li class="has_sub">
-               <a href="widgets.html" class="waves-effect"><i class="zmdi zmdi-layers"></i> <span> Widgets </span> </a>
+               <a href="<?= base_url('users') ?>" class="waves-effect"><i class="fa fa-users"></i> <span> Management Users </span> </a>
             </li>
 
             <li class="has_sub">

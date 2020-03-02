@@ -9,7 +9,7 @@
          <li class="list-group-item">
             <a href="#" class="user-list-item">
                <div class="avatar">
-                  <img src="assets/images/users/avatar-2.jpg" alt="">
+                  <img src="<?= base_url('assets/flacto/assets/images/users/avatar-2.jpg') ?>" alt="">
                </div>
                <div class="user-desc">
                   <span class="name">Michael Zenaty</span>
@@ -45,7 +45,7 @@
          <li class="list-group-item">
             <a href="#" class="user-list-item">
                <div class="avatar">
-                  <img src="assets/images/users/avatar-3.jpg" alt="">
+                  <img src="<?= base_url('assets/flacto/assets/images/users/avatar-3.jpg') ?>" alt="">
                </div>
                <div class="user-desc">
                   <span class="name">James Anderson</span>
