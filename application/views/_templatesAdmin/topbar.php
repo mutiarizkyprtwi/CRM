@@ -4,7 +4,7 @@
    <!-- LOGO -->
    <div class="topbar-left">
       <div class="text-center">
-         <a href="index-2.html" class="logo">
+         <a href="<?= base_url('admincp') ?>" class="logo">
             <i class="zmdi zmdi-toys icon-c-logo"></i><span>Flac<span>to</span></span>
             <!--<span><img src="assets/images/logo.png" alt="logo" style="height: 20px;"></span>-->
          </a>
@@ -52,10 +52,10 @@
                   </a>
 
                   <ul class="dropdown-menu dropdown-menu-right">
-                     <li><a href="javascript:void(0)" class="dropdown-item"><i class="ti-user m-r-5"></i> Profile</a></li>
+                     <li><a href="<?= base_url('profile') ?>" class="dropdown-item"><i class="ti-user m-r-5"></i> Profile</a></li>
                      <li><a href="javascript:void(0)" class="dropdown-item"><i class="ti-settings m-r-5"></i> Settings</a></li>
                      <li><a href="javascript:void(0)" class="dropdown-item"><i class="ti-lock m-r-5"></i> Lock screen</a></li>
-                     <li><a href="javascript:void(0)" class="dropdown-item"><i class="ti-power-off m-r-5"></i> Logout</a></li>
+                     <li><a href="<?= base_url('auth/logout') ?>" class="dropdown-item"><i class="ti-power-off m-r-5"></i> Logout</a></li>
                   </ul>
                </li>
 

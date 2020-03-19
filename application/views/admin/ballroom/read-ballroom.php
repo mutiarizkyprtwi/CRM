@@ -15,34 +15,36 @@
                </ul>
             </div>
 
-            <h4 class="header-title m-t-0 m-b-30">Management Users 
+            <h4 class="header-title m-t-0 m-b-30">Data Ballroom 
                &nbsp &nbsp
-               <a href="<?= base_url('users/add') ?>"><button type="button" class="btn btn-info waves-effect w-md waves-light m-b-5">Tambah Users</button> </h4>  
+               <a href="<?= base_url('ballroom/add') ?>"><button type="button" class="btn btn-info waves-effect w-md waves-light m-b-5">Tambah Ballroom</button> </h4>  
 
-            <?php $this->session->flashdata('pesan') ?>
+                  <?php $this->session->flashdata('pesan') ?>
             <table id="datatable-fixed-header" class="table table-striped table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                <thead>
                   <tr>
-                     <th>Nama</th>
-                     <th>Username</th>
-                     <th>Email</th>
-                     <th>password</th>
-                     <th>Bagian</th>
-                     <th>Status</th>
+                     <th>Kode Ballroom</th>
+                     <th>Jenis Ballroom</th>
+                     <th>Mata Uang</th>
+                     <th>Harga</th>
+                     <th>Satuan</th>
+                     <th>Detail</th>
+                     <th>Kategori</th>
                      <th>Aksi</th>
                   </tr>
                </thead>
 
                <tbody>
-                  <?php foreach ($users as $usr) : ?>
+                  <?php foreach ($ballroom as $blrm) : ?>
                   <tr>
-                     <td><?= $usr['nama_depan'] ?></td>
-                     <td><?= $usr['username'] ?></td>
-                     <td><?= $usr['email'] ?></td>
-                     <td><?= $usr['password'] ?></td>
-                     <td><?= $usr['role'] ?></td>
-                     <td><?= $usr['aktif'] ?></td>
-                     <td><a href="<?=base_url (); ?>users/hapus/<?= $usr['id_user']; ?>" class="badge badge-danger float-right" onclick="return confirm('yakin?');">Hapus</a> <a href="<?=base_url (); ?>users/ubah/<?= $usr['id_user']; ?>" class="badge badge-succses float-right">Ubah</a></td>
+                     <td><?= $blrm['kd_ballroom'] ?></td>
+                     <td><?= $blrm['jenis_ballroom'] ?></td>
+                     <td><?= $blrm['mata_uang'] ?></td>
+                     <td><?= $blrm['harga'] ?></td>
+                     <td><?= $blrm['satuan'] ?></td>
+                     <td><?= $blrm['detail'] ?></td>
+                     <td><?= $blrm['kategori'] ?></td>
+                     <td><a href="<?=base_url (); ?>ballroom/hapus/<?= $blrm['kd_ballroom']; ?>" class="badge badge-danger float-right" onclick="return confirm('yakin?');">Hapus</a>  <a href="<?=base_url (); ?>ballroom/ubah/<?= $blrm['kd_ballroom']; ?>" class="badge badge-succses float-right">Ubah</a></td>
                   </tr>
                <?php endforeach ?>
                </tbody>

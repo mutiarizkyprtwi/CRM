@@ -15,34 +15,26 @@
                </ul>
             </div>
 
-            <h4 class="header-title m-t-0 m-b-30">Management Users 
+            <h4 class="header-title m-t-0 m-b-30">Jenis Menu Resto
                &nbsp &nbsp
-               <a href="<?= base_url('users/add') ?>"><button type="button" class="btn btn-info waves-effect w-md waves-light m-b-5">Tambah Users</button> </h4>  
+               <a href="<?= base_url('jenis_makan_minum/add') ?>"><button type="button" class="btn btn-info waves-effect w-md waves-light m-b-5">Tambah Jenis Menu Resto</button> </h4>  
 
-            <?php $this->session->flashdata('pesan') ?>
+                  <?php $this->session->flashdata('pesan') ?>
             <table id="datatable-fixed-header" class="table table-striped table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                <thead>
                   <tr>
-                     <th>Nama</th>
-                     <th>Username</th>
-                     <th>Email</th>
-                     <th>password</th>
-                     <th>Bagian</th>
-                     <th>Status</th>
+                     <th>Kode Jenis Menu</th>
+                     <th>Jenis Menu</th>
                      <th>Aksi</th>
                   </tr>
                </thead>
 
                <tbody>
-                  <?php foreach ($users as $usr) : ?>
+                  <?php foreach ($jenismknmnm as $jmm) : ?>
                   <tr>
-                     <td><?= $usr['nama_depan'] ?></td>
-                     <td><?= $usr['username'] ?></td>
-                     <td><?= $usr['email'] ?></td>
-                     <td><?= $usr['password'] ?></td>
-                     <td><?= $usr['role'] ?></td>
-                     <td><?= $usr['aktif'] ?></td>
-                     <td><a href="<?=base_url (); ?>users/hapus/<?= $usr['id_user']; ?>" class="badge badge-danger float-right" onclick="return confirm('yakin?');">Hapus</a> <a href="<?=base_url (); ?>users/ubah/<?= $usr['id_user']; ?>" class="badge badge-succses float-right">Ubah</a></td>
+                     <td><?= $jmm['kd_jns_menu'] ?></td>
+                     <td><?= $jmm['jns_menu'] ?></td>
+                     <td><a href="<?=base_url (); ?>jenismknmnm/hapus/<?= $jmm['kd_jns_menu']; ?>" class="badge badge-danger float-right" onclick="return confirm('yakin?');">Hapus</a>  <a href="<?=base_url (); ?>jenismknmnm/ubah/<?= $jmm['kd_jns_menu']; ?>" class="badge badge-succses float-right">Ubah</a></td>
                   </tr>
                <?php endforeach ?>
                </tbody>

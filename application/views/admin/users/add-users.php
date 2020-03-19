@@ -1,0 +1,65 @@
+ <div class="row">
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="dropdown float-right">
+                                            <a href="#" class="dropdown-toggle card-drop" data-toggle="dropdown" aria-expanded="false">
+                                                <i class="zmdi zmdi-more-vert"></i>
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li><a href="#" class="dropdown-item">Action</a></li>
+                                                <li><a href="#" class="dropdown-item">Another action</a></li>
+                                                <li><a href="#" class="dropdown-item">Something else here</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#" class="dropdown-item">Separated link</a></li>
+                                            </ul>
+                                        </div>
+            
+                                        <h4 class="header-title m-t-0 m-b-30">Add Users</h4>
+                                        <div class="row">
+                                            <div class="col-xl-12">
+                                                <form class="form-horizontal" method="POST" 
+                                                action="<?= base_url('users/add')?>">
+                                                    <div class="form-group row">
+                                                        <label class="col-md-3 control-label">Username</label>
+                                                        <div class="col-md-9">
+                                                            <input type="text" name="username" class="form-control" placeholder="Username" value="<?= set_value('username') ?>"> 
+                                                            <?= form_error('username', '<label id="username-error" class="error text-danger">', '</label>') ?>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label class="col-md-3 control-label" for="example-email">Email</label>
+                                                        <div class="col-md-9">
+                                                            <input type="text" id="example-email" name="email" class="form-control" placeholder="Email" value="<?= set_value('email') ?>">
+                                                            <?= form_error('email', '<label id="email-error" class="error text-danger">', '</label>') ?>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label class="col-md-3 control-label">Password</label>
+                                                        <div class="col-md-9">
+                                                            <input type="password" name="password" class="form-control">
+                                                            <?= form_error('password', '<label id="password-error" class="error text-danger">', '</label>') ?>
+                                                        </div>
+                                                    </div>
+                                                   <div class="form-group row">
+                                                        <label class="col-sm-3 control-label">Role </label>
+                                                        <div class="col-sm-9">
+                                                            <select class="form-control" name="roleId">
+                                                               <?php
+                                                               foreach ($rules as $rule) : ?>
+                                                               <option value="<?= $rule['id_role'] ?>"><?= $rule['role']?></option>
+                                                               <?php endforeach; ?>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                      <div class="form-group row float-right">
+                                                           <button type="submit" class="btn btn-info waves-effect w-md waves-light m-b-5">Save</button>
+                                                    </div>
+                                                </form>
+                                            </div><!-- end col -->            
+                                        </div><!-- end row -->
+                                    </div>
+                                </div>
+                            </div><!-- end col -->
+                        </div>
+                        <!-- end row -->

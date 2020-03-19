@@ -12,7 +12,7 @@
             </li>
 
             <li class="has_sub">
-               <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-invert-colors"></i> <span> Data Master </span> <span class="menu-arrow"></span> </a>
+               <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-invert-colors"></i> <span> Admin UI </span> <span class="menu-arrow"></span> </a>
                <ul class="list-unstyled">
                   <li><a href="ui-buttons.html">Buttons</a></li>
                   <li><a href="ui-cards.html">Cards</a></li>
@@ -26,12 +26,17 @@
             </li>
 
             <li class="has_sub">
-               <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-case"></i> <span> Admin UI </span> <span class="menu-arrow"></span> </a>
+               <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-case"></i> <span> Data Master </span> <span class="menu-arrow"></span> </a>
                <ul class="list-unstyled">
-                  <li><a href="admin-masonry.html">Masonry</a></li>
-                  <li><a href="admin-notification.html">Notification</a></li>
-                  <li><a href="admin-range-slider.html">Range Slider</a></li>
-                  <li><a href="admin-sweetalert.html">Sweet Alert</a>
+                  <li><a href="<?= base_url('kamar') ?>">Kategori Kamar</a></li>
+                  <li><a href="<?= base_url('no_kamar') ?>">Kamar</a></li>
+                  <li><a href="<?= base_url('ballroom') ?>">Ballroom</a></li>
+                  <li><a href="<?= base_url('room') ?>">Type Room</a></li>
+                  <li><a href="<?= base_url('paket_makan') ?>">Paket Makan</a>
+                  <li><a href="<?= base_url('fasilitas') ?>">Fasilitas</a>
+                  <li><a href="<?= base_url('menu_resto') ?>">Menu Resto</a>
+                  <li><a href="<?= base_url('jenis_makan_minum') ?>">Jenis Menu Resto</a>
+
                </ul>
             </li>
 

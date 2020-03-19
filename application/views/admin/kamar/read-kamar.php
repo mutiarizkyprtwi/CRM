@@ -15,34 +15,30 @@
                </ul>
             </div>
 
-            <h4 class="header-title m-t-0 m-b-30">Management Users 
+            <h4 class="header-title m-t-0 m-b-30">Kategori Kamar 
                &nbsp &nbsp
-               <a href="<?= base_url('users/add') ?>"><button type="button" class="btn btn-info waves-effect w-md waves-light m-b-5">Tambah Users</button> </h4>  
+               <a href="<?= base_url('kamar/add') ?>"><button type="button" class="btn btn-info waves-effect w-md waves-light m-b-5">Tambah Kamar</button> </h4>  
 
-            <?php $this->session->flashdata('pesan') ?>
+                  <?php $this->session->flashdata('pesan') ?>
             <table id="datatable-fixed-header" class="table table-striped table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                <thead>
                   <tr>
-                     <th>Nama</th>
-                     <th>Username</th>
-                     <th>Email</th>
-                     <th>password</th>
-                     <th>Bagian</th>
-                     <th>Status</th>
+                     <th>Kode Katagori</th>
+                     <th>Kategori</th>
+                     <th>Keterangan</th>
+                     <th>Harga</th>
                      <th>Aksi</th>
                   </tr>
                </thead>
 
                <tbody>
-                  <?php foreach ($users as $usr) : ?>
+                  <?php foreach ($kamar as $kmr) : ?>
                   <tr>
-                     <td><?= $usr['nama_depan'] ?></td>
-                     <td><?= $usr['username'] ?></td>
-                     <td><?= $usr['email'] ?></td>
-                     <td><?= $usr['password'] ?></td>
-                     <td><?= $usr['role'] ?></td>
-                     <td><?= $usr['aktif'] ?></td>
-                     <td><a href="<?=base_url (); ?>users/hapus/<?= $usr['id_user']; ?>" class="badge badge-danger float-right" onclick="return confirm('yakin?');">Hapus</a> <a href="<?=base_url (); ?>users/ubah/<?= $usr['id_user']; ?>" class="badge badge-succses float-right">Ubah</a></td>
+                     <td><?= $kmr['kd_kategori'] ?></td>
+                     <td><?= $kmr['kategori'] ?></td>
+                     <td><?= $kmr['keterangan'] ?></td>
+                     <td><?= $kmr['harga'] ?></td>
+                     <td><a href="<?=base_url (); ?>kamar/hapus/<?= $kmr['kd_kategori']; ?>" class="badge badge-danger float-right" onclick="return confirm('yakin?');">Hapus</a> <a href="<?=base_url (); ?>kamar/ubah/<?= $kmr['kd_kategori']; ?>" class="badge badge-succses float-right">Ubah</a></td>
                   </tr>
                <?php endforeach ?>
                </tbody>
