@@ -40,7 +40,7 @@
                                                             <select class="form-control" name="kd_kategori">
                                                              <?php
                                                              foreach ($rules as $rule) : ?>
-                                                             <option value="<?= $rule['kd_kategori'] ?>"><?= $rule['kd_kategori']?></option>
+                                                             <option value="<?= $rule['kd_kategori'] ?>"><?= $rule['kd_kategori']?> <sub><?= $rule['kategori']?></sub></option>
                                                              <?php endforeach; ?>
                                                             </select>
                                                         </div>

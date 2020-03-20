@@ -47,8 +47,8 @@
             <li class="has_sub">
                <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-collection-text"></i><span class="badge badge-default float-right">6</span><span> Forms </span> </a>
                <ul class="list-unstyled">
-                  <li><a href="form-elements.html">Form Elements</a></li>
-                  <li><a href="form-advanced.html">Advanced Form</a></li>
+                  <li><a href="<?= base_url('checkin_kamar') ?>">Check-in Kamar</a></li>
+                  <li><a href="form-advanced.html">Check-out Kamar</a></li>
                   <li><a href="form-validation.html">Form Validation</a></li>
                   <li><a href="form-wizard.html">Form Wizard</a></li>
                   <li><a href="form-summernote.html">Summernote</a></li>

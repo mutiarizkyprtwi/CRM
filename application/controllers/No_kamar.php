@@ -7,6 +7,7 @@ class No_kamar extends CI_Controller
    {
       parent::__construct();
       $this->load->model('nokamar_model');
+      otentikasi();
    }
 
    public function index()
@@ -30,7 +31,7 @@ class No_kamar extends CI_Controller
          'judul' => 'Add Nomor Kamar',
          'isi'   => 'admin/no_kamar/add-nokamar'
       ];
-      $data['rules'] = $this->db->get('m_kamar')->result_array();
+      $data['rules'] = $this->db->get('m_kategori')->result_array();
       $this->load->view('_templatesAdmin/home', $data);
       } else{
        $data =  [

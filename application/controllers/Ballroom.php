@@ -7,6 +7,7 @@ class Ballroom extends CI_Controller
    {
       parent::__construct();
       $this->load->model('ballroom_model');
+      otentikasi();
    }
 
    public function index()

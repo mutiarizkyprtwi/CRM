@@ -7,6 +7,7 @@ class Menu_resto extends CI_Controller
    {
       parent::__construct();
       $this->load->model('menuresto_model');
+      otentikasi();
    }
 
    public function index()
@@ -31,7 +32,7 @@ class Menu_resto extends CI_Controller
          'judul' => 'Add Menu Resto',
          'isi'   => 'admin/menu_resto/add-menuresto'
       ];
-      $data['rules'] = $this->db->get('menu_resto')->result_array();
+      $data['rules'] = $this->db->get('m_jenismakanan')->result_array();
       $this->load->view('_templatesAdmin/home', $data);
       } else{
        $data =  [

@@ -7,6 +7,7 @@ class Kamar extends CI_Controller
    {
       parent::__construct();
       $this->load->model('kamar_model');
+      otentikasi();
    }
 
    public function index()
@@ -56,7 +57,7 @@ class Kamar extends CI_Controller
       redirect(base_url('kamar'));
    }
 
-   public function ubah()
+   public function ubah($kdkategori)
    {
       $this->form_validation->set_rules('kd_kategori', 'Kode Kategori', 'required|trim');
       $this->form_validation->set_rules('kategori', 'Kategori', 'required|trim');
@@ -68,16 +69,15 @@ class Kamar extends CI_Controller
          'judul' => 'Ubah Kategori Kamar',
          'isi'   => 'admin/kamar/ubah-kamar'
       ];
-      $data['rules'] = $this->db->get('m_kategori')->result_array();
+      $data['rules'] = $this->db->get_where('m_kategori', ['kd_kategori'=>$kdkategori])->result_array();
       $this->load->view('_templatesAdmin/home', $data);
       } else{
          $data =  [
-                  'kd_kategori' => $this->input->post('kd_kategori'),
                   'kategori' => $this->input->post('kategori'),
                   'keterangan' => $this->input->post('keterangan'),
                   'harga' => $this->input->post('harga')
          ];
-         $cek = $this->kamar_model->UbahKategoriKamar($data);
+         $cek = $this->kamar_model->UbahKategoriKamar($data, $kdkategori);
          if ($cek){
             $this->session->set_flashdata('pesan', 'Berhasil Mengubah Data Kamar');
             redirect(base_url('kamar'));

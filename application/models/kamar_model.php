@@ -22,4 +22,10 @@ class Kamar_model extends CI_Model
 
   }
 
+    public function UbahKategoriKamar($data, $kdkategori)
+  {
+    //insert ke dalam tabel users
+    return $this->db->update($this->_table, $data, ['kd_kategori'=>$kdkategori]);
+  }
+
 }

@@ -7,6 +7,7 @@ class Users extends CI_Controller
    {
       parent::__construct();
       $this->load->model('users_model');
+      otentikasi();
    }
 
    public function index()

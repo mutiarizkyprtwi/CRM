@@ -7,6 +7,7 @@ class Fasilitas extends CI_Controller
    {
       parent::__construct();
       $this->load->model('fasilitas_model');
+      otentikasi();
    }
 
    public function index()

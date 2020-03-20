@@ -7,6 +7,7 @@ class Jenis_Makan_Minum extends CI_Controller
    {
       parent::__construct();
       $this->load->model('jenismknmnm_model');
+      otentikasi();
    }
 
    public function index()

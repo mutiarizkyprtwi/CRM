@@ -7,6 +7,7 @@ class Room extends CI_Controller
    {
       parent::__construct();
       $this->load->model('room_model');
+      otentikasi();
    }
 
    public function index()

@@ -19,4 +19,19 @@
 <link href="<?= base_url('assets/flacto/plugins/datatables/dataTables.bootstrap4.min.css') ?>" rel="stylesheet" type="text/css" />
 <link href="<?= base_url('assets/flacto/plugins/datatables/scroller.bootstrap4.min.css') ?>" rel="stylesheet" type="text/css" />
 
+<!-- Plugins css-->
+        <link href="<?= base_url('assets/flacto/plugins/bootstrap-tagsinput/dist/bootstrap-tagsinput.css') ?>" rel="stylesheet" />
+        <link href="<?= base_url('assets/flacto/plugins/multiselect/css/multi-select.css') ?>"  rel="stylesheet" type="text/css" />
+        <link href="<?= base_url('assets/flacto/plugins/select2/dist/css/select2.css') ?>" rel="stylesheet" type="text/css">
+        <link href="<?= base_url('assets/flacto/plugins/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.css') ?>" rel="stylesheet" />
+        <link href="<?= base_url('assets/flacto/plugins/switchery/switchery.min.css') ?>" rel="stylesheet" />
+        <link href="<?= base_url('assets/flacto/plugins/timepicker/bootstrap-timepicker.min.css') ?>" rel="stylesheet">
+		<link href="<?= base_url('assets/flacto/plugins/mjolnic-bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css') ?>" rel="stylesheet">
+		<link href="<?= base_url('assets/flacto/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css') ?>" rel="stylesheet">
+		<link href="<?= base_url('assets/flacto/plugins/bootstrap-daterangepicker/daterangepicker.css') ?>" rel="stylesheet">
+
+	<!-- 	<link href="<?= base_url('assets/flacto/assets/css/bootstrap.min.css') ?>" rel="stylesheet" type="text/css" />
+        <link href="<?= base_url('assets/flacto/assets/css/icons.css') ?>" rel="stylesheet" type="text/css" />
+        <link href="<?= base_url('assets/flacto/assets/css/style.css') ?>" rel="stylesheet" type="text/css" /> -->
+
 <script src="<?= base_url('assets/flacto/assets/js/modernizr.min.js') ?>"></script>

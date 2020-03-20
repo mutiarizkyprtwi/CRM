@@ -21,17 +21,14 @@
                                                 <form class="form-horizontal" method="POST" 
                                                 action="<?= base_url('menu_resto/add')?>">
                                                     <div class="form-group row">
-                                                        <label class="col-md-3 control-label">Kode Menu</label>
+                                                        <label class="col-md-3 control-label">Jenis Menu</label>
                                                         <div class="col-md-9">
-                                                            <input type="text" name="kd_menu" class="form-control" placeholder="" id="kd_menu" value="<?= set_value('kd_menu') ?>">
-                                                            <?= form_error('kd_menu', '<label id="kd_menu-error" class="error text-danger">', '</label>') ?>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group row">
-                                                        <label class="col-md-3 control-label">Kode Jenis Menu</label>
-                                                        <div class="col-md-9">
-                                                            <input type="text" id="kd_jns_menu" name="kd_jns_menu" class="form-control" placeholder="" value="<?= set_value('kd_jns_menu') ?>">
-                                                            <?= form_error('kd_jns_menu', '<label id="kd_jns_menu-error" class="error text-danger">', '</label>') ?>
+                                                            <select class="form-control" name="kd_jns_menu">
+                                                             <?php
+                                                             foreach ($rules as $rule) : ?>
+                                                             <option value="<?= $rule['kd_jns_menu'] ?>"><sub><?= $rule['jns_menu']?></sub></option>
+                                                             <?php endforeach; ?>
+                                                            </select>
                                                         </div>
                                                     </div>
                                                     <div class="form-group row">

@@ -7,9 +7,7 @@ class Admincp extends CI_Controller
    {
       parent::__construct();
 
-      // if ($this->session->userdata('status') != "login") {
-      //    redirect(base_url("auth"));
-      // }
+      otentikasi();
    }
 
    public function index()

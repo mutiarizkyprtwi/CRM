@@ -6,7 +6,7 @@
          <div class="item active">
             <img src="<?= base_url('assets/images/slider/slide1.jpg') ?>" alt="Slide" />
             <div class="carousel-caption">
-               <h2 data-animation="animated fadeInDown">Welcome to Hotely</h2>
+               <h2 data-animation="animated fadeInDown">Welcome to Grand Malaka Ethical</h2>
                <h6 data-animation="animated bounceIn"><span class="left-sep"></span>the place where you looking to<span class="right-sep"></span></h6>
                <a href="#" title="Explore Now" data-animation="animated fadeInUp">explore now <i class="fa fa-long-arrow-right"></i></a>
             </div>
@@ -14,7 +14,7 @@
          <div class="item">
             <img src="<?= base_url('assets/images/slider/slide1.jpg') ?>" alt="Slide" />
             <div class="carousel-caption">
-               <h2 data-animation="animated fadeInDown">Welcome to Hotely</h2>
+               <h2 data-animation="animated fadeInDown">Welcome to Grand Malaka Ethical</h2>
                <h6 data-animation="animated bounceIn"><span class="left-sep"></span>the place where you looking to<span class="right-sep"></span></h6>
                <a href="#" title="Explore Now" data-animation="animated fadeInUp">explore now <i class="fa fa-long-arrow-right"></i></a>
             </div>
@@ -22,7 +22,7 @@
          <div class="item">
             <img src="<?= base_url('assets/images/slider/slide1.jpg') ?>" alt="Slide" />
             <div class="carousel-caption">
-               <h2 data-animation="animated fadeInDown">Welcome to Hotely</h2>
+               <h2 data-animation="animated fadeInDown">Welcome to Grand Malaka Ethical</h2>
                <h6 data-animation="animated bounceIn"><span class="left-sep"></span>the place where you looking to<span class="right-sep"></span></h6>
                <a href="#" title="Explore Now" data-animation="animated fadeInUp">explore now <i class="fa fa-long-arrow-right"></i></a>
             </div>
@@ -101,7 +101,7 @@
       </div><!-- Section Header /- -->
       <div class="offer-list">
          <div class="offer-box tall">
-            <img src="assets/images/offer/offer1.jpg" alt="Offer" />
+            <img src="<?= base_url ('assets/images/offer/offer1.jpg')?>" alt="Offer" />
             <div class="offer-detail">
                <h3>health &amp; <span>fitness</span></h3>
                <div class="price-detail">
@@ -169,7 +169,7 @@
          <a class="read-more" title="view direction" href="#">view direction <i class="fa fa-long-arrow-right"></i></a>
       </div>
       <div class="col-md-7 col-sm-12 col-xs-12">
-         <img src="assets/images/dir-map.jpg" alt="Direrction Map" />
+         <img src="<?= base_url('assets/images/dir-map.jpg') ?>" alt="Direrction Map" />
       </div>
    </div><!-- Container /- -->
    <div class="section-padding"></div>

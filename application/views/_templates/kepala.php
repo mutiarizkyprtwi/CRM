@@ -9,10 +9,10 @@
 <title><?= $title ?></title>
 
 <!-- Standard Favicon -->
-<link rel="icon" type="image/x-icon" href="<?= base_url('assets/images/favicon.png') ?>" />
+<link rel="icon" type="image/x-icon" href="<?= base_url('assets/images/logo_hotel.png') ?>" />
 
 <!-- For iPhone 4 Retina display: -->
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?= base_url('assets/images/favicon.png') ?>">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?= base_url('assets/images/logo_hotel.png') ?>">
 
 <!-- For iPad: -->
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?= base_url('assets/images/apple-touch-icon-72x72-precomposed.htm') ?>l">
