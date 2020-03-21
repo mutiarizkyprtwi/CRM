@@ -35,8 +35,9 @@
                                                         </div>
                                                     </div>
                                                       <div class="form-group row float-right">
-                                                           <button type="submit" class="btn btn-info waves-effect w-md waves-light m-b-5">Save</button>
+                                                           <button type="submit" class="btn btn-info waves-effect w-md waves-light m-b-5" style="margin-right: 10px;">Save</button>
                                                     </div>
+                                                    <a href="<?= base_url('fasilitas/index') ?>"><button type="button" class="btn btn-danger waves-effect w-md waves-light m-b-5" style="margin-left: 250px;">Cancel</button></a>
                                                 </form>
                                             </div><!-- end col -->            
                                         </div><!-- end row -->

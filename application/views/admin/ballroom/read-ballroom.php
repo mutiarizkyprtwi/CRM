@@ -17,7 +17,7 @@
 
             <h4 class="header-title m-t-0 m-b-30">Data Ballroom 
                &nbsp &nbsp
-               <a href="<?= base_url('ballroom/add') ?>"><button type="button" class="btn btn-info waves-effect w-md waves-light m-b-5">Tambah Ballroom</button> </h4>  
+               <a href="<?= base_url('ballroom/add') ?>"><button type="button" class="btn btn-info waves-effect w-md waves-light m-b-5">Add Ballroom</button> </h4>  
 
                   <?php $this->session->flashdata('pesan') ?>
             <table id="datatable-fixed-header" class="table table-striped table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
@@ -44,7 +44,7 @@
                      <td><?= $blrm['satuan'] ?></td>
                      <td><?= $blrm['detail'] ?></td>
                      <td><?= $blrm['kategori'] ?></td>
-                     <td><a href="<?=base_url (); ?>ballroom/hapus/<?= $blrm['kd_ballroom']; ?>" class="badge badge-danger float-right" onclick="return confirm('yakin?');">Hapus</a>  <a href="<?=base_url (); ?>ballroom/ubah/<?= $blrm['kd_ballroom']; ?>" class="badge badge-succses float-right">Ubah</a></td>
+                     <td><a href="<?=base_url (); ?>ballroom/hapus/<?= $blrm['kd_ballroom']; ?>" class="badge badge-danger float-right" onclick="return confirm('yakin?');">Delete</a>  <a href="<?=base_url (); ?>ballroom/ubah/<?= $blrm['kd_ballroom']; ?>" class="badge badge-succses float-right">Edit</a></td>
                   </tr>
                <?php endforeach ?>
                </tbody>

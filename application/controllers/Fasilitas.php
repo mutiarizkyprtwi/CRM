@@ -52,4 +52,29 @@ class Fasilitas extends CI_Controller
       $this->session->set_flashdata('flash', 'Dihapus');
       redirect(base_url('fasilitas'));
    }
+
+      public function ubah($kd_fasilitas)
+   {
+      $this->form_validation->set_rules('kd_fasilitas', 'Kode Fasilitas', 'required|trim');
+      $this->form_validation->set_rules('fasilitas', 'Fasilitas', 'required|trim');
+      if ($this->form_validation->run() == FALSE) {
+      $data = [
+         'title' => SITE_NAME,
+         'judul' => 'Ubah Paket Makan',
+         'isi'   => 'admin/fasilitas/ubah-fasilitas'
+      ];
+      $data['rules'] = $this->db->get_where('m_fasilitas', ['kd_fasilitas'=>$kd_fasilitas])->result_array();
+      $this->load->view('_templatesAdmin/home', $data);
+      } else{
+         $data =  [
+                  'kd_fasilitas' => $this->input->post('kd_fasilitas'),
+                  'fasilitas' => $this->input->post('fasilitas')
+                  ];
+         $cek = $this->fasilitas_model->UbahFasilitas($data, $kd_fasilitas);
+         if ($cek){
+            $this->session->set_flashdata('pesan', 'Berhasil Mengubah Data Fasilitas');
+            redirect(base_url('fasilitas'));
+         }
+      }
+   }
 }

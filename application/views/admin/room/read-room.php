@@ -17,7 +17,7 @@
 
             <h4 class="header-title m-t-0 m-b-30">Data Type Room 
                &nbsp &nbsp
-               <a href="<?= base_url('room/add') ?>"><button type="button" class="btn btn-info waves-effect w-md waves-light m-b-5">Tambah Type Room</button> </h4>  
+               <a href="<?= base_url('room/add') ?>"><button type="button" class="btn btn-info waves-effect w-md waves-light m-b-5">Add Type Room</button> </h4>  
 
                   <?php $this->session->flashdata('pesan') ?>
             <table id="datatable-fixed-header" class="table table-striped table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
@@ -44,8 +44,8 @@
                      <td><?= $rm['theatre'] ?></td>
                      <td><?= $rm['u-shape'] ?></td>
                      <td><?= $rm['class'] ?></td>
-                     <td><a href="<?=base_url (); ?>room/hapus/<?= $rm['kd_room']; ?>" class="badge badge-danger float-right" onclick="return confirm('yakin?');">Hapus</a>
-                      <a href="<?=base_url (); ?>room/ubah/<?= $rm['kd_room']; ?>" class="badge badge-succses float-right">Ubah</a></td>
+                     <td><a href="<?=base_url (); ?>room/hapus/<?= $rm['kd_room']; ?>" class="badge badge-danger float-right" onclick="return confirm('yakin?');">Delete</a>
+                      <a href="<?=base_url (); ?>room/ubah/<?= $rm['kd_room']; ?>" class="badge badge-succses float-right">Edit</a></td>
                   </tr>
                <?php endforeach ?>
                </tbody>

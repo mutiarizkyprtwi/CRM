@@ -14,11 +14,16 @@ class Ballroom_model extends CI_Model
   	return $this->db->insert($this->_table, $data);
   }
 
-   public function HapusDataBallroom($kd_ballroom)
+  public function HapusDataBallroom($kd_ballroom)
   {
     $this->db->where('kd_ballroom', $kd_ballroom);
     $this->db->delete('m_ballroom');
+  }
 
+  public function UbahBallroom($data, $kd_ballroom)
+  {
+    //insert ke dalam tabel users
+    return $this->db->update($this->_table, $data, ['kd_ballroom'=>$kd_ballroom]);
   }
 
 }

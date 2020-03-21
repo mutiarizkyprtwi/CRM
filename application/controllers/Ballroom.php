@@ -59,4 +59,36 @@ class Ballroom extends CI_Controller
       $this->session->set_flashdata('flash', 'Dihapus');
       redirect(base_url('ballroom'));
    }
+
+    public function ubah($kd_ballroom)
+   {
+      $this->form_validation->set_rules('kd_ballroom', 'Kode Ballroom', 'required|trim');
+      $this->form_validation->set_rules('jenis_ballroom', 'Jenis Ballroom', 'required|trim');
+      $this->form_validation->set_rules('harga', 'harga', 'required|trim');
+      $this->form_validation->set_rules('detail', 'detail', 'required|trim');
+      if ($this->form_validation->run() == FALSE) {
+      $data = [
+         'title' => SITE_NAME,
+         'judul' => 'Ubah Ballroom',
+         'isi'   => 'admin/ballroom/ubah-ballroom'
+      ];
+      $data['rules'] = $this->db->get_where('m_ballroom', ['kd_ballroom'=>$kd_ballroom])->result_array();
+      $this->load->view('_templatesAdmin/home', $data);
+      } else{
+         $data =  [
+                  'kd_ballroom' => $this->input->post('kd_ballroom'),
+                  'jenis_ballroom' => $this->input->post('jenis_ballroom'),
+                  'mata_uang' => $this->input->post('mata_uang'),
+                  'harga' => $this->input->post('harga'),
+                  'satuan' => $this->input->post('satuan'),
+                  'detail' => $this->input->post('detail'),
+                  'kategori' => $this->input->post('kategori')
+         ];
+         $cek = $this->ballroom_model->UbahBallroom($data, $kd_ballroom);
+         if ($cek){
+            $this->session->set_flashdata('pesan', 'Berhasil Mengubah Data Ballroom');
+            redirect(base_url('ballroom'));
+         }
+      }
+   }
 }

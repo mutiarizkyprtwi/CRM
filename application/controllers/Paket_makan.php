@@ -23,7 +23,6 @@ class Paket_makan extends CI_Controller
 
    public function add()
    {
-      $this->form_validation->set_rules('kd_paket', 'Kode Paket', 'required|trim');
       $this->form_validation->set_rules('nama_paket', 'Nama Paket', 'required|trim');
       $this->form_validation->set_rules('harga', 'harga', 'required|trim');
       $this->form_validation->set_rules('ket', 'Keterangan', 'required|trim');
@@ -58,4 +57,35 @@ class Paket_makan extends CI_Controller
       $this->session->set_flashdata('flash', 'Dihapus');
       redirect(base_url('paket_makan'));
    }
+
+   public function ubah($kd_paket)
+   {
+      $this->form_validation->set_rules('nama_paket', 'Nama Paket', 'required|trim');
+      $this->form_validation->set_rules('harga', 'harga', 'required|trim');
+      $this->form_validation->set_rules('ket', 'Keterangan', 'required|trim');
+      if ($this->form_validation->run() == FALSE) {
+      $data = [
+         'title' => SITE_NAME,
+         'judul' => 'Ubah Paket Makan',
+         'isi'   => 'admin/paket_makan/ubah-paketmakan'
+      ];
+      $data['rules'] = $this->db->get_where('paket_makan', ['kd_paket'=>$kd_paket])->result_array();
+      $this->load->view('_templatesAdmin/home', $data);
+      } else{
+         $data =  [
+                  'kd_paket' => $this->input->post('kd_paket'),
+                  'nama_paket' => $this->input->post('nama_paket'),
+                  'harga' => $this->input->post('harga'),
+                  'satuan' => $this->input->post('satuan'),
+                  'ket' => $this->input->post('ket'),
+                  'kategori' => $this->input->post('kategori')
+                  ];
+         $cek = $this->paketmakan_model->UbahPaketMakan($data, $kd_paket);
+         if ($cek){
+            $this->session->set_flashdata('pesan', 'Berhasil Mengubah Data Paket Makan');
+            redirect(base_url('paket_makan'));
+         }
+      }
+   }
+
 }

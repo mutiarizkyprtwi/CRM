@@ -10,14 +10,10 @@ class Nokamar_model extends CI_Model
     return $this->db->get($this->_table);
   }
 
-  public function save(){
+  public function save($data){
 
-  	//ambil semua data form users
-  	$this->no_kamar = $this->input->post('no_kamar');
-  	$this->lantai = $this->input->post('lantai');
-  	$this->kd_kategori = $this->input->post('kd_kategori');
   	//insert ke dalam tabel users
-  	$this->db->insert($this->_table, $this);
+    return $this->db->insert($this->_table, $data);
   }
 
    public function HapusDataNoKamar($no_kamar)
@@ -25,6 +21,13 @@ class Nokamar_model extends CI_Model
     $this->db->where('no_kamar', $no_kamar);
     $this->db->delete('m_kamar');
 
+  }
+
+  public function UbahNoKamar($data, $no_kamar)
+  {
+    //insert ke dalam tabel users
+    $this->db->join('m_kategori', 'm_kamar.kd_kategori=m_kategori.kd_kategori');
+    return $this->db->update($this->_table, $data, ['no_kamar'=>$no_kamar]);
   }
 
 }

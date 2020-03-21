@@ -15,63 +15,66 @@
                                             </ul>
                                         </div>
             
-                                        <h4 class="header-title m-t-0 m-b-30">Add Paket Makan</h4>
+                                        <h4 class="header-title m-t-0 m-b-30">Edit Type Room</h4>
                                         <div class="row">
                                             <div class="col-xl-12">
+                                                <?php foreach ($rules as $data) : ?>
                                                 <form class="form-horizontal" method="POST" 
-                                                action="<?= base_url('paket_makan/add')?>">
+                                                action="<?= base_url('room/ubah/'.$data['kd_room'].'')?>">
                                                     <div class="form-group row">
-                                                        <label class="col-md-3 control-label">Kode Katagori</label>
+                                                        <label class="col-md-3 control-label">Kode Room</label>
                                                         <div class="col-md-9">
-                                                            <input type="text" name="kd_paket" class="form-control" placeholder="" id="kd_paket" value="<?= set_value('kd_paket') ?>">
-                                                            <?= form_error('kd_paket', '<label id="kd_paket-error" class="error text-danger">', '</label>') ?>
+                                                            <input type="text" name="kd_room" class="form-control" placeholder="" id="kd_room" value="<?=$data['kd_room'] ?>">
                                                         </div>
                                                     </div>
                                                     <div class="form-group row">
-                                                        <label class="col-md-3 control-label">Nama Paket</label>
+                                                        <label class="col-md-3 control-label">Nama Room</label>
                                                         <div class="col-md-9">
-                                                            <input type="text" id="nama_paket" name="nama_paket" class="form-control" placeholder="" value="<?= set_value('nama_paket') ?>">
-                                                            <?= form_error('nama_paket', '<label id="nama_paket-error" class="error text-danger">', '</label>') ?>
+                                                            <input type="text" id="room" name="room" class="form-control" placeholder="" value="<?=$data['room'] ?>">
                                                         </div>
                                                     </div>
                                                     <div class="form-group row">
-                                                        <label class="col-md-3 control-label">Harga</label>
-                                                        <div class="col-md-9">
-                                                            <input type="text" name="harga" class="form-control" id="harga" value="<?= set_value('harga') ?>">
-                                                            <?= form_error('harga', '<label id="harga-error" class="error text-danger">', '</label>') ?>
+                                                        <label class="col-md-3 control-label">Location</label>
+                                                       <div class="col-md-9">
+                                                            <input type="text" id="location" name="location" class="form-control" placeholder="" value="<?=$data['location'] ?>">
                                                         </div>
                                                     </div>
                                                     <div class="form-group row">
-                                                        <label class="col-md-3 control-label">Satuan</label>
+                                                        <label class="col-md-3 control-label">Size</label>
                                                         <div class="col-md-9">
-                                                            <select class="form-control" name="satuan">
-                                                               <option value="Orang/Pax">Orang/Pax</option>
-                                                            </select>
-                                                               
+                                                            <input type="text" name="size" id="size" class="form-control" value="<?=$data['size'] ?>">
                                                         </div>
                                                     </div>
                                                     <div class="form-group row">
-                                                        <label class="col-md-3 control-label">Keterangan</label>
+                                                        <label class="col-md-3 control-label">Theatre</label>
                                                         <div class="col-md-9">
-                                                            <input type="text" name="ket" id="ket" class="form-control" value="<?= set_value('ket') ?>">
-                                                        <?= form_error('ket', '<label id="ket-error" class="error text-danger">', '</label>') ?>   
+                                                            <input type="integer" name="theatre" id="theatre" class="form-control" value="<?=$data['theatre'] ?>"> 
                                                         </div>
                                                     </div>
                                                     <div class="form-group row">
-                                                        <label class="col-md-3 control-label">Kategori</label>
+                                                        <label class="col-md-3 control-label">U-Shape</label>
                                                         <div class="col-md-9">
-                                                            <tr>
-                                                            <td><input type="radio" name="kategori" value="Standard" checked/>Standard</td>
-                                                            </tr>
-                                                            <tr>
-                                                            <td><input type="radio" name="kategori" value="VIP">VIP</td>
-                                                            </tr>
+                                                            <input type="integer" name="u-shape" id="u-shape" class="form-control" value="<?=$data['u-shape'] ?>">   
                                                         </div>
                                                     </div>
+                                                    <div class="form-group row">
+                                                        <label class="col-md-3 control-label">Round</label>
+                                                        <div class="col-md-9">
+                                                            <input type="text" name="round" id="round" class="form-control" value="<?=$data['round'] ?>">  
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label class="col-md-3 control-label">Class</label>
+                                                        <div class="col-md-9">
+                                                            <input type="integer" name="class" id="class" class="form-control" value="<?=$data['class'] ?>">  
+                                                        </div>
+                                                    </div>
+                                                   
                                                       <div class="form-group row float-right">
                                                            <button type="submit" class="btn btn-info waves-effect w-md waves-light m-b-5" style="margin-right: 10px;">Save</button>
                                                     </div>
-                                                    <a href="<?= base_url('paket_makan/index') ?>"><button type="button" class="btn btn-danger waves-effect w-md waves-light m-b-5" style="margin-left: 250px;">Cancel</button></a>
+                                                    <a href="<?= base_url('room/index') ?>"><button type="button" class="btn btn-danger waves-effect w-md waves-light m-b-5" style="margin-left: 250px;">Cancel</button></a>
+                                                    <?php endforeach ?>
                                                 </form>
                                             </div><!-- end col -->            
                                         </div><!-- end row -->

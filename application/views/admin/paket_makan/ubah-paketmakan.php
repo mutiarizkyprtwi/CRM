@@ -15,46 +15,61 @@
                                             </ul>
                                         </div>
             
-                                        <h4 class="header-title m-t-0 m-b-30">Add Menu Makanan dan Minuman</h4>
+                                        <h4 class="header-title m-t-0 m-b-30">Edit Paket Makan</h4>
                                         <div class="row">
                                             <div class="col-xl-12">
+                                                <?php foreach ($rules as $data) : ?>
                                                 <form class="form-horizontal" method="POST" 
-                                                action="<?= base_url('menu_resto/add')?>">
+                                                action="<?= base_url('paket_makan/ubah/'.$data['kd_paket'].'')?>">
                                                     <div class="form-group row">
-                                                        <label class="col-md-3 control-label">Jenis Menu</label>
+                                                        <label class="col-md-3 control-label">Kode Katagori</label>
                                                         <div class="col-md-9">
-                                                            <select class="form-control" name="kd_jns_menu">
-                                                             <?php
-                                                             foreach ($rules as $rule) : ?>
-                                                             <option value="<?= $rule['kd_jns_menu'] ?>"><sub><?= $rule['jns_menu']?></sub></option>
-                                                             <?php endforeach; ?>
-                                                            </select>
+                                                            <input type="text" name="kd_paket" class="form-control" placeholder="" id="kd_paket" value="<?=$data['kd_paket'] ?>">
                                                         </div>
                                                     </div>
                                                     <div class="form-group row">
-                                                        <label class="col-md-3 control-label">Nama Menu</label>
+                                                        <label class="col-md-3 control-label">Nama Paket</label>
                                                         <div class="col-md-9">
-                                                            <input type="text" id="nama_menu" name="nama_menu" class="form-control" placeholder="" value="<?= set_value('nama_menu') ?>">
-                                                            <?= form_error('nama_menu', '<label id="nama_menu-error" class="error text-danger">', '</label>') ?>
+                                                            <input type="text" id="nama_paket" name="nama_paket" class="form-control" placeholder="" value="<?=$data['nama_paket'] ?>">
                                                         </div>
                                                     </div>
                                                     <div class="form-group row">
                                                         <label class="col-md-3 control-label">Harga</label>
                                                         <div class="col-md-9">
-                                                            <input type="integer" name="harga" class="form-control" id="harga" value="<?= set_value('harga') ?>">
-                                                            <?= form_error('harga', '<label id="harga-error" class="error text-danger">', '</label>') ?>
+                                                            <input type="text" name="harga" class="form-control" id="harga" value="<?=$data['harga'] ?>">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label class="col-md-3 control-label">Satuan</label>
+                                                        <div class="col-md-9">
+                                                            <select class="form-control" name="satuan">
+                                                               <option value="Orang/Pax">Orang/Pax</option>
+                                                            </select>
+                                                               
                                                         </div>
                                                     </div>
                                                     <div class="form-group row">
                                                         <label class="col-md-3 control-label">Keterangan</label>
                                                         <div class="col-md-9">
-                                                            <input type="text" name="ket" id="ket" class="form-control" value="">
+                                                            <input type="text" name="ket" id="ket" class="form-control" value="<?=$data['ket'] ?>"> 
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label class="col-md-3 control-label">Kategori</label>
+                                                        <div class="col-md-9">
+                                                            <tr>
+                                                            <td><input type="radio" name="kategori" value="Standard">Standard</td>
+                                                            </tr>
+                                                            <tr>
+                                                            <td><input type="radio" name="kategori" value="VIP">VIP</td>
+                                                            </tr>
                                                         </div>
                                                     </div>
                                                       <div class="form-group row float-right">
                                                            <button type="submit" class="btn btn-info waves-effect w-md waves-light m-b-5" style="margin-right: 10px;">Save</button>
                                                     </div>
-                                                    <a href="<?= base_url('menu_resto/index') ?>"><button type="button" class="btn btn-danger waves-effect w-md waves-light m-b-5" style="margin-left: 250px;">Cancel</button></a>
+                                                    <a href="<?= base_url('paket_makan/index') ?>"><button type="button" class="btn btn-danger waves-effect w-md waves-light m-b-5" style="margin-left: 250px;">Cancel</button></a>
+                                                    <?php endforeach ?>
                                                 </form>
                                             </div><!-- end col -->            
                                         </div><!-- end row -->

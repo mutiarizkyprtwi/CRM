@@ -56,4 +56,33 @@ class Menu_resto extends CI_Controller
       $this->session->set_flashdata('flash', 'Dihapus');
       redirect(base_url('menu_resto'));
    }
+
+   public function ubah($kd_menu)
+   {
+      $this->form_validation->set_rules('kd_menu', 'Kode Paket', 'required|trim');
+      $this->form_validation->set_rules('nama_menu', 'Nama Menu', 'required|trim');
+      $this->form_validation->set_rules('harga', 'Harga', 'required|trim');
+      if ($this->form_validation->run() == FALSE) {
+      $data = [
+         'title' => SITE_NAME,
+         'judul' => 'Ubah Menu Resto',
+         'isi'   => 'admin/menu_resto/ubah-menuresto'
+      ];
+      $data['rules'] = $this->db->get_where('menu_resto', ['kd_menu'=>$kd_menu])->result_array();
+      $this->load->view('_templatesAdmin/home', $data);
+      } else{
+         $data =  [
+                  'kd_menu' => $this->input->post('kd_menu'),
+                  'kd_jns_menu' => $this->input->post('kd_jns_menu'),
+                  'nama_menu' => $this->input->post('nama_menu'),
+                  'harga' => $this->input->post('harga'),
+                  'ket' => $this->input->post('ket')
+                  ];
+         $cek = $this->menuresto_model->UbahMenuResto($data, $kd_menu);
+         if ($cek){
+            $this->session->set_flashdata('pesan', 'Berhasil Mengubah Data Menu Resto');
+            redirect(base_url('menu_resto'));
+         }
+      }
+   }
 }

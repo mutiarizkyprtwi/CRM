@@ -15,7 +15,7 @@
                                             </ul>
                                         </div>
             
-                                        <h4 class="header-title m-t-0 m-b-30">Ubah Kategori Kamar</h4>
+                                        <h4 class="header-title m-t-0 m-b-30">Edit Kategori Kamar</h4>
                                         <div class="row">
                                             <div class="col-xl-12">
                                                 <?php foreach ($rules as $data) : ?>
@@ -36,20 +36,19 @@
                                                     <div class="form-group row">
                                                         <label class="col-md-3 control-label">Keterangan</label>
                                                         <div class="col-md-9">
-                                                            <input type="text" name="keterangan" class="form-control" id="keterangan" value="<?= set_value('keterangan') ?>">
-                                                            <?= form_error('keterangan', '<label id="keterangan-error" class="error text-danger">', '</label>') ?>
+                                                            <input type="text" name="keterangan" class="form-control" id="keterangan" value="<?= $data['keterangan'] ?>">
                                                         </div>
                                                     </div>
                                                     <div class="form-group row">
                                                         <label class="col-md-3 control-label">Harga</label>
                                                         <div class="col-md-9">
-                                                            <input type="integer" name="harga" id="harga" class="form-control" value="<?= set_value('harga') ?>">
-                                                        <?= form_error('harga', '<label id="harga-error" class="error text-danger">', '</label>') ?>   
+                                                            <input type="integer" name="harga" id="harga" class="form-control" value="<?= $data['harga']?>">
                                                         </div>
                                                     </div>
                                                       <div class="form-group row float-right">
-                                                           <button type="submit" name="ubah" class="btn btn-info waves-effect w-md waves-light m-b-5">Save</button>
+                                                           <button type="submit" name="ubah" class="btn btn-info waves-effect w-md waves-light m-b-5" style="margin-right: 10px;">Save</button>
                                                     </div>
+                                                    <a href="<?= base_url('kamar/index') ?>"><button type="button" class="btn btn-danger waves-effect w-md waves-light m-b-5" style="margin-left: 250px;">Cancel</button></a>
                                                     <?php endforeach ?>
                                                 </form>
                                             </div><!-- end col -->            

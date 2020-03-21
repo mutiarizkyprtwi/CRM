@@ -15,43 +15,29 @@
                                             </ul>
                                         </div>
             
-                                        <h4 class="header-title m-t-0 m-b-30">Add Kamar</h4>
+                                        <h4 class="header-title m-t-0 m-b-30">Edit Jenis Resto</h4>
                                         <div class="row">
+                                            <?php foreach ($rules as $data) : ?>
                                             <div class="col-xl-12">
                                                 <form class="form-horizontal" method="POST" 
-                                                action="<?= base_url('kamar/add')?>">
+                                                action="<?= base_url('jenis_makan_minum/ubah/'.$data['kd_jns_menu'].'')?>">
                                                     <div class="form-group row">
-                                                        <label class="col-md-3 control-label">Kode Katagori</label>
+                                                        <label class="col-md-3 control-label">Kode Jenis Menu</label>
                                                         <div class="col-md-9">
-                                                            <input type="text" name="kd_kategori" class="form-control" placeholder="" id="kd_kategori" value="<?= set_value('kd_kategori') ?>">
-                                                            <?= form_error('kd_kategori', '<label id="kd_kategori-error" class="error text-danger">', '</label>') ?>
+                                                            <input type="text" name="kd_jns_menu" class="form-control" placeholder="" id="kd_jns_menu" value="<?=$data['kd_jns_menu'] ?>">
                                                         </div>
                                                     </div>
                                                     <div class="form-group row">
-                                                        <label class="col-md-3 control-label">Katagori</label>
+                                                        <label class="col-md-3 control-label">Jenis Menu</label>
                                                         <div class="col-md-9">
-                                                            <input type="text" id="katagori" name="kategori" class="form-control" placeholder="" value="<?= set_value('kategori') ?>">
-                                                            <?= form_error('kategori', '<label id="kategori-error" class="error text-danger">', '</label>') ?>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group row">
-                                                        <label class="col-md-3 control-label">Keterangan</label>
-                                                        <div class="col-md-9">
-                                                            <input type="text" name="keterangan" class="form-control" id="keterangan" value="<?= set_value('keterangan') ?>">
-                                                            <?= form_error('keterangan', '<label id="keterangan-error" class="error text-danger">', '</label>') ?>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group row">
-                                                        <label class="col-md-3 control-label">Harga</label>
-                                                        <div class="col-md-9">
-                                                            <input type="integer" name="harga" id="harga" class="form-control" value="<?= set_value('harga') ?>">
-                                                        <?= form_error('harga', '<label id="harga-error" class="error text-danger">', '</label>') ?>   
+                                                            <input type="text" id="jns_menu" name="jns_menu" class="form-control" placeholder="" value="<?=$data['jns_menu'] ?>">
                                                         </div>
                                                     </div>
                                                       <div class="form-group row float-right">
                                                            <button type="submit" class="btn btn-info waves-effect w-md waves-light m-b-5" style="margin-right: 10px;">Save</button>
                                                     </div>
-                                                    <a href="<?= base_url('kamar/index') ?>"><button type="button" class="btn btn-danger waves-effect w-md waves-light m-b-5" style="margin-left: 250px;">Cancel</button></a>
+                                                    <a href="<?= base_url('jenis_makan_minum/index') ?>"><button type="button" class="btn btn-danger waves-effect w-md waves-light m-b-5" style="margin-left: 250px;">Cancel</button></a>
+                                                    <?php endforeach ?>
                                                 </form>
                                             </div><!-- end col -->            
                                         </div><!-- end row -->

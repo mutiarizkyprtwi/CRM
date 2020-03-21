@@ -19,7 +19,12 @@ class paketmakan_model extends CI_Model
   {
     $this->db->where('kd_paket', $kd_paket);
     $this->db->delete('paket_makan');
+  }
 
+  public function UbahPaketMakan($data, $kd_paket)
+  {
+    //insert ke dalam tabel users
+    return $this->db->update($this->_table, $data, ['kd_paket'=>$kd_paket]);
   }
 
 }

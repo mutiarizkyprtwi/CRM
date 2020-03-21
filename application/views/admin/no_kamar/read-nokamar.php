@@ -17,7 +17,7 @@
 
             <h4 class="header-title m-t-0 m-b-30">Data Kamar 
                &nbsp &nbsp
-               <a href="<?= base_url('no_kamar/add') ?>"><button type="button" class="btn btn-info waves-effect w-md waves-light m-b-5">Tambah Data Kamar</button> </h4>  
+               <a href="<?= base_url('no_kamar/add') ?>"><button type="button" class="btn btn-info waves-effect w-md waves-light m-b-5">Add Data Kamar</button> </h4>  
 
                   <?php $this->session->flashdata('pesan') ?>
             <table id="datatable-fixed-header" class="table table-striped table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
@@ -36,7 +36,7 @@
                      <td><?= $nokmr['no_kamar'] ?></td>
                      <td><?= $nokmr['lantai'] ?></td>
                      <td><?= $nokmr['kd_kategori'] ?></td>
-                     <td><a href="<?=base_url (); ?>no_kamar/hapus/<?= $nokmr['no_kamar']; ?>" class="badge badge-danger float-right" onclick="return confirm('yakin?');">Hapus</a>  <a href="<?=base_url (); ?>no_kamar/ubah/<?= $nokmr['no_kamar']; ?>" class="badge badge-succses float-right">Ubah</a></td>
+                     <td><a href="<?=base_url (); ?>no_kamar/hapus/<?= $nokmr['no_kamar']; ?>" class="badge badge-danger float-right" onclick="return confirm('yakin?');">Delete</a>  <a href="<?=base_url (); ?>no_kamar/ubah/<?= $nokmr['no_kamar']; ?>" class="badge badge-succses float-right">Edit</a></td>
                   </tr>
                <?php endforeach ?>
                </tbody>

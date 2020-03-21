@@ -23,4 +23,10 @@ class menuresto_model extends CI_Model
 
   }
 
+  public function UbahMenuResto($data, $kd_menu)
+  {
+    //insert ke dalam tabel users
+    return $this->db->update($this->_table, $data, ['kd_menu'=>$kd_menu]);
+  }
+
 }

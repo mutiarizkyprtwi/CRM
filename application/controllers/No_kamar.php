@@ -37,12 +37,11 @@ class No_kamar extends CI_Controller
        $data =  [
                   'no_kamar' => $this->input->post('no_kamar'),
                   'lantai' => $this->input->post('lantai'),
-                  'mata_uang' => $this->input->post('mata_uang'),
                   'kd_kategori' => $this->input->post('kd_kategori')
          ];
          $cek = $this->nokamar_model->save($data);
          if ($cek){
-            $this->session->set_flashdata('pesan', 'Berhasil Menambahkan Data Ballroom');
+            $this->session->set_flashdata('pesan', 'Berhasil Menambahkan Data Nomor Kamar');
             redirect(base_url('no_kamar'));
          }
       }
@@ -53,5 +52,32 @@ class No_kamar extends CI_Controller
       $this->nokamar_model->HapusDataNoKamar($no_kamar);
       $this->session->set_flashdata('flash', 'Dihapus');
       redirect(base_url('no_kamar'));
+   }
+
+      public function ubah($no_kamar)
+   {
+      $this->form_validation->set_rules('no_kamar', 'Nomor Kamar', 'required|trim');
+      $this->form_validation->set_rules('lantai', 'lantai', 'required|trim');
+      $this->form_validation->set_rules('kd_kategori', 'Kode Kategori', 'required|trim');
+      if ($this->form_validation->run() == FALSE) {
+      $data = [
+         'title' => SITE_NAME,
+         'judul' => 'Ubah Kategori Kamar',
+         'isi'   => 'admin/no_kamar/ubah-nokamar'
+      ];
+      $data['rules'] = $this->db->get_where('m_kamar', ['no_kamar'=>$no_kamar])->result_array();
+      $this->load->view('_templatesAdmin/home', $data);
+      } else{
+         $data =  [
+                  'no_kamar' => $this->input->post('no_kamar'),
+                  'lantai' => $this->input->post('lantai'),
+                  'kd_kategori' => $this->input->post('kd_kategori')
+         ];
+         $cek = $this->nokamar_model->UbahNoKamar($data, $no_kamar);
+         if ($cek){
+            $this->session->set_flashdata('pesan', 'Berhasil Mengubah Data Nomor Kamar');
+            redirect(base_url('no_kamar'));
+         }
+      }
    }
 }

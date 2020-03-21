@@ -19,7 +19,12 @@ class Fasilitas_model extends CI_Model
   {
     $this->db->where('kd_fasilitas', $kd_fasilitas);
     $this->db->delete('m_fasilitas');
+  }
 
+  public function UbahFasilitas($data, $kd_fasilitas)
+  {
+    //insert ke dalam tabel users
+    return $this->db->update($this->_table, $data, ['kd_fasilitas'=>$kd_fasilitas]);
   }
 
 }
