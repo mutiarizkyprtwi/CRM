@@ -4,7 +4,7 @@
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
          <div class="item active">
-            <img src="<?= base_url('assets/images/slider/slide1.jpg') ?>" alt="Slide" />
+            <img src="<?= base_url('assets/images/slider/GM.jpg') ?>" alt="Slide" />
             <div class="carousel-caption">
                <h2 data-animation="animated fadeInDown">Welcome to Grand Malaka Ethical</h2>
                <h6 data-animation="animated bounceIn"><span class="left-sep"></span>the place where you looking to<span class="right-sep"></span></h6>
@@ -12,7 +12,7 @@
             </div>
          </div>
          <div class="item">
-            <img src="<?= base_url('assets/images/slider/slide1.jpg') ?>" alt="Slide" />
+            <img src="<?= base_url('assets/images/slider/ballroom.jpg') ?>" alt="Slide" />
             <div class="carousel-caption">
                <h2 data-animation="animated fadeInDown">Welcome to Grand Malaka Ethical</h2>
                <h6 data-animation="animated bounceIn"><span class="left-sep"></span>the place where you looking to<span class="right-sep"></span></h6>
@@ -20,7 +20,7 @@
             </div>
          </div>
          <div class="item">
-            <img src="<?= base_url('assets/images/slider/slide1.jpg') ?>" alt="Slide" />
+            <img src="<?= base_url('assets/images/slider/resto.jpg') ?>" alt="Slide" />
             <div class="carousel-caption">
                <h2 data-animation="animated fadeInDown">Welcome to Grand Malaka Ethical</h2>
                <h6 data-animation="animated bounceIn"><span class="left-sep"></span>the place where you looking to<span class="right-sep"></span></h6>
@@ -101,9 +101,9 @@
       </div><!-- Section Header /- -->
       <div class="offer-list">
          <div class="offer-box tall">
-            <img src="<?= base_url ('assets/images/offer/offer1.jpg')?>" alt="Offer" />
+            <img src="<?= base_url ('assets/images/offer/kolam_renang.jpg')?>" alt="Offer" />
             <div class="offer-detail">
-               <h3>health &amp; <span>fitness</span></h3>
+               <h3>Swimming <span>Pool</span></h3>
                <div class="price-detail">
                   <h4>starts from - <span>75<sup>$</sup></span></h4>
                   <a class="read-more" title="book now" href="#">book now <i class="fa fa-long-arrow-right"></i></a>
@@ -111,9 +111,9 @@
             </div>
          </div>
          <div class="offer-box wide">
-            <img src="<?= base_url('assets/images/offer/offer2.jpg') ?>" alt="Offer" />
+            <img src="<?= base_url('assets/images/offer/resto3.jpg') ?>" alt="Offer" />
             <div class="offer-detail">
-               <h3>Best <span>Dishes</span></h3>
+               <h3>Restaurant</h3>
                <div class="price-detail">
                   <h4>starts from - <span>75<sup>$</sup></span></h4>
                   <a class="read-more" title="book now" href="#">book now <i class="fa fa-long-arrow-right"></i></a>
@@ -121,9 +121,9 @@
             </div>
          </div>
          <div class="offer-box wide">
-            <img src="<?= base_url('assets/images/offer/offer3.jpg') ?>" alt="Offer" />
+            <img src="<?= base_url('assets/images/offer/ballroom.jpg') ?>" alt="Offer" />
             <div class="offer-detail">
-               <h3>Swimming <span>pool</span></h3>
+               <h3>Ball<span>room</span></h3>
                <div class="price-detail">
                   <h4>starts from - <span>75<sup>$</sup></span></h4>
                   <a class="read-more" title="book now" href="#">book now <i class="fa fa-long-arrow-right"></i></a>
@@ -131,7 +131,7 @@
             </div>
          </div>
          <div class="offer-box full">
-            <img src="<?= base_url('assets/images/offer/offer4.jpg') ?>" alt="Offer" />
+            <img src="<?= base_url('assets/images/offer/family.jpg') ?>" alt="Offer" />
             <div class="offer-detail">
                <h3>HIFI INTERIOR <span>BEDROOMS</span></h3>
                <div class="price-detail">
@@ -187,11 +187,11 @@
       <div class="recommended-detail">
          <div class="col-md-6 col-sm-12 col-xs-12 no-padding hotel-detail">
             <div class="col-md-6 col-sm-6 col-xs-6 no-padding hotel-img-box">
-               <img src="<?= base_url('assets/images/hotel/recommended1.jpg') ?>" alt="Recommended" height="267" width="297" />
+               <img src="<?= base_url('assets/images/hotel/1.jpg') ?>" alt="Recommended" height="267" width="297" />
                <span><a href="#" title="Book Now">Book Now</a></span>
             </div>
             <div class="col-md-6 col-sm-6 col-xs-6 hotel-detail-box">
-               <h4>Hotel Paris</h4>
+               <h4>Rumah Kayu</h4>
                <p>These men promptly escaped from a dum to the Los Angeles</p>
                <h6><b>125<sup>$</sup></b><span>For Person Per Night</span></h6>
                <span>
@@ -203,11 +203,11 @@
          </div>
          <div class="col-md-6 col-sm-12 col-xs-12 no-padding hotel-detail">
             <div class="col-md-6 col-sm-6 col-xs-6 no-padding hotel-img-box">
-               <img src="<?= base_url('assets/images/hotel/recommended1.jpg') ?>" alt="Recommended" height="267" width="297" />
+               <img src="<?= base_url('assets/images/hotel/superiortwin.jpg') ?>" alt="Recommended" height="267" width="297" />
                <span><a href="#" title="Book Now">Book Now</a></span>
             </div>
             <div class="col-md-6 col-sm-6 col-xs-6 hotel-detail-box">
-               <h4>Hotel Paris</h4>
+               <h4>Superior</h4>
                <p>These men promptly escaped from a dum to the Los Angeles</p>
                <h6><b>125<sup>$</sup></b><span>For Person Per Night</span></h6>
                <span>
@@ -219,11 +219,11 @@
          </div>
          <div class="col-md-6 col-sm-12 col-xs-12 no-padding hotel-detail">
             <div class="col-md-6 col-sm-6 col-xs-6 no-padding hotel-img-box">
-               <img src="<?= base_url('assets/images/hotel/recommended1.jpg') ?>" alt="Recommended" height="267" width="297" />
+               <img src="<?= base_url('assets/images/hotel/family.jpg') ?>" alt="Recommended" height="267" width="297" />
                <span><a href="#" title="Book Now">Book Now</a></span>
             </div>
             <div class="col-md-6 col-sm-6 col-xs-6 hotel-detail-box">
-               <h4>Hotel Paris</h4>
+               <h4>Family Suite</h4>
                <p>These men promptly escaped from a dum to the Los Angeles</p>
                <h6><b>125<sup>$</sup></b><span>For Person Per Night</span></h6>
                <span>
@@ -235,11 +235,11 @@
          </div>
          <div class="col-md-6 col-sm-12 col-xs-12 no-padding hotel-detail">
             <div class="col-md-6 col-sm-6 col-xs-6 no-padding hotel-img-box">
-               <img src="<?= base_url('assets/images/hotel/recommended1.jpg') ?>" alt="Recommended" height="267" width="297" />
+               <img src="<?= base_url('assets/images/hotel/twin.jpg') ?>" alt="Recommended" height="267" width="297" />
                <span><a href="#" title="Book Now">Book Now</a></span>
             </div>
             <div class="col-md-6 col-sm-6 col-xs-6 hotel-detail-box">
-               <h4>Hotel Paris</h4>
+               <h4>Standard</h4>
                <p>These men promptly escaped from a dum to the Los Angeles</p>
                <h6><b>125<sup>$</sup></b><span>For Person Per Night</span></h6>
                <span>
@@ -264,10 +264,10 @@
          <div class="carousel-inner" role="listbox">
             <div class="item active">
                <div class="col-md-6 no-padding room-img">
-                  <img src="<?= base_url('assets/images/room/room1.jpg') ?>" alt="Room">
+                  <img src="<?= base_url('assets/images/room/rumahkayu.jpg') ?>" alt="Room">
                </div>
                <div class="col-md-6 no-padding room-detail">
-                  <h4>luxury rooms</h4>
+                  <h4>Rumah Kayu</h4>
                   <div class="room-facility">
                      <div class="facility-box">
                         <i><img src="<?= base_url('assets/images/room/facility-ic1.png') ?>" alt="Facility Icon" /></i>
@@ -288,10 +288,10 @@
             </div>
             <div class="item">
                <div class="col-md-6 no-padding room-img">
-                  <img src="<?= base_url('assets/images/room/room1.jpg') ?>" alt="Room">
+                  <img src="<?= base_url('assets/images/room/family.jpg') ?>" alt="Room">
                </div>
                <div class="col-md-6 no-padding room-detail">
-                  <h4>luxury rooms</h4>
+                  <h4>Family Suite</h4>
                   <div class="room-facility">
                      <div class="facility-box">
                         <i><img src="<?= base_url('assets/images/room/facility-ic1.png') ?>" alt="Facility Icon" /></i>
@@ -312,10 +312,10 @@
             </div>
             <div class="item">
                <div class="col-md-6 no-padding room-img">
-                  <img src="<?= base_url('assets/images/room/room1.jpg') ?>" alt="Room">
+                  <img src="<?= base_url('assets/images/room/superior.jpg') ?>" alt="Room">
                </div>
                <div class="col-md-6 no-padding room-detail">
-                  <h4>luxury rooms</h4>
+                  <h4>Superior</h4>
                   <div class="room-facility">
                      <div class="facility-box">
                         <i><img src="<?= base_url('assets/images/room/facility-ic1.png') ?>" alt="Facility Icon" /></i>
@@ -336,10 +336,10 @@
             </div>
             <div class="item">
                <div class="col-md-6 no-padding room-img">
-                  <img src="<?= base_url('assets/images/room/room1.jpg') ?>" alt="Room">
+                  <img src="<?= base_url('assets/images/room/superiortwin.jpg') ?>" alt="Room">
                </div>
                <div class="col-md-6 no-padding room-detail">
-                  <h4>luxury rooms</h4>
+                  <h4>Superior Twin</h4>
                   <div class="room-facility">
                      <div class="facility-box">
                         <i><img src="<?= base_url('assets/images/room/facility-ic1.png') ?>" alt="Facility Icon" /></i>
@@ -360,10 +360,10 @@
             </div>
             <div class="item">
                <div class="col-md-6 no-padding room-img">
-                  <img src="<?= base_url('assets/images/room/room1.jpg') ?>" alt="Room">
+                  <img src="<?= base_url('assets/images/room/family3.jpg') ?>" alt="Room">
                </div>
                <div class="col-md-6 no-padding room-detail">
-                  <h4>luxury rooms</h4>
+                  <h4>Superior King</h4>
                   <div class="room-facility">
                      <div class="facility-box">
                         <i><img src="<?= base_url('assets/images/room/facility-ic1.png') ?>" alt="Facility Icon" /></i>
@@ -384,10 +384,10 @@
             </div>
             <div class="item">
                <div class="col-md-6 no-padding room-img">
-                  <img src="<?= base_url('assets/images/room/room1.jpg') ?>" alt="Room">
+                  <img src="<?= base_url('assets/images/room/twin.jpg') ?>" alt="Room">
                </div>
                <div class="col-md-6 no-padding room-detail">
-                  <h4>luxury rooms</h4>
+                  <h4>Standard</h4>
                   <div class="room-facility">
                      <div class="facility-box">
                         <i><img src="<?= base_url('assets/images/room/facility-ic1.png') ?>" alt="Facility Icon" /></i>
@@ -508,10 +508,10 @@
          <div class="col-md-4 col-sm-4 col-xs-6">
             <div class="price-box">
                <div class="price-img-box">
-                  <img src="<?= base_url('assets/images/price/price1.jpg') ?>" alt="Price" />
+                  <img src="<?= base_url('assets/images/price/twin.jpg') ?>" alt="Price" />
                   <h4><sup>$</sup>99<sub>per</sub> <span>night</span></h4>
                </div>
-               <h3>comfort room</h3>
+               <h3>Standard</h3>
                <ul>
                   <li>Restaurant Foods</li>
                   <li><del>High Speed Free Wifi</del></li>
@@ -525,10 +525,10 @@
          <div class="col-md-4 col-sm-4 col-xs-6">
             <div class="price-box">
                <div class="price-img-box">
-                  <img src="<?= base_url('assets/images/price/price2.jpg') ?>" alt="Price" />
+                  <img src="<?= base_url('assets/images/price/family.jpg') ?>" alt="Price" />
                   <h4><sup>$</sup>119<sub>per</sub> <span>night</span></h4>
                </div>
-               <h3>deluxe room</h3>
+               <h3>family</h3>
                <ul>
                   <li>Restaurant Foods</li>
                   <li>High Speed Free Wifi</li>
@@ -542,10 +542,10 @@
          <div class="col-md-4 col-sm-4 col-xs-6">
             <div class="price-box">
                <div class="price-img-box">
-                  <img src="<?= base_url('assets/images/price/price3.jpg') ?>" alt="Price" />
+                  <img src="<?= base_url('assets/images/price/rumahkayu.jpg') ?>" alt="Price" />
                   <h4><sup>$</sup>139<sub>per</sub> <span>night</span></h4>
                </div>
-               <h3>luxury room</h3>
+               <h3>Rumah Kayu</h3>
                <ul>
                   <li>Restaurant Foods</li>
                   <li>High Speed Free Wifi</li>

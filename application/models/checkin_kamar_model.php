@@ -6,6 +6,8 @@ class Checkin_kamar_model extends CI_Model
   private $_table = "checkin";
 
    public function getDataCheckinKamar(){
+    $this->db->join('m_kamar', 'checkin.no_kamar=m_kamar.no_kamar');
+    $this->db->join('m_kategori', 'm_kamar.kd_kategori=m_kategori.kd_kategori');
     return $this->db->get($this->_table);
   }
 
@@ -14,9 +16,9 @@ class Checkin_kamar_model extends CI_Model
   	return $this->db->insert($this->_table, $data);
   }
 
-   public function HapusDataBallroom($id_user)
+   public function HapusDataCheckin($nomor_checkin)
   {
-    $this->db->where('id_user', $id_user);
+    $this->db->where('nomor_checkin', $nomor_checkin);
     $this->db->delete('checkin');
 
   }

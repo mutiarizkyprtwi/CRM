@@ -41,13 +41,6 @@
                                                             <?= form_error('keterangan', '<label id="keterangan-error" class="error text-danger">', '</label>') ?>
                                                         </div>
                                                     </div>
-                                                    <div class="form-group row">
-                                                        <label class="col-md-3 control-label">Harga</label>
-                                                        <div class="col-md-9">
-                                                            <input type="integer" name="harga" id="harga" class="form-control" value="<?= set_value('harga') ?>">
-                                                        <?= form_error('harga', '<label id="harga-error" class="error text-danger">', '</label>') ?>   
-                                                        </div>
-                                                    </div>
                                                       <div class="form-group row float-right">
                                                            <button type="submit" class="btn btn-info waves-effect w-md waves-light m-b-5" style="margin-right: 10px;">Save</button>
                                                     </div>

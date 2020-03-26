@@ -25,7 +25,9 @@
                                                         <label class="col-md-3 control-label">Jenis Menu</label>
                                                         <div class="col-md-9">
                                                             <select class="form-control" name="kd_jns_menu">
-                                                             <option value="<?= $rule['kd_jns_menu'] ?>"><sub><?= $rule['jns_menu']?></sub></option>
+                                                                <?php foreach ($menu as $d) : ?>
+                                                                     <option value="<?= $d['kd_jns_menu'] ?>"><sub><?= $d['jns_menu']?></sub></option>
+                                                                 <?php endforeach; ?>
                                                             </select>
                                                         </div>
                                                     </div>

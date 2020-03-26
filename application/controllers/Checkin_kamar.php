@@ -24,8 +24,9 @@ class Checkin_kamar extends CI_Controller
    public function add()
    {
       $this->form_validation->set_rules('no_kamar', 'Nomor Kamar', 'required|trim');
-      $this->form_validation->set_rules('nama', 'Nama', 'required|trim');
-      $this->form_validation->set_rules('harga', 'Harga', 'required|trim');
+      $this->form_validation->set_rules('email_pemesan', 'Email Pemesan', 'required|trim');
+      $this->form_validation->set_rules('lama_menginap', 'lama_menginap', 'required|trim');
+      $this->form_validation->set_rules('harga_awal', 'Harga Awal', 'required|trim');
       $this->form_validation->set_rules('bf', 'bf', 'required|trim');
       $this->form_validation->set_rules('extra_bed', 'Extra Bed', 'required|trim');
       $this->form_validation->set_rules('total_harga', 'Total Harga', 'required|trim');
@@ -42,10 +43,12 @@ class Checkin_kamar extends CI_Controller
       $this->load->view('_templatesAdmin/home', $data);
       } else{
        $data =  [
-                  'id_user' => $this->input->post('id_user'),
                   'no_kamar' => $this->input->post('no_kamar'),
-                  'type_room' => $this->input->post('type_room'),
-                  'harga' => $this->input->post('harga'),
+                  'email_pemesan' => $this->input->post('email_pemesan'),
+                  'arrival' => date("Y-m-d", strtotime($this->input->post('arrival'))),
+                  'depart' => date("Y-m-d", strtotime($this->input->post('depart'))),
+                  'lama_menginap' => $this->input->post('lama_menginap'),
+                  'harga_awal' => $this->input->post('harga_awal'),
                   'bf' => $this->input->post('bf'),
                   'extra_bed' => $this->input->post('extra_bed'),
                   'total_harga' => $this->input->post('total_harga'),
@@ -61,9 +64,9 @@ class Checkin_kamar extends CI_Controller
       }
    }
 
-   public function hapus($id_user)
+   public function hapus($nomor_checkin)
    {
-      $this->checkin_kamar_model->HapusDataBallroom($id_user);
+      $this->checkin_kamar_model->HapusDataCheckin($nomor_checkin);
       $this->session->set_flashdata('flash', 'Dihapus');
       redirect(base_url('checkin_kamar'));
    }

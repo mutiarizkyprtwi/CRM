@@ -17,7 +17,7 @@
 
             <h4 class="header-title m-t-0 m-b-30">Data Ballroom 
                &nbsp &nbsp
-               <a href="<?= base_url('ballroom/add') ?>"><button type="button" class="btn btn-info waves-effect w-md waves-light m-b-5">Add Ballroom</button> </h4>  
+               <a href="<?= base_url('ballroom/add') ?>"><button type="button" class="btn btn-info waves-effect w-md waves-light m-b-5">Add Ballroom</button></a> </h4>  
 
                   <?php $this->session->flashdata('pesan') ?>
             <table id="datatable-fixed-header" class="table table-striped table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
@@ -25,7 +25,6 @@
                   <tr>
                      <th>Kode Ballroom</th>
                      <th>Jenis Ballroom</th>
-                     <th>Mata Uang</th>
                      <th>Harga</th>
                      <th>Satuan</th>
                      <th>Detail</th>
@@ -39,8 +38,7 @@
                   <tr>
                      <td><?= $blrm['kd_ballroom'] ?></td>
                      <td><?= $blrm['jenis_ballroom'] ?></td>
-                     <td><?= $blrm['mata_uang'] ?></td>
-                     <td><?= $blrm['harga'] ?></td>
+                     <td><?= $blrm['mata_uang']." ".number_format($blrm['harga'],0,',','.') ?></td>
                      <td><?= $blrm['satuan'] ?></td>
                      <td><?= $blrm['detail'] ?></td>
                      <td><?= $blrm['kategori'] ?></td>

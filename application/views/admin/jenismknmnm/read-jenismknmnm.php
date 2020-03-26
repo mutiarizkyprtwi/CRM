@@ -17,7 +17,7 @@
 
             <h4 class="header-title m-t-0 m-b-30">Jenis Menu Resto
                &nbsp &nbsp
-               <a href="<?= base_url('jenis_makan_minum/add') ?>"><button type="button" class="btn btn-info waves-effect w-md waves-light m-b-5">Add Jenis Menu Resto</button> </h4>  
+               <a href="<?= base_url('jenis_makan_minum/add') ?>"><button type="button" class="btn btn-info waves-effect w-md waves-light m-b-5">Add Jenis Menu Resto</button></a> </h4>  
 
                   <?php $this->session->flashdata('pesan') ?>
             <table id="datatable-fixed-header" class="table table-striped table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">

@@ -44,6 +44,12 @@
                                                             </select>
                                                         </div>
                                                         </div>
+                                                    <div class="form-group row">
+                                                        <label class="col-md-3 control-label">Harga Permalam</label>
+                                                        <div class="col-md-9">
+                                                            <input type="text" id="harga_permalam" name="harga_permalam" class="form-control" placeholder="" value="<?=$data['harga_permalam'] ?>"?>
+                                                        </div>
+                                                    </div>
                                                         <div class="form-group row float-right">
                                                            <button type="submit" class="btn btn-info waves-effect w-md waves-light m-b-5" style="margin-right: 10px;">Save</button>
                                                     </div>

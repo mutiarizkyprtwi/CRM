@@ -25,8 +25,6 @@ class Kamar extends CI_Controller
    {
       $this->form_validation->set_rules('kd_kategori', 'Kode Kategori', 'required|trim');
       $this->form_validation->set_rules('kategori', 'Kategori', 'required|trim');
-      $this->form_validation->set_rules('keterangan', 'Keterangan', 'required|trim');
-      $this->form_validation->set_rules('harga', 'harga', 'required|trim');
       if ($this->form_validation->run() == FALSE) {
       $data = [
          'title' => SITE_NAME,
@@ -39,8 +37,7 @@ class Kamar extends CI_Controller
          $data =  [
                   'kd_kategori' => $this->input->post('kd_kategori'),
                   'kategori' => $this->input->post('kategori'),
-                  'keterangan' => $this->input->post('keterangan'),
-                  'harga' => $this->input->post('harga')
+                  'keterangan' => $this->input->post('keterangan')
          ];
          $cek = $this->kamar_model->save($data);
          if ($cek){
@@ -57,27 +54,25 @@ class Kamar extends CI_Controller
       redirect(base_url('kamar'));
    }
 
-   public function ubah($kdkategori)
+   public function ubah($kd_kategori)
    {
       $this->form_validation->set_rules('kd_kategori', 'Kode Kategori', 'required|trim');
       $this->form_validation->set_rules('kategori', 'Kategori', 'required|trim');
-      $this->form_validation->set_rules('keterangan', 'Keterangan', 'required|trim');
-      $this->form_validation->set_rules('harga', 'harga', 'required|trim');
       if ($this->form_validation->run() == FALSE) {
       $data = [
          'title' => SITE_NAME,
          'judul' => 'Ubah Kategori Kamar',
          'isi'   => 'admin/kamar/ubah-kamar'
       ];
-      $data['rules'] = $this->db->get_where('m_kategori', ['kd_kategori'=>$kdkategori])->result_array();
+      $data['rules'] = $this->db->get_where('m_kategori', ['kd_kategori'=>$kd_kategori])->result_array();
       $this->load->view('_templatesAdmin/home', $data);
       } else{
          $data =  [
+                  'kd_kategori' => $this->input->post('kd_kategori'),
                   'kategori' => $this->input->post('kategori'),
-                  'keterangan' => $this->input->post('keterangan'),
-                  'harga' => $this->input->post('harga')
+                  'keterangan' => $this->input->post('keterangan')
          ];
-         $cek = $this->kamar_model->UbahKategoriKamar($data, $kdkategori);
+         $cek = $this->kamar_model->UbahKategoriKamar($data, $kd_kategori);
          if ($cek){
             $this->session->set_flashdata('pesan', 'Berhasil Mengubah Data Kamar');
             redirect(base_url('kamar'));

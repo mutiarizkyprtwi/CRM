@@ -15,7 +15,7 @@
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?= base_url('assets/images/logo_hotel.png') ?>">
 
 <!-- For iPad: -->
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?= base_url('assets/images/apple-touch-icon-72x72-precomposed.htm') ?>l">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?= base_url('assets/images/apple-touch-icon-72x72-precomposed.html') ?>">
 
 <!-- For iPhone: -->
 <link rel="apple-touch-icon-precomposed" href="<?= base_url('assets/images/apple-touch-icon-57x57-precomposed.html') ?>">

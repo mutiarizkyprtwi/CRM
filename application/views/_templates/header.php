@@ -3,7 +3,7 @@
    <!-- Container -->
    <div class="container">
       <div class="row">
-         <div class="logo-block col-md-3"><a href="index-2.html" title="Hotely"><img width="35%" src="<?= base_url ('assets/images/logo_hotel.png') ?>" alt="Logo" /></a></div>
+         <div class="logo-block col-md-3"><a href="index-2.html" title="GME"><img width="35%" src="<?= base_url ('assets/images/logo_hotel.png') ?>" alt="Logo" /></a></div>
          <div class="col-md-9 contact-detail">
             <div class="phone">
                <img src="<?= base_url ('assets/images/phone-ic.png') ?>" alt="Phone" />

@@ -68,6 +68,7 @@ class Menu_resto extends CI_Controller
          'judul' => 'Ubah Menu Resto',
          'isi'   => 'admin/menu_resto/ubah-menuresto'
       ];
+      $data['menu'] = $this->db->get('m_jenismakanan')->result_array();
       $data['rules'] = $this->db->get_where('menu_resto', ['kd_menu'=>$kd_menu])->result_array();
       $this->load->view('_templatesAdmin/home', $data);
       } else{

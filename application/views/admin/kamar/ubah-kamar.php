@@ -39,12 +39,6 @@
                                                             <input type="text" name="keterangan" class="form-control" id="keterangan" value="<?= $data['keterangan'] ?>">
                                                         </div>
                                                     </div>
-                                                    <div class="form-group row">
-                                                        <label class="col-md-3 control-label">Harga</label>
-                                                        <div class="col-md-9">
-                                                            <input type="integer" name="harga" id="harga" class="form-control" value="<?= $data['harga']?>">
-                                                        </div>
-                                                    </div>
                                                       <div class="form-group row float-right">
                                                            <button type="submit" name="ubah" class="btn btn-info waves-effect w-md waves-light m-b-5" style="margin-right: 10px;">Save</button>
                                                     </div>

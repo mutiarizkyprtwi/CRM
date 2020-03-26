@@ -17,7 +17,7 @@
 
             <h4 class="header-title m-t-0 m-b-30">Kategori Kamar 
                &nbsp &nbsp
-               <a href="<?= base_url('kamar/add') ?>"><button type="button" class="btn btn-info waves-effect w-md waves-light m-b-5">Add Kamar</button> </h4>  
+               <a href="<?= base_url('kamar/add') ?>"><button type="button" class="btn btn-info waves-effect w-md waves-light m-b-5">Add Kamar</button></a> </h4>  
 
                   <?php $this->session->flashdata('pesan') ?>
             <table id="datatable-fixed-header" class="table table-striped table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
@@ -26,7 +26,6 @@
                      <th>Kode Katagori</th>
                      <th>Kategori</th>
                      <th>Keterangan</th>
-                     <th>Harga</th>
                      <th>Aksi</th>
                   </tr>
                </thead>
@@ -37,7 +36,6 @@
                      <td><?= $kmr['kd_kategori'] ?></td>
                      <td><?= $kmr['kategori'] ?></td>
                      <td><?= $kmr['keterangan'] ?></td>
-                     <td><?= $kmr['harga'] ?></td>
                      <td><a href="<?=base_url (); ?>kamar/hapus/<?= $kmr['kd_kategori']; ?>" class="badge badge-danger float-right" onclick="return confirm('yakin?');">Delete</a> <a href="<?=base_url (); ?>kamar/ubah/<?= $kmr['kd_kategori']; ?>" class="badge badge-succses float-right">Edit</a></td>
                   </tr>
                <?php endforeach ?>

@@ -21,32 +21,17 @@
                                                 <form class="form-horizontal" method="POST" 
                                                 action="<?= base_url('checkin_kamar/add')?>">
                                                     <div class="form-group row">
-                                                        <label class="col-md-3 control-label">Kode Katagori</label>
+                                                        <label class="col-md-3 control-label">Nomor Kamar</label>
                                                         <div class="col-md-9">
                                                             <input type="text" name="no_kamar" class="form-control" placeholder="" id="no_kamar" value="<?= set_value('no_kamar') ?>">
                                                             <?= form_error('no_kamar', '<label id="no_kamar-error" class="error text-danger">', '</label>') ?>
                                                         </div>
                                                     </div>
                                                     <div class="form-group row">
-                                                        <label class="col-md-3 control-label">Type Room</label>
+                                                        <label class="col-md-3 control-label">Email</label>
                                                         <div class="col-md-9">
-                                                        <select class="form-control" name="type_room">
-                                                            <option value="STANDARD">STANDARD</option>
-                                                            <option value="JUNIOR SUITE">JUNIOR SUITE</option>
-                                                            <option value="SUPERIOR SINGLE">SUPERIOR SINGLE</option>
-                                                            <option value="SUPERIOR TWIN">SUPERIOR TWIN</option>
-                                                            <option value="SUPERIOR KING">SUPERIOR KING</option>
-                                                            <option value="SUITE FAMILY">SUITE FAMILY</option>
-                                                            <option value="DELUXE FAMILY">DELUXE FAMILY</option>
-                                                            <option value="RUMAH KAYU">RUMAH KAYU</option>
-                                                        </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group row">
-                                                        <label class="col-md-3 control-label">Nama</label>
-                                                        <div class="col-md-9">
-                                                            <input type="text" name="nama" class="form-control" id="nama" value="<?= set_value('nama') ?>">
-                                                            <?= form_error('nama', '<label id="nama-error" class="error text-danger">', '</label>') ?>
+                                                            <input type="text" name="email_pemesan" class="form-control" id="email_pemesan" value="<?= set_value('email_pemesan') ?>">
+                                                            <?= form_error('email_pemesan', '<label id="email_pemesan-error" class="error text-danger">', '</label>') ?>
                                                         </div>
                                                     </div>
                                                     <div class="form-group row">
@@ -71,11 +56,18 @@
                                                              </div><!-- input-group -->
                                                         </div>
                                                     </div>
+                                                   <div class="form-group row">
+                                                        <label class="col-md-3 control-label">Lama Menginap</label>
+                                                        <div class="col-md-9">
+                                                            <input type="integer" name="lama_menginap" class="form-control" id="lama_menginap" value="<?= set_value('lama_menginap') ?>">
+                                                            <?= form_error('lama_menginap', '<label id="lama_menginap-error" class="error text-danger">', '</label>') ?>
+                                                        </div>
+                                                    </div>
                                                     <div class="form-group row">
                                                         <label class="col-md-3 control-label">harga</label>
                                                         <div class="col-md-9">
-                                                            <input type="integer" name="harga" class="form-control" id="harga" value="<?= set_value('harga') ?>">
-                                                            <?= form_error('harga', '<label id="harga-error" class="error text-danger">', '</label>') ?>
+                                                            <input type="integer" name="harga_awal" class="form-control" id="harga_awal" value="<?= set_value('harga_awal') ?>">
+                                                            <?= form_error('harga_awal', '<label id="harga_awal-error" class="error text-danger">', '</label>') ?>
                                                         </div>
                                                     </div>
                                                     <div class="form-group row">
@@ -116,8 +108,14 @@
                                                     <div class="form-group row">
                                                         <label class="col-md-3 control-label">REMARK</label>
                                                         <div class="col-md-9">
-                                                            <input type="text" name="remark" class="form-control" id="remark" value="<?= set_value('remark') ?>">
-                                                            <?= form_error('remark', '<label id="remark-error" class="error text-danger">', '</label>') ?>
+                                                           <select class="form-control" name="remark">
+                                                               <option value="WALK IN">WALK IN</option>
+                                                               <option value="HOUSE USE">HOUSE USE</option>
+                                                               <option value="PEGI PEGI">PEGI PEGI</option>
+                                                               <option value="TRAVELOKA">TRAVELOKA</option>
+                                                               <option value="TIKET.COM">TIKET.COM</option>
+                                                               <option value="COMPLIMENT">COMPLIMENT</option>
+                                                            </select>
                                                         </div>
                                                     </div>
                                                       <div class="form-group row float-right">

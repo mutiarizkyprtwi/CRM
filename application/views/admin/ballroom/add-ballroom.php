@@ -74,7 +74,7 @@
                                                             <td><input type="radio" name="kategori" value="RESIDENTIAL" checked/>RESIDENTIAL</td>
                                                             </tr>
                                                             <tr>
-                                                            <td><input type="radio" name="kategori" value="NON-RESIDENTIAL">NON-RESIDENTIAL</td>
+                                                            <td><input type="radio" name="kategori" value="NON RESIDENTIAL">NON-RESIDENTIAL</td>
                                                             </tr>
                                                         </div>
                                                     </div>

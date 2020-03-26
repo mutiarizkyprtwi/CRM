@@ -25,6 +25,7 @@ class No_kamar extends CI_Controller
    {
       $this->form_validation->set_rules('no_kamar', 'Nomor Kamar', 'required|trim');
       $this->form_validation->set_rules('lantai', 'Lantai', 'required|trim');
+      $this->form_validation->set_rules('harga_permalam', 'Harga Permalam', 'required|trim');
       if ($this->form_validation->run() == FALSE) {
       $data = [
          'title' => SITE_NAME,
@@ -37,7 +38,8 @@ class No_kamar extends CI_Controller
        $data =  [
                   'no_kamar' => $this->input->post('no_kamar'),
                   'lantai' => $this->input->post('lantai'),
-                  'kd_kategori' => $this->input->post('kd_kategori')
+                  'kd_kategori' => $this->input->post('kd_kategori'),
+                  'harga_permalam' => $this->input->post('harga_permalam')
          ];
          $cek = $this->nokamar_model->save($data);
          if ($cek){
@@ -59,6 +61,7 @@ class No_kamar extends CI_Controller
       $this->form_validation->set_rules('no_kamar', 'Nomor Kamar', 'required|trim');
       $this->form_validation->set_rules('lantai', 'lantai', 'required|trim');
       $this->form_validation->set_rules('kd_kategori', 'Kode Kategori', 'required|trim');
+      $this->form_validation->set_rules('harga_permalam', 'Harga Permalam', 'required|trim');
       if ($this->form_validation->run() == FALSE) {
       $data = [
          'title' => SITE_NAME,
@@ -71,7 +74,8 @@ class No_kamar extends CI_Controller
          $data =  [
                   'no_kamar' => $this->input->post('no_kamar'),
                   'lantai' => $this->input->post('lantai'),
-                  'kd_kategori' => $this->input->post('kd_kategori')
+                  'kd_kategori' => $this->input->post('kd_kategori'),
+                   'harga_permalam' => $this->input->post('harga_permalam')
          ];
          $cek = $this->nokamar_model->UbahNoKamar($data, $no_kamar);
          if ($cek){
