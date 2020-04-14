@@ -49,7 +49,13 @@
                                                              <select multiple="multiple" class="multi-select" id="fasilitas" name="fasilitas[]" data-plugin="multiselect">
                                                             <?php
                                                              foreach ($fasilitas as $fst) : ?>
-                                                             <option value="<?= $fst['kd_fasilitas'] ?>"><sub><?= $fst['fasilitas']?></sub></option>
+                                                                    <option value="<?= $fst['kd_fasilitas'] ?>" 
+                                                                        <?php
+                                                                            foreach ($fasilitasKamar as $fstk) : ?> 
+                                                                            <?= $fst['kd_fasilitas']==$fstk['id_fasilitas']?"selected":"" ?> 
+                                                                        <?php endforeach; ?>>
+                                                                        <sub><?= $fst['fasilitas']?></sub>
+                                                                    </option>
                                                              <?php endforeach; ?>
                                                             </select>
                                                         </div>

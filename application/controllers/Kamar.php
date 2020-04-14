@@ -135,6 +135,7 @@ class Kamar extends CI_Controller
       $data['fotoKamar'] = $this->db->get_where('m_fotokamar',['kd_kategori'=>$kd_kategori])->result_array();
       $data['kriteria'] = $this->db->get_where('m_kategori',['kd_kategori'=>$kd_kategori])->row_array();
       $data['fasilitas'] = $this->db->get('m_fasilitas')->result_array();
+      $data['fasilitasKamar'] = $this->db->get_where('fasilitas_kamar', ['kd_kategori'=>$kd_kategori])->result_array();
       $this->load->view('_templatesAdmin/home', $data);
       } else{
          $data =  [

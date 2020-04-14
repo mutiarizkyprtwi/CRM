@@ -1195,7 +1195,7 @@
 	text-align: center;
 	display: inline-block;
 	margin-bottom: 20px;
-	margin-right: 20px;
+	/*margin-right: 20px;*/
 	margin-top: 20px;
 }
 .room-facility > div h5 {

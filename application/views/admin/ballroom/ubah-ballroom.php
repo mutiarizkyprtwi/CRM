@@ -37,10 +37,10 @@
                                                         <label class="col-md-3 control-label">Mata Uang</label>
                                                         <div class="col-sm-9">
                                                             <tr>
-                                                            <td><input type="radio" name="mata_uang" value="IDR" checked/>IDR</td>
+                                                            <td><input type="radio" name="mata_uang" value="IDR" <?= $data['mata_uang']=="IDR"?"checked":"" ?>/>IDR</td>
                                                             </tr>
                                                             <tr>
-                                                            <td><input type="radio" name="mata_uang" value="USD">USD</td>
+                                                            <td><input type="radio" name="mata_uang" value="USD"  <?= $data['mata_uang']=="USD"?"checked":"" ?>/>USD</td>
                                                             </tr>
                                                         </div>
                                                     </div>
@@ -54,7 +54,7 @@
                                                         <label class="col-md-3 control-label">Satuan</label>
                                                         <div class="col-md-9">
                                                             <select class="form-control" name="satuan">
-                                                               <option value="pax">pax</option>
+                                                               <option value="pax"  <?= $data['satuan']=="pax"?"selected":"" ?>/>pax</option>
                                                             </select>
                                                         </div>
                                                     </div>

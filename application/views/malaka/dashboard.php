@@ -1,4 +1,4 @@
-Slider Section -->
+<!-- Slider Section --> 
 <div id="slider-section" class="slider-section container-fluid no-padding">
    <div id="photo-slider" class="carousel slide" data-ride="carousel">
       <!-- Wrapper for slides -->
@@ -204,7 +204,7 @@ Slider Section -->
          </div>
       <?php endforeach ?>
          </div>
-         <a href="#" title="View More Hotels" class="read-more">view more hotels<i class="fa fa-long-arrow-right"></i></a>
+         <a href="<?= base_url('listkamar') ?>" title="View More Hotels" class="read-more">view more hotels<i class="fa fa-long-arrow-right"></i></a>
       </div>
    </div><!-- Container /- -->
    <div class="section-padding"></div>
@@ -227,23 +227,23 @@ Slider Section -->
                   <div class="room-facility" style="display:inline-block;">
                      <div class="facility-box">
                         <i><img width="30%" src="<?= ('images/room/location.png') ?>" /></i>
-                        <h5>Location <span>--</span></h5>
+                        <h5>Location <span><?=($rm['location']) ?></span></h5>
                      </div>
                      <div class="facility-box">
                         <i><img width="35%" src="<?= ('images/room/sizee.png') ?>" alt="Facility Icon" /></i>
-                        <h5>Size<span>--</span></h5>
+                        <h5>Size<span><?=($rm['size']) ?></span></h5>
                      </div>
                      <div class="facility-box">
                         <i><img width="35%" src="<?= ('images/room/theatre.png') ?>"/></i>
-                        <h5>Theatre <span>--</span></h5>
+                        <h5>Theatre <span><?=($rm['theatre']) ?></span></h5>
                      </div>
                      <div class="facility-box">
                         <i><img width="35%" src="<?= ('images/room/u-shape.png') ?>" alt="Facility Icon" /></i>
-                        <h5>U-shape <span>--</span></h5>
+                        <h5>U-shape <span><?=($rm['u-shape']) ?></span></h5>
                      </div>
                      <div class="facility-box">
                         <i><img width="35%" src="<?= ('images/room/class.png') ?>" alt="Facility Icon" /></i>
-                        <h5>Class <span>--</span></h5>
+                        <h5>Class <span><?=($rm['class']) ?></span></h5>
                      </div>
                   </div>
                   <p>These men promptly escaped from a maximum security stock ade to the Los Angeles underground these Happy Days are yours and mine Happy Days as long wrong with that the Brady Bunch.</p>
