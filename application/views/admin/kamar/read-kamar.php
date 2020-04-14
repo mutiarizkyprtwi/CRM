@@ -1,5 +1,6 @@
 <div class="row">
    <div class="col-sm-12">
+      <?= $this->session->flashdata('pesan')?>
       <div class="card table-responsive">
          <div class="card-body">
             <div class="dropdown float-right">
@@ -26,6 +27,7 @@
                      <th>Kode Katagori</th>
                      <th>Kategori</th>
                      <th>Keterangan</th>
+                     <th>Harga Permalam</th>
                      <th>Aksi</th>
                   </tr>
                </thead>
@@ -36,6 +38,7 @@
                      <td><?= $kmr['kd_kategori'] ?></td>
                      <td><?= $kmr['kategori'] ?></td>
                      <td><?= $kmr['keterangan'] ?></td>
+                     <td><?= $kmr['harga_permalam'] ?></td>
                      <td><a href="<?=base_url (); ?>kamar/hapus/<?= $kmr['kd_kategori']; ?>" class="badge badge-danger float-right" onclick="return confirm('yakin?');">Delete</a> <a href="<?=base_url (); ?>kamar/ubah/<?= $kmr['kd_kategori']; ?>" class="badge badge-succses float-right">Edit</a></td>
                   </tr>
                <?php endforeach ?>

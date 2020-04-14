@@ -1,4 +1,4 @@
-<!-- Slider Section -->
+Slider Section -->
 <div id="slider-section" class="slider-section container-fluid no-padding">
    <div id="photo-slider" class="carousel slide" data-ride="carousel">
       <!-- Wrapper for slides -->
@@ -183,71 +183,26 @@
       <div class="section-header">
          <h3>recommended hotels</h3>
          <p>These men promptly escaped from a maximum security stock ade to the Los Angeles underground these Happy Days are yours and mine Happy Days as long wrong with that the Brady Bunch.</p>
-      </div>
+      </div> 
       <div class="recommended-detail">
+         <?php foreach($kamar as $km) :?>
          <div class="col-md-6 col-sm-12 col-xs-12 no-padding hotel-detail">
             <div class="col-md-6 col-sm-6 col-xs-6 no-padding hotel-img-box">
-               <img src="<?= base_url('assets/images/hotel/1.jpg') ?>" alt="Recommended" height="267" width="297" />
+               <img src="<?= base_url('images/kamar/resize/'.$km['nama_foto']) ?>" alt="Recommended" height="267" width="297" />
                <span><a href="#" title="Book Now">Book Now</a></span>
             </div>
             <div class="col-md-6 col-sm-6 col-xs-6 hotel-detail-box">
-               <h4>Rumah Kayu</h4>
+               <h4><?= $km['kategori']?></h4>
                <p>These men promptly escaped from a dum to the Los Angeles</p>
-               <h6><b>125<sup>$</sup></b><span>For Person Per Night</span></h6>
+               <h6><b><sup>Rp</sup><?= number_format($km['harga_permalam'],0,',','.'); ?></b><span>For Person Per Night</span></h6>
                <span>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star-half-o"></i>
+                  <?php for($i=1; $i<=$km['rating_kamar']; $i++) :  ?>
+                     <i class="fa fa-star"></i>
+               <?php endfor ?>
                </span>
             </div>
          </div>
-         <div class="col-md-6 col-sm-12 col-xs-12 no-padding hotel-detail">
-            <div class="col-md-6 col-sm-6 col-xs-6 no-padding hotel-img-box">
-               <img src="<?= base_url('assets/images/hotel/superiortwin.jpg') ?>" alt="Recommended" height="267" width="297" />
-               <span><a href="#" title="Book Now">Book Now</a></span>
-            </div>
-            <div class="col-md-6 col-sm-6 col-xs-6 hotel-detail-box">
-               <h4>Superior</h4>
-               <p>These men promptly escaped from a dum to the Los Angeles</p>
-               <h6><b>125<sup>$</sup></b><span>For Person Per Night</span></h6>
-               <span>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star-half-o"></i>
-               </span>
-            </div>
-         </div>
-         <div class="col-md-6 col-sm-12 col-xs-12 no-padding hotel-detail">
-            <div class="col-md-6 col-sm-6 col-xs-6 no-padding hotel-img-box">
-               <img src="<?= base_url('assets/images/hotel/family.jpg') ?>" alt="Recommended" height="267" width="297" />
-               <span><a href="#" title="Book Now">Book Now</a></span>
-            </div>
-            <div class="col-md-6 col-sm-6 col-xs-6 hotel-detail-box">
-               <h4>Family Suite</h4>
-               <p>These men promptly escaped from a dum to the Los Angeles</p>
-               <h6><b>125<sup>$</sup></b><span>For Person Per Night</span></h6>
-               <span>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star-half-o"></i>
-               </span>
-            </div>
-         </div>
-         <div class="col-md-6 col-sm-12 col-xs-12 no-padding hotel-detail">
-            <div class="col-md-6 col-sm-6 col-xs-6 no-padding hotel-img-box">
-               <img src="<?= base_url('assets/images/hotel/twin.jpg') ?>" alt="Recommended" height="267" width="297" />
-               <span><a href="#" title="Book Now">Book Now</a></span>
-            </div>
-            <div class="col-md-6 col-sm-6 col-xs-6 hotel-detail-box">
-               <h4>Standard</h4>
-               <p>These men promptly escaped from a dum to the Los Angeles</p>
-               <h6><b>125<sup>$</sup></b><span>For Person Per Night</span></h6>
-               <span>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star-half-o"></i>
-               </span>
-            </div>
+      <?php endforeach ?>
          </div>
          <a href="#" title="View More Hotels" class="read-more">view more hotels<i class="fa fa-long-arrow-right"></i></a>
       </div>
@@ -262,150 +217,40 @@
    <div class="container">
       <div id="room-carousel" class="carousel slide" data-ride="carousel">
          <div class="carousel-inner" role="listbox">
-            <div class="item active">
+            <?php foreach($room as $rm) :?>
+            <div class="item <?= $rm['kd_room']=="RM-1"?'active':'' ?>">
                <div class="col-md-6 no-padding room-img">
-                  <img src="<?= base_url('assets/images/room/rumahkayu.jpg') ?>" alt="Room">
+                 <img src="<?= base_url('images/room/resize/'.$rm['nama_foto']) ?>" alt="Recommended" height="582" width="543" />
                </div>
                <div class="col-md-6 no-padding room-detail">
-                  <h4>Rumah Kayu</h4>
-                  <div class="room-facility">
+                  <h4><?= $rm['room'] ?></h4>
+                  <div class="room-facility" style="display:inline-block;">
                      <div class="facility-box">
-                        <i><img src="<?= base_url('assets/images/room/facility-ic1.png') ?>" alt="Facility Icon" /></i>
-                        <h5>high speed <span>wifi</span></h5>
+                        <i><img width="30%" src="<?= ('images/room/location.png') ?>" /></i>
+                        <h5>Location <span>--</span></h5>
                      </div>
                      <div class="facility-box">
-                        <i><img src="<?= base_url('assets/images/room/facility-ic2.png') ?>" alt="Facility Icon" /></i>
-                        <h5>one-call <span>doctor</span></h5>
+                        <i><img width="35%" src="<?= ('images/room/sizee.png') ?>" alt="Facility Icon" /></i>
+                        <h5>Size<span>--</span></h5>
                      </div>
                      <div class="facility-box">
-                        <i><img src="<?= base_url('assets/images/room/facility-ic3.png') ?>" alt="Facility Icon" /></i>
-                        <h5>mineral <span>water</span></h5>
+                        <i><img width="35%" src="<?= ('images/room/theatre.png') ?>"/></i>
+                        <h5>Theatre <span>--</span></h5>
+                     </div>
+                     <div class="facility-box">
+                        <i><img width="35%" src="<?= ('images/room/u-shape.png') ?>" alt="Facility Icon" /></i>
+                        <h5>U-shape <span>--</span></h5>
+                     </div>
+                     <div class="facility-box">
+                        <i><img width="35%" src="<?= ('images/room/class.png') ?>" alt="Facility Icon" /></i>
+                        <h5>Class <span>--</span></h5>
                      </div>
                   </div>
                   <p>These men promptly escaped from a maximum security stock ade to the Los Angeles underground these Happy Days are yours and mine Happy Days as long wrong with that the Brady Bunch.</p>
                   <a class="read-more" title="Read More" href="#">Read More <i class="fa fa-long-arrow-right"></i></a>
                </div>
             </div>
-            <div class="item">
-               <div class="col-md-6 no-padding room-img">
-                  <img src="<?= base_url('assets/images/room/family.jpg') ?>" alt="Room">
-               </div>
-               <div class="col-md-6 no-padding room-detail">
-                  <h4>Family Suite</h4>
-                  <div class="room-facility">
-                     <div class="facility-box">
-                        <i><img src="<?= base_url('assets/images/room/facility-ic1.png') ?>" alt="Facility Icon" /></i>
-                        <h5>high speed <span>wifi</span></h5>
-                     </div>
-                     <div class="facility-box">
-                        <i><img src="<?= base_url('assets/images/room/facility-ic2.png') ?>" alt="Facility Icon" /></i>
-                        <h5>one-call <span>doctor</span></h5>
-                     </div>
-                     <div class="facility-box">
-                        <i><img src="<?= base_url('assets/images/room/facility-ic3.png') ?>" alt="Facility Icon" /></i>
-                        <h5>mineral <span>water</span></h5>
-                     </div>
-                  </div>
-                  <p>These men promptly escaped from a maximum security stock ade to the Los Angeles underground these Happy Days are yours and mine Happy Days as long wrong with that the Brady Bunch.</p>
-                  <a class="read-more" title="Read More" href="#">Read More <i class="fa fa-long-arrow-right"></i></a>
-               </div>
-            </div>
-            <div class="item">
-               <div class="col-md-6 no-padding room-img">
-                  <img src="<?= base_url('assets/images/room/superior.jpg') ?>" alt="Room">
-               </div>
-               <div class="col-md-6 no-padding room-detail">
-                  <h4>Superior</h4>
-                  <div class="room-facility">
-                     <div class="facility-box">
-                        <i><img src="<?= base_url('assets/images/room/facility-ic1.png') ?>" alt="Facility Icon" /></i>
-                        <h5>high speed <span>wifi</span></h5>
-                     </div>
-                     <div class="facility-box">
-                        <i><img src="<?= base_url('assets/images/room/facility-ic2.png') ?>" alt="Facility Icon" /></i>
-                        <h5>one-call <span>doctor</span></h5>
-                     </div>
-                     <div class="facility-box">
-                        <i><img src="<?= base_url('assets/images/room/facility-ic3.png') ?>" alt="Facility Icon" /></i>
-                        <h5>mineral <span>water</span></h5>
-                     </div>
-                  </div>
-                  <p>These men promptly escaped from a maximum security stock ade to the Los Angeles underground these Happy Days are yours and mine Happy Days as long wrong with that the Brady Bunch.</p>
-                  <a class="read-more" title="Read More" href="#">Read More <i class="fa fa-long-arrow-right"></i></a>
-               </div>
-            </div>
-            <div class="item">
-               <div class="col-md-6 no-padding room-img">
-                  <img src="<?= base_url('assets/images/room/superiortwin.jpg') ?>" alt="Room">
-               </div>
-               <div class="col-md-6 no-padding room-detail">
-                  <h4>Superior Twin</h4>
-                  <div class="room-facility">
-                     <div class="facility-box">
-                        <i><img src="<?= base_url('assets/images/room/facility-ic1.png') ?>" alt="Facility Icon" /></i>
-                        <h5>high speed <span>wifi</span></h5>
-                     </div>
-                     <div class="facility-box">
-                        <i><img src="<?= base_url('assets/images/room/facility-ic2.png') ?>" alt="Facility Icon" /></i>
-                        <h5>one-call <span>doctor</span></h5>
-                     </div>
-                     <div class="facility-box">
-                        <i><img src="<?= base_url('assets/images/room/facility-ic3.png') ?>" alt="Facility Icon" /></i>
-                        <h5>mineral <span>water</span></h5>
-                     </div>
-                  </div>
-                  <p>These men promptly escaped from a maximum security stock ade to the Los Angeles underground these Happy Days are yours and mine Happy Days as long wrong with that the Brady Bunch.</p>
-                  <a class="read-more" title="Read More" href="#">Read More <i class="fa fa-long-arrow-right"></i></a>
-               </div>
-            </div>
-            <div class="item">
-               <div class="col-md-6 no-padding room-img">
-                  <img src="<?= base_url('assets/images/room/family3.jpg') ?>" alt="Room">
-               </div>
-               <div class="col-md-6 no-padding room-detail">
-                  <h4>Superior King</h4>
-                  <div class="room-facility">
-                     <div class="facility-box">
-                        <i><img src="<?= base_url('assets/images/room/facility-ic1.png') ?>" alt="Facility Icon" /></i>
-                        <h5>high speed <span>wifi</span></h5>
-                     </div>
-                     <div class="facility-box">
-                        <i><img src="<?= base_url('assets/images/room/facility-ic2.png') ?>" alt="Facility Icon" /></i>
-                        <h5>one-call <span>doctor</span></h5>
-                     </div>
-                     <div class="facility-box">
-                        <i><img src="<?= base_url('assets/images/room/facility-ic3.png') ?>" alt="Facility Icon" /></i>
-                        <h5>mineral <span>water</span></h5>
-                     </div>
-                  </div>
-                  <p>These men promptly escaped from a maximum security stock ade to the Los Angeles underground these Happy Days are yours and mine Happy Days as long wrong with that the Brady Bunch.</p>
-                  <a class="read-more" title="Read More" href="#">Read More <i class="fa fa-long-arrow-right"></i></a>
-               </div>
-            </div>
-            <div class="item">
-               <div class="col-md-6 no-padding room-img">
-                  <img src="<?= base_url('assets/images/room/twin.jpg') ?>" alt="Room">
-               </div>
-               <div class="col-md-6 no-padding room-detail">
-                  <h4>Standard</h4>
-                  <div class="room-facility">
-                     <div class="facility-box">
-                        <i><img src="<?= base_url('assets/images/room/facility-ic1.png') ?>" alt="Facility Icon" /></i>
-                        <h5>high speed <span>wifi</span></h5>
-                     </div>
-                     <div class="facility-box">
-                        <i><img src="<?= base_url('assets/images/room/facility-ic2.png') ?>" alt="Facility Icon" /></i>
-                        <h5>one-call <span>doctor</span></h5>
-                     </div>
-                     <div class="facility-box">
-                        <i><img src="<?= base_url('assets/images/room/facility-ic3.png') ?>" alt="Facility Icon" /></i>
-                        <h5>mineral <span>water</span></h5>
-                     </div>
-                  </div>
-                  <p>These men promptly escaped from a maximum security stock ade to the Los Angeles underground these Happy Days are yours and mine Happy Days as long wrong with that the Brady Bunch.</p>
-                  <a class="read-more" title="Read More" href="#">Read More <i class="fa fa-long-arrow-right"></i></a>
-               </div>
-            </div>
+            <?php endforeach ?>
          </div>
          <!-- Controls -->
          <div class="carousel-contorls">
@@ -619,4 +464,4 @@
       </div>
    </div><!-- Container /- -->
    <div class="section-padding"></div>
-</div><!-- Event Section /- -->
+</div><!-- Event Section /-

@@ -36,7 +36,7 @@ class Room extends CI_Controller
          'judul' => 'Add Room',
          'isi'   => 'admin/room/add-room'
       ];
-      $data['rules'] = $this->db->get('m_room')->result_array();
+      $data['room'] = $this->db->get('m_room')->result_array();
       $this->load->view('_templatesAdmin/home', $data);
       } else{
        $data =  [
@@ -46,14 +46,60 @@ class Room extends CI_Controller
                   'size' => $this->input->post('size'),
                   'theatre' => $this->input->post('theatre'),
                   'u-shape' => $this->input->post('u-shape'),
-                  'round' => $this->input->post('round'),
                   'class' => $this->input->post('class')
          ];
-         $cek = $this->room_model->save($data);
-         if ($cek){
-            $this->session->set_flashdata('pesan', 'Berhasil Menambahkan Data Ballroom');
+
+         if ($_FILES['fotoroom']['name'][0]!=='') {
+            $banyakFoto = sizeof($_FILES['fotoroom']['tmp_name']);
+
+            $files = $_FILES['fotoroom'];
+            $config['image_library']='gd2';
+            $config['upload_path']= './images/room/';
+            $config['allowed_types'] = 'jpg|png|gif|bmp|jpeg|JPG|PNG|GIF|BMP|JPEG';
+            $config['max_size']=2048;
+            $config['create_thumb']=FALSE;
+            $config['maintain_ratio']=FALSE;
+            $config['width'] = 582;
+            $config['height']= 543;
+
+            $id = $this->input->post('kd_room');
+            $cek = $this->room_model->save($data);
+
+            for ($i=0; $i < $banyakFoto; $i++) { 
+               $_FILES['fotoroom']['name'] = $files['name'][$i];
+               $_FILES['fotoroom']['type'] = $files['type'][$i];
+               $_FILES['fotoroom']['tmp_name'] = $files['tmp_name'][$i];
+               $_FILES['fotoroom']['size'] = $files['size'][$i];
+               $config['file_name']= $id.'--'.date("d-m-Y").'--'.$_FILES['fotoroom']['name'];
+
+               $this->load->library('upload',$config);
+               $this->upload->initialize($config);
+
+               if($this->upload->do_upload('fotoroom')){
+                  $foto = $this->upload->data();
+                  $config['source_image']='./images/room/'.$foto['file_name'];
+                  $config['new_image']='./images/room/resize/'.$foto['file_name'];
+                  $this->load->library('image_lib', $config);
+                  $this->image_lib->resize();
+                  $gambar= [
+                     'nama_foto'=> $foto['file_name'],
+                     'kd_room' => $id
+                  ];
+
+                  $this->db->insert('m_fotoroom', $gambar);
+                  $this->session->set_flashdata('pesan', 'Berhasil Menambahkan Data Room');
+               }else{
+                  $error = array('error'=>$this->upload->display_error());
+                  $this->session->set_flashdata('pesan', $error['error']);
+               }
+            }
             redirect(base_url('room'));
-         }
+            $cek = $this->room_model->save($data);
+            if ($cek){
+               $this->session->set_flashdata('pesan', 'Berhasil Menambahkan Data Room');
+               redirect(base_url('room'));
+            }
+        }
       }
    }
 
@@ -79,7 +125,10 @@ class Room extends CI_Controller
          'judul' => 'Ubah Room',
          'isi'   => 'admin/room/ubah-room'
       ];
-      $data['rules'] = $this->db->get_where('m_room', ['kd_room'=>$kd_room])->result_array();
+      $data['fotoroom'] = $this->db->get_where('m_fotoroom',['kd_room'=>$kd_room])->result_array();
+      $data['room'] = $this->db->get_where('m_room', ['kd_room'=>$kd_room])->row_array();
+      // var_dump($data['room']);
+      // die;
       $this->load->view('_templatesAdmin/home', $data);
       } else{
          $data =  [
@@ -89,14 +138,67 @@ class Room extends CI_Controller
                   'size' => $this->input->post('size'),
                   'theatre' => $this->input->post('theatre'),
                   'u-shape' => $this->input->post('u-shape'),
-                  'round' => $this->input->post('round'),
                   'class' => $this->input->post('class')
                   ];
-         $cek = $this->room_model->UbahRoom($data, $kd_room);
-         if ($cek){
-            $this->session->set_flashdata('pesan', 'Berhasil Mengubah Data Room');
+
+         if ($_FILES['fotoroom']['name'][0]!=='') {
+            $banyakFoto = sizeof($_FILES['fotoroom']['tmp_name']);
+
+            $files = $_FILES['fotoroom'];
+            $config['image_library']='gd2';
+            $config['upload_path']= './images/room/';
+            $config['allowed_types'] = 'jpg|png|gif|bmp|jpeg|JPG|PNG|GIF|BMP|JPEG';
+            $config['max_size']=2048;
+            $config['create_thumb']=FALSE;
+            $config['maintain_ratio']=FALSE;
+            $config['width'] = 582;
+            $config['height']= 543;
+
+            $id = $this->input->post('kd_room');
+            $cek = $this->room_model->UbahRoom($data, $id);
+
+            for ($i=0; $i < $banyakFoto; $i++) { 
+               $_FILES['fotoroom']['name'] = $files['name'][$i];
+               $_FILES['fotoroom']['type'] = $files['type'][$i];
+               $_FILES['fotoroom']['tmp_name'] = $files['tmp_name'][$i];
+               $_FILES['fotoroom']['size'] = $files['size'][$i];
+               $config['file_name']= $id.'--'.date("d-m-Y").'--'.$_FILES['fotoroom']['name'];
+
+               $this->load->library('upload',$config);
+               $this->upload->initialize($config);
+
+               if($this->upload->do_upload('fotoroom')){
+                  $foto = $this->upload->data();
+                  $config['source_image']='./images/room/'.$foto['file_name'];
+                  $config['new_image']='./images/room/resize/'.$foto['file_name'];
+                  $this->load->library('image_lib', $config);
+                  $this->image_lib->resize();
+                  $gambar= [
+                     'nama_foto'=> $foto['file_name'],
+                     'kd_room' => $id
+                  ];
+
+                  $this->db->insert('m_fotoroom', $gambar);
+                  $this->session->set_flashdata('pesan', 'Berhasil Menambahkan Data Room');
+               }else{
+                  $error = array('error'=>$this->upload->display_error());
+                  $this->session->set_flashdata('pesan', $error['error']);
+               }
+            }
+            redirect(base_url('room'));
+         }else{
+             $id = $this->input->post('kd_room');
+             $cek = $this->room_model->UbahRoom($data, $id);
+             $this->session->set_flashdata('pesan', 'Berhasil Mengubah Data Room');
             redirect(base_url('room'));
          }
       }
+   }
+
+    public function hapusfotoroom($id_room,$kd_room)
+   {
+      $this->room_model->HapusFotoRoom($id_room);
+      $this->session->set_flashdata('flash', 'Dihapus');
+      redirect(base_url('room/ubah/'.$kd_room));
    }
 }

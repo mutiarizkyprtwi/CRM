@@ -18,8 +18,7 @@
                                         <h4 class="header-title m-t-0 m-b-30">Add Kamar</h4>
                                         <div class="row">
                                             <div class="col-xl-12">
-                                                <form class="form-horizontal" method="POST" 
-                                                action="<?= base_url('kamar/add')?>">
+                                                <?= form_open_multipart('kamar/add')?>
                                                     <div class="form-group row">
                                                         <label class="col-md-3 control-label">Kode Katagori</label>
                                                         <div class="col-md-9">
@@ -41,11 +40,36 @@
                                                             <?= form_error('keterangan', '<label id="keterangan-error" class="error text-danger">', '</label>') ?>
                                                         </div>
                                                     </div>
+                                                    <div class="form-group row">
+                                                        <label class="col-md-3 control-label">Harga Permalam</label>
+                                                        <div class="col-md-9">
+                                                            <input type="text" id="harga_permalam" name="harga_permalam" class="form-control" placeholder="" value="<?= set_value('harga_permalam') ?>">
+                                                            <?= form_error('harga_permalam', '<label id="harga_permalam-error" class="error text-danger">', '</label>') ?>
+                                                        </div>
+                                                    </div>
+                                                        <div class="form-group row">
+                                                        <label class="col-md-3 control-label"> Fasilitas</label>
+                                                        <div class="col-md-9">
+                                                             <select multiple="multiple" class="multi-select" id="fasilitas" name="fasilitas[]" data-plugin="multiselect">
+                                                            <?php
+                                                             foreach ($fasilitas as $fst) : ?>
+                                                             <option value="<?= $fst['kd_fasilitas'] ?>"><sub><?= $fst['fasilitas']?></sub></option>
+                                                             <?php endforeach; ?>
+                                                     </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label class="col-md-3 control-label">Foto</label>
+                                                        <div class="col-md-9">
+                                                            <input type="file" id="fotoKamar" name="fotoKamar[]" multiple class="form-control" placeholder="" >
+                                                            <?= form_error('foto', '<label id="foto-error" class="error text-danger">', '</label>') ?>
+                                                        </div>
+                                                    </div>
                                                       <div class="form-group row float-right">
                                                            <button type="submit" class="btn btn-info waves-effect w-md waves-light m-b-5" style="margin-right: 10px;">Save</button>
                                                     </div>
                                                     <a href="<?= base_url('kamar/index') ?>"><button type="button" class="btn btn-danger waves-effect w-md waves-light m-b-5" style="margin-left: 250px;">Cancel</button></a>
-                                                </form>
+                                                <?php form_close()?>
                                             </div><!-- end col -->            
                                         </div><!-- end row -->
                                     </div>

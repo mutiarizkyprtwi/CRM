@@ -19,13 +19,18 @@ class Kamar_model extends CI_Model
   {
     $this->db->where('kd_kategori', $kd_kategori);
     $this->db->delete('m_kategori');
-
   }
 
   public function UbahKategoriKamar($data, $kd_kategori)
   {
     //insert ke dalam tabel users
     return $this->db->update($this->_table, $data, ['kd_kategori'=>$kd_kategori]);
+  }
+
+   public function HapusFotoKamar($id_fotokamar)
+  {
+    $this->db->where('id_fotokamar', $id_fotokamar);
+    $this->db->delete('m_fotokamar');
   }
 
 }

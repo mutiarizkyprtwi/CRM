@@ -18,68 +18,71 @@
                                         <h4 class="header-title m-t-0 m-b-30">Edit Type Room</h4>
                                         <div class="row">
                                             <div class="col-xl-12">
-                                                <?php foreach ($rules as $data) : ?>
-                                                <form class="form-horizontal" method="POST" 
-                                                action="<?= base_url('room/ubah/'.$data['kd_room'].'')?>">
+                                                <?= form_open_multipart('room/ubah/'.$room['kd_room'])?>
                                                     <div class="form-group row">
                                                         <label class="col-md-3 control-label">Kode Room</label>
                                                         <div class="col-md-9">
-                                                            <input type="text" name="kd_room" class="form-control" placeholder="" id="kd_room" value="<?=$data['kd_room'] ?>">
+                                                            <input type="text" name="kd_room" class="form-control" placeholder="" id="kd_room" value="<?= $room['kd_room'] ?>">
                                                         </div>
                                                     </div>
                                                     <div class="form-group row">
                                                         <label class="col-md-3 control-label">Nama Room</label>
                                                         <div class="col-md-9">
-                                                            <input type="text" id="room" name="room" class="form-control" placeholder="" value="<?=$data['room'] ?>">
+                                                            <input type="text" id="room" name="room" class="form-control" placeholder="" value="<?= $room['room'] ?>">
                                                         </div>
                                                     </div>
                                                     <div class="form-group row">
                                                         <label class="col-md-3 control-label">Location</label>
                                                        <div class="col-md-9">
-                                                            <input type="text" id="location" name="location" class="form-control" placeholder="" value="<?=$data['location'] ?>">
+                                                            <input type="text" id="location" name="location" class="form-control" placeholder="" value="<?= $room['location'] ?>">
                                                         </div>
                                                     </div>
                                                     <div class="form-group row">
                                                         <label class="col-md-3 control-label">Size</label>
                                                         <div class="col-md-9">
-                                                            <input type="text" name="size" id="size" class="form-control" value="<?=$data['size'] ?>">
+                                                            <input type="text" name="size" id="size" class="form-control" value="<?= $room['size'] ?>">
                                                         </div>
                                                     </div>
                                                     <div class="form-group row">
                                                         <label class="col-md-3 control-label">Theatre</label>
                                                         <div class="col-md-9">
-                                                            <input type="integer" name="theatre" id="theatre" class="form-control" value="<?=$data['theatre'] ?>"> 
+                                                            <input type="integer" name="theatre" id="theatre" class="form-control" value="<?= $room['theatre'] ?>"> 
                                                         </div>
                                                     </div>
                                                     <div class="form-group row">
                                                         <label class="col-md-3 control-label">U-Shape</label>
                                                         <div class="col-md-9">
-                                                            <input type="integer" name="u-shape" id="u-shape" class="form-control" value="<?=$data['u-shape'] ?>">   
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group row">
-                                                        <label class="col-md-3 control-label">Round</label>
-                                                        <div class="col-md-9">
-                                                            <input type="text" name="round" id="round" class="form-control" value="<?=$data['round'] ?>">  
+                                                            <input type="integer" name="u-shape" id="u-shape" class="form-control" value="<?= $room['u-shape'] ?>">   
                                                         </div>
                                                     </div>
                                                     <div class="form-group row">
                                                         <label class="col-md-3 control-label">Class</label>
                                                         <div class="col-md-9">
-                                                            <input type="integer" name="class" id="class" class="form-control" value="<?=$data['class'] ?>">  
+                                                            <input type="integer" name="class" id="class" class="form-control" value="<?= $room['class'] ?>">  
                                                         </div>
                                                     </div>
-                                                   
+                                                    <div class="form-group row">
+                                                        <label class="col-md-3 control-label">Foto</label>
+                                                        <div class="col-md-9">
+                                                            <input type="file" id="fotoroom" name="fotoroom[]" multiple class="form-control" placeholder="" >
+                                                            <?= form_error('foto', '<label id="foto-error" class="error text-danger">', '</label>') ?>
+                                                        </div>
+                                                    </div>
                                                       <div class="form-group row float-right">
                                                            <button type="submit" class="btn btn-info waves-effect w-md waves-light m-b-5" style="margin-right: 10px;">Save</button>
                                                     </div>
                                                     <a href="<?= base_url('room/index') ?>"><button type="button" class="btn btn-danger waves-effect w-md waves-light m-b-5" style="margin-left: 250px;">Cancel</button></a>
-                                                    <?php endforeach ?>
-                                                </form>
+                                                    <?php form_close()?>
                                             </div><!-- end col -->            
                                         </div><!-- end row -->
                                     </div>
                                 </div>
                             </div><!-- end col -->
+                             <div class="col-md-6">
+                                <?php foreach($fotoroom as $foto) :?>
+                                    <img src="<?= base_url('images/room/'.$foto['nama_foto']) ?>" class="img-fluid img-thumbnail" width="100">
+                                    <a href="<?= base_url('room/hapusfotoroom/'.$foto['id_room'].'/'.$foto['kd_room']) ?>"><i class="fa fa-trash text-danger mr-3"></i> </a> 
+                                <?php endforeach ?>
+                            </div>
                         </div>
                         <!-- end row -->

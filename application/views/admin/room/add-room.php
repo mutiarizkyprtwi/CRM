@@ -19,7 +19,7 @@
                                         <div class="row">
                                             <div class="col-xl-12">
                                                 <form class="form-horizontal" method="POST" 
-                                                action="<?= base_url('room/add')?>">
+                                                <?= form_open_multipart('room/add')?>
                                                     <div class="form-group row">
                                                         <label class="col-md-3 control-label">Kode Room</label>
                                                         <div class="col-md-9">
@@ -63,24 +63,24 @@
                                                         </div>
                                                     </div>
                                                     <div class="form-group row">
-                                                        <label class="col-md-3 control-label">Round</label>
-                                                        <div class="col-md-9">
-                                                            <input type="text" name="round" id="round" class="form-control" value="">  
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group row">
                                                         <label class="col-md-3 control-label">Class</label>
                                                         <div class="col-md-9">
                                                             <input type="integer" name="class" id="class" class="form-control" value="<?= set_value('class') ?>">
                                                         <?= form_error('class', '<label id="class-error" class="error text-danger">', '</label>') ?>   
                                                         </div>
                                                     </div>
-                                                   
+                                                   <div class="form-group row">
+                                                        <label class="col-md-3 control-label">Foto</label>
+                                                        <div class="col-md-9">
+                                                            <input type="file" id="fotoroom" name="fotoroom[]" multiple class="form-control" placeholder="" >
+                                                            <?= form_error('foto', '<label id="foto-error" class="error text-danger">', '</label>') ?>
+                                                        </div>
+                                                    </div>
                                                       <div class="form-group row float-right">
                                                            <button type="submit" class="btn btn-info waves-effect w-md waves-light m-b-5" style="margin-right: 10px;">Save</button>
                                                     </div>
                                                     <a href="<?= base_url('room/index') ?>"><button type="button" class="btn btn-danger waves-effect w-md waves-light m-b-5" style="margin-left: 250px;">Cancel</button></a>
-                                                </form>
+                                                <?php form_close()?>
                                             </div><!-- end col -->            
                                         </div><!-- end row -->
                                     </div>

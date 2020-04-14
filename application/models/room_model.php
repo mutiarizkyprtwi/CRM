@@ -26,4 +26,10 @@ class Room_model extends CI_Model
     return $this->db->update($this->_table, $data, ['kd_room'=>$kd_room]);
   }
 
+   public function HapusFotoRoom($id_room)
+  {
+    $this->db->where('id_room', $id_room);
+    $this->db->delete('m_fotoroom');
+  }
+
 }

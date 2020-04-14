@@ -7,7 +7,7 @@
          <div class="col-md-9 contact-detail">
             <div class="phone">
                <img src="<?= base_url ('assets/images/phone-ic.png') ?>" alt="Phone" />
-               <h6>Telp</h6>
+               <h6>Telp</h6>   
                <a href="tell:0711821781" title="+62 711-821781">+62 711-821781</a>
             </div>
             <div class="address">
